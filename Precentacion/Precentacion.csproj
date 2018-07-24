@@ -40,6 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormArticulo.Designer.cs">
+      <DependentUpon>FormArticulo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,7 +58,18 @@
     <Compile Include="FormPresentacion.Designer.cs">
       <DependentUpon>FormPresentacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVistaCategoria_Articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVistaCategoria_Articulo.Designer.cs">
+      <DependentUpon>FormVistaCategoria_Articulo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Negocio\Negocio.csproj">
@@ -61,12 +78,41 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormArticulo.resx">
+      <DependentUpon>FormArticulo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCategoria.resx">
       <DependentUpon>FormCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPresentacion.resx">
       <DependentUpon>FormPresentacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormVistaCategoria_Articulo.resx">
+      <DependentUpon>FormVistaCategoria_Articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchDataBase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addarchivo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveArchivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchDataBase16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchDataBase24x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

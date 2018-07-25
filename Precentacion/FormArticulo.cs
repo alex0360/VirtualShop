@@ -48,8 +48,8 @@ namespace Precentacion
         /// <param name="nombre">nombre de la Categoria</param>
         public void SetCategoria(int idCategoria, string nombre)
         {
-            FkCategoria = idCategoria;
-            TBCategoria.Text = nombre;
+            this.FkCategoria = idCategoria;
+            this.TBCategoria.Text = nombre;
         }
 
         // Mensaje de informacion       

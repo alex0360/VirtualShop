@@ -6,7 +6,6 @@ as
 select top 200 * from DBVentas.dbo.Categoria
 order by nombre asc
 go
-
 --Procedimiento Buscar(textBuscar=Nombre)
 Create Proc SpBuscar_Categoria
 @textBuscar varchar(50)
@@ -16,7 +15,6 @@ where  nombre COLLATE SQL_Latin1_General_Cp1_CI_AI
 like '%'+ @textBuscar + '%' 
 ORDER BY DBVentas.dbo.Categoria.nombre
 go
-
 --Procedimiento Insertar(id, nombre, descrip)
 create proc SpInsertar_Categoria
 @idCategoria int output,
@@ -26,7 +24,6 @@ as
 insert into DBVentas.dbo.Categoria (nombre, descripcion)
 values(@nombre, @descripcion)
 go
-
 --Procedimiento Editar(id)
 Create Proc SpEditar_Categoria
 @idCategoria int,
@@ -37,7 +34,6 @@ update DBVentas.dbo.Categoria set nombre=@nombre,
 descripcion=@descripcion
 where idCategoria=@idCategoria
 go
-
 --Procedimento Eliminar(id)
 Create Proc SpEliminar_Categoria
 @idCategoria int
@@ -45,6 +41,7 @@ as
 delete from DBVentas.dbo.Categoria
 where idCategoria = @idCategoria
 go
+
 
 --Procedimiento Mostrar Presentacion
 Create Proc SpMostrar_Presentacion
@@ -86,6 +83,7 @@ as
 delete from Presentacion
 where idPresentacion= @idPresentacion
 go
+
 
 --Procedimiento Mostrar Articulo
 create proc SpMostrar_Articulo
@@ -134,4 +132,63 @@ create proc SpEliminar_Articulo
 as
 delete from Articulo
 where idArticulo = @idArticulo
+Go
+
+--Mostrar
+Create proc SpMostrar_Proveedor
+as
+select top 100 * from Proveedor
+order by razon_social asc
+Go
+--Buscar Razon Social
+create proc Spbuscar_Proveedor_razon_social
+@textBuscar varchar(50)
+as
+select * from Proveedor
+where razon_social like '%'+@textBuscar+'%'
+Go
+--Buscar Numero de Documento
+create proc Spbuscar_Proveedor_num_documento
+@textBuscar varchar(50)
+as
+select * from Proveedor
+where num_documeto like '%'+@textBuscar+'%'
+Go
+--Insertar
+create proc SpInsertar_Proveedor
+@idProveedor int output,
+@razon_social varchar(150),
+@sector_comercial varchar(50),
+@tipo_documento varchar(50),
+@num_documento varchar(50),
+@direccion varchar(100),
+@telefono varchar(50),
+@email varchar(50),
+@url_web varchar(100)
+AS
+INSERT INTO Proveedor (razon_social,sector_comercial,tipo_documento,num_documeto,direccion,telefono,email,url_web)
+VALUES(@razon_social,@sector_comercial,@tipo_documento,@num_documento,@direccion,@telefono,@email,@url_web)
+Go 
+--Editar
+create proc SpEditar_Proveedor
+@idProveedor int,
+@razon_social varchar(150),
+@sector_comercial varchar(50),
+@tipo_documento varchar(50),
+@num_documento varchar(50),
+@direccion varchar(100),
+@telefono varchar(50),
+@email varchar(50),
+@url_web varchar(100)
+AS
+UPDATE Proveedor Set razon_social=@razon_social, sector_comercial=@sector_comercial, tipo_documento=@tipo_documento,
+num_documeto=@num_documento, direccion=@direccion, telefono=@telefono, email=@email, url_web=@url_web
+WHERE idProveedor = @idProveedor
+Go 
+--Eleminar
+create proc SpEliminar_Proveedor
+@idProveedor int
+AS
+delete from Proveedor
+where idProveedor = @idProveedor
 Go

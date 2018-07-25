@@ -36,6 +36,7 @@
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.lMatenimCategoria = new System.Windows.Forms.Label();
             this.lTituloCategoria = new System.Windows.Forms.Label();
+            this.BAddDataBase = new System.Windows.Forms.Button();
             this.tabConCategoria.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagListado)).BeginInit();
@@ -44,14 +45,15 @@
             // tabConCategoria
             // 
             this.tabConCategoria.Controls.Add(this.tabPage1);
-            this.tabConCategoria.Location = new System.Drawing.Point(30, 46);
+            this.tabConCategoria.Location = new System.Drawing.Point(12, 45);
             this.tabConCategoria.Name = "tabConCategoria";
             this.tabConCategoria.SelectedIndex = 0;
-            this.tabConCategoria.Size = new System.Drawing.Size(746, 394);
+            this.tabConCategoria.Size = new System.Drawing.Size(392, 394);
             this.tabConCategoria.TabIndex = 3;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.BAddDataBase);
             this.tabPage1.Controls.Add(this.datagListado);
             this.tabPage1.Controls.Add(this.labMostrarTotal);
             this.tabPage1.Controls.Add(this.tbBuscar);
@@ -59,7 +61,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(738, 365);
+            this.tabPage1.Size = new System.Drawing.Size(384, 365);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -78,7 +80,7 @@
             this.datagListado.ReadOnly = true;
             this.datagListado.RowTemplate.Height = 24;
             this.datagListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagListado.Size = new System.Drawing.Size(687, 202);
+            this.datagListado.Size = new System.Drawing.Size(326, 202);
             this.datagListado.TabIndex = 5;
             this.datagListado.DoubleClick += new System.EventHandler(this.DatagListado_DoubleClick);
             // 
@@ -91,7 +93,7 @@
             // labMostrarTotal
             // 
             this.labMostrarTotal.AutoSize = true;
-            this.labMostrarTotal.Location = new System.Drawing.Point(561, 88);
+            this.labMostrarTotal.Location = new System.Drawing.Point(33, 100);
             this.labMostrarTotal.Name = "labMostrarTotal";
             this.labMostrarTotal.Size = new System.Drawing.Size(16, 17);
             this.labMostrarTotal.TabIndex = 4;
@@ -102,7 +104,7 @@
             this.tbBuscar.BackColor = System.Drawing.SystemColors.Control;
             this.tbBuscar.Location = new System.Drawing.Point(120, 21);
             this.tbBuscar.Name = "tbBuscar";
-            this.tbBuscar.Size = new System.Drawing.Size(457, 22);
+            this.tbBuscar.Size = new System.Drawing.Size(178, 22);
             this.tbBuscar.TabIndex = 1;
             this.tbBuscar.TextChanged += new System.EventHandler(this.TbBuscar_TextChanged);
             // 
@@ -121,18 +123,33 @@
             this.lTituloCategoria.BackColor = System.Drawing.Color.Transparent;
             this.lTituloCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lTituloCategoria.ForeColor = System.Drawing.Color.Maroon;
-            this.lTituloCategoria.Location = new System.Drawing.Point(24, 11);
+            this.lTituloCategoria.Location = new System.Drawing.Point(12, 11);
             this.lTituloCategoria.Name = "lTituloCategoria";
             this.lTituloCategoria.Size = new System.Drawing.Size(150, 31);
             this.lTituloCategoria.TabIndex = 2;
             this.lTituloCategoria.Text = "Categoria:";
+            // 
+            // BAddDataBase
+            // 
+            this.BAddDataBase.BackgroundImage = global::Precentacion.Properties.Resources.addDataBase24x;
+            this.BAddDataBase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BAddDataBase.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.BAddDataBase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BAddDataBase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BAddDataBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BAddDataBase.Location = new System.Drawing.Point(308, 11);
+            this.BAddDataBase.Name = "BAddDataBase";
+            this.BAddDataBase.Size = new System.Drawing.Size(41, 43);
+            this.BAddDataBase.TabIndex = 9;
+            this.BAddDataBase.UseVisualStyleBackColor = true;
+            this.BAddDataBase.Click += new System.EventHandler(this.BAddDataBase_Click);
             // 
             // FormVistaCategoria_Articulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(413, 450);
             this.Controls.Add(this.tabConCategoria);
             this.Controls.Add(this.lTituloCategoria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -158,5 +175,6 @@
         private System.Windows.Forms.TextBox tbBuscar;
         private System.Windows.Forms.Label lMatenimCategoria;
         private System.Windows.Forms.Label lTituloCategoria;
+        private System.Windows.Forms.Button BAddDataBase;
     }
 }

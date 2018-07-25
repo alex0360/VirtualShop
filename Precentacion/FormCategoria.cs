@@ -50,11 +50,11 @@ namespace Precentacion
         }
 
         // !Enabled Editar
-        private void Editar()
+        private void Editar(bool valor=false)
         {
             if (!IdCategoria.Equals(null))
             
-                isNuevo = false;
+                isNuevo = valor;
         }
 
         // !Enabled Nuevo
@@ -88,12 +88,18 @@ namespace Precentacion
             labMostrarTotal.Text = "Total de Regristros: " + Convert.ToString(datagListado.Rows.Count);
         }
 
+        // Saber si agregar una nueva categoria
         #region Eventos del Formulario
         private void FormCategoria_Load(object sender, EventArgs e)
         {
             this.Top = 0;
             this.Left = 0;
-
+            if (FormVistaCategoria_Articulo.GetInstacia)
+            {
+                tabConCategoria.SelectedIndex = 1;
+                Editar(true);
+            }
+            FormVistaCategoria_Articulo.GetInstacia = false;
             Clear();
             Mostrar();
 

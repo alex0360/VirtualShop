@@ -16,6 +16,16 @@ namespace Precentacion
         {
             InitializeComponent();
         }
+
+        private static bool _Instacia;
+        /// <summary>
+        /// Para saber si fue instaciada por VistaCategoria
+        /// </summary>
+        public static bool GetInstacia
+        {
+            get { return _Instacia; }
+            set { _Instacia = value; }
+        }
         // Metodo para Ocultar Columns
         private void OcultarColumns()
         {
@@ -62,6 +72,13 @@ namespace Precentacion
 
             form.SetCategoria(par1, par2);
             this.Hide();
+        }
+
+        private void BAddDataBase_Click(object sender, EventArgs e)
+        {
+            GetInstacia = true;
+            FormCategoria form = new FormCategoria();
+            form.ShowDialog();
         }
     }
 }

@@ -140,6 +140,13 @@ as
 select top 100 * from Proveedor
 order by razon_social asc
 Go
+-- Buscar Ambas
+Create proc Spbuscar_Proveedor_NumDoc_RazonSocial
+@textBuscar varchar(50)
+as
+select * from Proveedor
+where num_documeto like '%'+@textBuscar+'%' or razon_social like '%'+@textBuscar+'%'
+
 --Buscar Razon Social
 create proc Spbuscar_Proveedor_razon_social
 @textBuscar varchar(50)

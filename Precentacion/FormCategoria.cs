@@ -87,13 +87,14 @@ namespace Precentacion
             RowsEliminar();
             labMostrarTotal.Text = "Total de Regristros: " + Convert.ToString(datagListado.Rows.Count);
         }
-
-        // Saber si agregar una nueva categoria
+                
         #region Eventos del Formulario
+        // Cuando esta Cargando el Formulario
         private void FormCategoria_Load(object sender, EventArgs e)
         {
             this.Top = 0;
             this.Left = 0;
+            // Saber si agregar una nueva categoria
             if (FormVistaCategoria_Articulo.GetInstacia)
             {
                 tabConCategoria.SelectedIndex = 1;
@@ -104,17 +105,17 @@ namespace Precentacion
             Mostrar();
 
         }
-
+        // Button Guscar
         private void ButBuscar_Click(object sender, EventArgs e)
         {
             BuscarMostar();
         }
-
+        // TextBox Buscar
         private void TbBuscar_TextChanged(object sender, EventArgs e)
         {
             BuscarMostar();
         }
-
+        // Button Guardar
         private void ButGuardar_Click(object sender, EventArgs e)
         {
             try
@@ -152,11 +153,10 @@ namespace Precentacion
                 MessageBox.Show(ex.Message + ex.StackTrace,"Excepcion",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-
+        // Cancelar introduccion de los datos
         private void ButCancelar_Click(object sender, EventArgs e) => Clear();
-
+        // ChekBox Eliminar
         private void ChbEliminar_CheckedChanged(object sender, EventArgs e)=> RowsEliminar();
-
         // DataGridView
         private void DatagListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -175,7 +175,7 @@ namespace Precentacion
             tabConCategoria.SelectedIndex = 1;
             Editar();
         }
-
+        // Button Eliminar
         private void ButEliminar_Click(object sender, EventArgs e)
         {
             try

@@ -113,6 +113,9 @@ namespace Datos
             } catch (Exception ex)
             {
                 respuesta = ex.Message.ToString();
+            } finally
+            {
+                if (Conexion.SqlConnection.State == System.Data.ConnectionState.Open) Conexion.SqlConnection.Close();
             }
             return respuesta;
         }
@@ -177,6 +180,9 @@ namespace Datos
             } catch (Exception ex)
             {
                 respuesta = ex.Message.ToString();
+            } finally
+            {
+                if (Conexion.SqlConnection.State == System.Data.ConnectionState.Open) Conexion.SqlConnection.Close();
             }
             return respuesta;
         }
@@ -207,6 +213,9 @@ namespace Datos
             } catch (Exception ex)
             {
                 respuesta = ex.Message.ToString();
+            } finally
+            {
+                if (Conexion.SqlConnection.State == System.Data.ConnectionState.Open) Conexion.SqlConnection.Close();
             }
             return respuesta;
         }
@@ -231,7 +240,9 @@ namespace Datos
             } catch
             {
                 tableResutado = null;
-            }
+            } finally {
+                if (Conexion.SqlConnection.State == System.Data.ConnectionState.Open) Conexion.SqlConnection.Close();
+                 }
             return tableResutado;
         }
 
@@ -263,6 +274,9 @@ namespace Datos
             } catch
             {
                 tableResutado = null;
+            } finally
+            {
+                if (Conexion.SqlConnection.State == System.Data.ConnectionState.Open) Conexion.SqlConnection.Close();
             }
             return tableResutado;
         }

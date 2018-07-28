@@ -25,6 +25,7 @@ namespace Precentacion
 
             this.TBCategoria.ReadOnly = true;
             LlenarCombPresentacion();
+           
         }
 
         // Recoger los Datos

@@ -77,7 +77,6 @@ namespace Negocio
         /// <returns>DataTable:Tabla.Articulo{100Filas},Null</returns>
         public static System.Data.DataTable Mostar()
         {
-            System.Windows.Forms.MessageBox.Show(Datos.Conexion.SqlConnection.State.ToString());
             return new Datos.Articulo().Mostrar();
         }
 

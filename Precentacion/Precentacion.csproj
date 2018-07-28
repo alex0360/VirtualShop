@@ -40,6 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\FaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\FaderForm.Designer.cs">
+      <DependentUpon>FaderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Clases\FaderForm.resx">
+      <DependentUpon>FaderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormArticulo.resx">
       <DependentUpon>FormArticulo.cs</DependentUpon>
     </EmbeddedResource>

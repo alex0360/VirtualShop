@@ -16,7 +16,7 @@ namespace VirtualShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(Precentacion.FormArticulo.GetInstacia());
+            Application.Run(new Precentacion.FormProveedor());
         }
     }
 }

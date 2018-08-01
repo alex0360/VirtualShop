@@ -145,7 +145,8 @@ Create proc Spbuscar_Proveedor_NumDoc_RazonSocial
 @textBuscar varchar(50)
 as
 select * from Proveedor
-where num_documeto like '%'+@textBuscar+'%' or razon_social like '%'+@textBuscar+'%'
+where num_documento like '%'+@textBuscar+'%' or razon_social like '%'+@textBuscar+'%'
+GO
 
 --Buscar Razon Social
 create proc Spbuscar_Proveedor_razon_social
@@ -159,7 +160,7 @@ create proc Spbuscar_Proveedor_num_documento
 @textBuscar varchar(50)
 as
 select * from Proveedor
-where num_documeto like '%'+@textBuscar+'%'
+where num_documento like '%'+@textBuscar+'%'
 Go
 --Insertar
 create proc SpInsertar_Proveedor
@@ -173,7 +174,7 @@ create proc SpInsertar_Proveedor
 @email varchar(50),
 @url_web varchar(100)
 AS
-INSERT INTO Proveedor (razon_social,sector_comercial,tipo_documento,num_documeto,direccion,telefono,email,url_web)
+INSERT INTO Proveedor (razon_social,sector_comercial,tipo_documento,num_documento,direccion,telefono,email,url_web)
 VALUES(@razon_social,@sector_comercial,@tipo_documento,@num_documento,@direccion,@telefono,@email,@url_web)
 Go 
 --Editar
@@ -189,7 +190,7 @@ create proc SpEditar_Proveedor
 @url_web varchar(100)
 AS
 UPDATE Proveedor Set razon_social=@razon_social, sector_comercial=@sector_comercial, tipo_documento=@tipo_documento,
-num_documeto=@num_documento, direccion=@direccion, telefono=@telefono, email=@email, url_web=@url_web
+num_documento=@num_documento, direccion=@direccion, telefono=@telefono, email=@email, url_web=@url_web
 WHERE idProveedor = @idProveedor
 Go 
 --Eleminar
@@ -199,3 +200,48 @@ AS
 delete from Proveedor
 where idProveedor = @idProveedor
 Go
+
+
+--Procedimiento Mostrar
+CREATE PROC SpMostrar_Cliente
+AS
+SELECT TOP 100 * FROM Cliente
+ORDER BY nombre ASC
+GO
+--Procedimiento Buscar Nombre y Apellido
+CREATE PROC SpBuscar_Cliente
+@textBuscar VARCHAR(50)
+AS
+SELECT * FROM Cliente
+WHERE nombre LIKE '%'+@textBuscar+'%' OR apellido LIKE '%'+@textBuscar+'%'
+GO
+--Procedimiento Insertar
+CREATE PROC SpInsertar_Cliente
+@idCliente int OUTPUT,
+@nombre VARCHAR(20),
+@apellido VARCHAR(40),
+@sexo VARCHAR(1),
+@fecha_nacimiento DATE,
+@tipo_documento VARCHAR(20),
+@num_documento VARCHAR(14),
+@direccion VARCHAR(100),
+@telefono VARCHAR(10),
+@email VARCHAR(50)
+AS
+INSERT INTO Cliente(nombre, apellido, sexo, fecha_nacimiento, tipo_documento, num_documento, direccion, telefono, email)
+VALUES ( @nombre, @apellido, @sexo, @fecha_nacimiento, @tipo_documento, @num_documento, @direccion, @telefono, @email)
+GO
+--Procedimiento Editar
+CREATE PROC SpEditar_Cliente
+@idCliente int OUTPUT,
+@nombre VARCHAR(20),
+@apellido VARCHAR(40),
+@sexo VARCHAR(1),
+@fecha_nacimiento DATE,
+@tipo_documento VARCHAR(20),
+@num_documento VARCHAR(14),
+@direccion VARCHAR(100),
+@telefono VARCHAR(10),
+@email VARCHAR(50)
+AS
+--Continuar

@@ -22,14 +22,5 @@ namespace Precentacion.Clases
         // Mensaje de Error
         protected virtual void MensajeError(string mensaje = "Falta ingresar algunos datos, seran remarcados") => MessageBox.Show(mensaje, "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-        // CheckBox MostrarRowsEliminar
-       protected virtual void RowsEliminar()
-        {
-            if (CBEliminar.Checked)
-                DGVListado.Columns[0].Visible = true;
-            else
-                DGVListado.Columns[0].Visible = false;
-        }
-
     }
 }

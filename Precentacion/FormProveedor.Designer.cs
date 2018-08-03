@@ -58,12 +58,14 @@
             // 
             this.BCancelar.Location = new System.Drawing.Point(310, 266);
             this.BCancelar.Size = new System.Drawing.Size(111, 36);
+            this.BCancelar.TabIndex = 10;
             this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
             // 
             // BGuardar
             // 
             this.BGuardar.Location = new System.Drawing.Point(186, 266);
             this.BGuardar.Size = new System.Drawing.Size(111, 36);
+            this.BGuardar.TabIndex = 9;
             this.BGuardar.Click += new System.EventHandler(this.BGuardar_Click);
             // 
             // LTitulo
@@ -149,7 +151,7 @@
             // 
             // TBBuscar
             // 
-            this.TBBuscar.Location = new System.Drawing.Point(94, 17);
+            this.TBBuscar.Location = new System.Drawing.Point(85, 20);
             this.TBBuscar.Size = new System.Drawing.Size(233, 22);
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
             // 
@@ -165,7 +167,7 @@
             this.TBRazon.Margin = new System.Windows.Forms.Padding(1);
             this.TBRazon.Name = "TBRazon";
             this.TBRazon.Size = new System.Drawing.Size(235, 22);
-            this.TBRazon.TabIndex = 8;
+            this.TBRazon.TabIndex = 1;
             // 
             // LRazon
             // 
@@ -174,7 +176,7 @@
             this.LRazon.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LRazon.Name = "LRazon";
             this.LRazon.Size = new System.Drawing.Size(95, 17);
-            this.LRazon.TabIndex = 7;
+            this.LRazon.TabIndex = 0;
             this.LRazon.Text = "Razon Social:";
             // 
             // LSector_comercial
@@ -184,7 +186,7 @@
             this.LSector_comercial.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LSector_comercial.Name = "LSector_comercial";
             this.LSector_comercial.Size = new System.Drawing.Size(119, 17);
-            this.LSector_comercial.TabIndex = 7;
+            this.LSector_comercial.TabIndex = 0;
             this.LSector_comercial.Text = "Sector Comercial:";
             // 
             // LTipo_documento
@@ -194,7 +196,7 @@
             this.LTipo_documento.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LTipo_documento.Name = "LTipo_documento";
             this.LTipo_documento.Size = new System.Drawing.Size(136, 17);
-            this.LTipo_documento.TabIndex = 7;
+            this.LTipo_documento.TabIndex = 0;
             this.LTipo_documento.Text = "Tipo de Documento:";
             // 
             // LDireccion
@@ -204,7 +206,7 @@
             this.LDireccion.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LDireccion.Name = "LDireccion";
             this.LDireccion.Size = new System.Drawing.Size(71, 17);
-            this.LDireccion.TabIndex = 7;
+            this.LDireccion.TabIndex = 0;
             this.LDireccion.Text = "Direccion:";
             // 
             // TBDireccion
@@ -215,7 +217,7 @@
             this.TBDireccion.Multiline = true;
             this.TBDireccion.Name = "TBDireccion";
             this.TBDireccion.Size = new System.Drawing.Size(235, 41);
-            this.TBDireccion.TabIndex = 8;
+            this.TBDireccion.TabIndex = 5;
             // 
             // lNum_documento
             // 
@@ -224,7 +226,7 @@
             this.lNum_documento.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lNum_documento.Name = "lNum_documento";
             this.lNum_documento.Size = new System.Drawing.Size(158, 17);
-            this.lNum_documento.TabIndex = 7;
+            this.lNum_documento.TabIndex = 0;
             this.lNum_documento.Text = "Numero de Documento:";
             // 
             // TBNum_documento
@@ -234,7 +236,7 @@
             this.TBNum_documento.Margin = new System.Windows.Forms.Padding(1);
             this.TBNum_documento.Name = "TBNum_documento";
             this.TBNum_documento.Size = new System.Drawing.Size(235, 22);
-            this.TBNum_documento.TabIndex = 8;
+            this.TBNum_documento.TabIndex = 4;
             // 
             // LTelefono
             // 
@@ -243,7 +245,7 @@
             this.LTelefono.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LTelefono.Name = "LTelefono";
             this.LTelefono.Size = new System.Drawing.Size(68, 17);
-            this.LTelefono.TabIndex = 7;
+            this.LTelefono.TabIndex = 0;
             this.LTelefono.Text = "Telefono:";
             // 
             // TBTelefono
@@ -253,7 +255,7 @@
             this.TBTelefono.Margin = new System.Windows.Forms.Padding(1);
             this.TBTelefono.Name = "TBTelefono";
             this.TBTelefono.Size = new System.Drawing.Size(235, 22);
-            this.TBTelefono.TabIndex = 8;
+            this.TBTelefono.TabIndex = 7;
             // 
             // LEmail
             // 
@@ -262,7 +264,7 @@
             this.LEmail.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LEmail.Name = "LEmail";
             this.LEmail.Size = new System.Drawing.Size(46, 17);
-            this.LEmail.TabIndex = 7;
+            this.LEmail.TabIndex = 0;
             this.LEmail.Text = "Email:";
             // 
             // TBEmail
@@ -272,7 +274,7 @@
             this.TBEmail.Margin = new System.Windows.Forms.Padding(1);
             this.TBEmail.Name = "TBEmail";
             this.TBEmail.Size = new System.Drawing.Size(155, 22);
-            this.TBEmail.TabIndex = 8;
+            this.TBEmail.TabIndex = 6;
             // 
             // lUrl
             // 
@@ -281,7 +283,7 @@
             this.lUrl.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lUrl.Name = "lUrl";
             this.lUrl.Size = new System.Drawing.Size(40, 17);
-            this.lUrl.TabIndex = 7;
+            this.lUrl.TabIndex = 0;
             this.lUrl.Text = "URL:";
             // 
             // TBUrl
@@ -325,7 +327,7 @@
             this.CBSector_comercial.Location = new System.Drawing.Point(266, 45);
             this.CBSector_comercial.Name = "CBSector_comercial";
             this.CBSector_comercial.Size = new System.Drawing.Size(116, 24);
-            this.CBSector_comercial.TabIndex = 9;
+            this.CBSector_comercial.TabIndex = 2;
             // 
             // CBTipo_documento
             // 
@@ -334,7 +336,7 @@
             this.CBTipo_documento.Location = new System.Drawing.Point(9, 110);
             this.CBTipo_documento.Name = "CBTipo_documento";
             this.CBTipo_documento.Size = new System.Drawing.Size(116, 24);
-            this.CBTipo_documento.TabIndex = 9;
+            this.CBTipo_documento.TabIndex = 3;
             // 
             // FormProveedor
             // 

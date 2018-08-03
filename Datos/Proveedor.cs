@@ -163,6 +163,7 @@ namespace Datos
                 SqlParameter ParId = new SqlParameter() {
                     ParameterName = "@idProveedor",
                     SqlDbType = SqlDbType.Int,
+                    Value = Proveedor.IdProveedor
                 }; sqlCommand.Parameters.Add(ParId);
                 SqlParameter ParRazon_social = new SqlParameter() {
                     ParameterName = "@razon_social",

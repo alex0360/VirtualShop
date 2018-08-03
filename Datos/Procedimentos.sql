@@ -205,21 +205,21 @@ Go
 --Procedimiento Mostrar
 CREATE PROC SpMostrar_Cliente
 AS
-SELECT TOP 100 * FROM Cliente
+SELECT TOP 100 * FROM dbo.Cliente
 ORDER BY nombre ASC
 GO
 --Procedimiento Buscar Nombre y Apellido
 CREATE PROC SpBuscar_Cliente
 @textBuscar VARCHAR(50)
 AS
-SELECT * FROM Cliente
-WHERE nombre LIKE '%'+@textBuscar+'%' OR apellido LIKE '%'+@textBuscar+'%'
+SELECT * FROM  DBVentas.dbo.Cliente
+WHERE nombre LIKE '%'+@textBuscar+'%' OR apellidos LIKE '%'+@textBuscar+'%'
 GO
 --Procedimiento Insertar
 CREATE PROC SpInsertar_Cliente
 @idCliente int OUTPUT,
 @nombre VARCHAR(20),
-@apellido VARCHAR(40),
+@apellidos VARCHAR(40),
 @sexo VARCHAR(1),
 @fecha_nacimiento DATE,
 @tipo_documento VARCHAR(20),
@@ -228,14 +228,14 @@ CREATE PROC SpInsertar_Cliente
 @telefono VARCHAR(10),
 @email VARCHAR(50)
 AS
-INSERT INTO Cliente(nombre, apellido, sexo, fecha_nacimiento, tipo_documento, num_documento, direccion, telefono, email)
-VALUES ( @nombre, @apellido, @sexo, @fecha_nacimiento, @tipo_documento, @num_documento, @direccion, @telefono, @email)
+INSERT INTO  DBVentas.dbo.Cliente(nombre, apellidos, sexo, fecha_nacimiento, tipo_documento, num_documento, direccion, telefono, email)
+VALUES ( @nombre, @apellidos, @sexo, @fecha_nacimiento, @tipo_documento, @num_documento, @direccion, @telefono, @email)
 GO
 --Procedimiento Editar
 CREATE PROC SpEditar_Cliente
 @idCliente int OUTPUT,
 @nombre VARCHAR(20),
-@apellido VARCHAR(40),
+@apellidos VARCHAR(40),
 @sexo VARCHAR(1),
 @fecha_nacimiento DATE,
 @tipo_documento VARCHAR(20),
@@ -244,4 +244,14 @@ CREATE PROC SpEditar_Cliente
 @telefono VARCHAR(10),
 @email VARCHAR(50)
 AS
---Continuar
+UPDATE  DBVentas.dbo.Cliente SET nombre = @nombre, apellidos = @apellidos, sexo = @sexo, fecha_nacimiento = @fecha_nacimiento,
+num_documento = @num_documento, direccion = @direccion, telefono = @telefono, email = @email
+WHERE idCliente = @idCliente
+GO
+--Procedimento Eliminar
+CREATE PROC SpEliminar_Cliente
+@idCliente int
+AS
+DELETE FROM  DBVentas.dbo.Cliente
+WHERE idCliente = @idCliente
+GO

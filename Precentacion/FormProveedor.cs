@@ -32,6 +32,7 @@ namespace Precentacion
             TBTelefono.Text = null;
             TBEmail.Text = null;
             TBUrl.Text = null;
+            CargarSector_comercial();
         }
         // Metodo para Ocultar Columns
         private void OcultarColumns()
@@ -82,7 +83,20 @@ namespace Precentacion
             RowsEliminar();
             LTotalRegistro.Text = "Total de Regristros: " + Convert.ToString(DGVListado.Rows.Count);
         }
-
+        // Cargar ComboBox
+        private void CargarSector_comercial()
+        {
+            try {
+                CBSector_comercial.Items.Clear();
+                using (System.IO.StreamReader SR = new System.IO.StreamReader("sector_comercial.sc"))
+                {
+                    while (SR.Peek() >= 0)
+                    {
+                        CBSector_comercial.Items.Add(SR.ReadLine());
+                    }
+                }
+            } catch(Exception e) { MessageBox.Show(e.Message); }
+        }
         #region Eventos
         private void FormProveedor_Load(object sender, EventArgs e)
         {
@@ -145,6 +159,7 @@ namespace Precentacion
             TBEmail.Text = Convert.ToString(DGVListado.CurrentRow.Cells["email"].Value);
             TBUrl.Text = Convert.ToString(DGVListado.CurrentRow.Cells["url_web"].Value);
             tabCon.SelectedIndex = 1;
+            
             Editar();
         }
         private void BGuardar_Click(object sender, EventArgs e)
@@ -197,5 +212,6 @@ namespace Precentacion
         }
         private void BCancelar_Click(object sender, EventArgs e) => Clear();
         #endregion
+
     }
 }

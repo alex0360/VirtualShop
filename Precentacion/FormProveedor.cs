@@ -32,7 +32,7 @@ namespace Precentacion
             TBTelefono.Text = null;
             TBEmail.Text = null;
             TBUrl.Text = null;
-            CargarSector_comercial();
+            CargarComboBox();
         }
         // Metodo para Ocultar Columns
         private void OcultarColumns()
@@ -84,18 +84,10 @@ namespace Precentacion
             LTotalRegistro.Text = "Total de Regristros: " + Convert.ToString(DGVListado.Rows.Count);
         }
         // Cargar ComboBox
-        private void CargarSector_comercial()
+        private void CargarComboBox()
         {
-            try {
-                CBSector_comercial.Items.Clear();
-                using (System.IO.StreamReader SR = new System.IO.StreamReader("sector_comercial.sc"))
-                {
-                    while (SR.Peek() >= 0)
-                    {
-                        CBSector_comercial.Items.Add(SR.ReadLine());
-                    }
-                }
-            } catch(Exception e) { MessageBox.Show(e.Message); }
+            new Negocio.Read(CBSector_comercial, "SCom.vshop");
+            new Negocio.Read(CBTipo_documento, "TDoc.vshop");
         }
         #region Eventos
         private void FormProveedor_Load(object sender, EventArgs e)

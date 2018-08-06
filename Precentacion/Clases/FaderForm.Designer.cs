@@ -74,11 +74,11 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.GBMatenimiento);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(1);
-            this.tabPage2.Size = new System.Drawing.Size(777, 374);
+            this.tabPage2.Size = new System.Drawing.Size(777, 373);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Matenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -158,6 +158,7 @@
             this.BImprimir.TabIndex = 3;
             this.BImprimir.Text = "&Imprimir";
             this.BImprimir.UseVisualStyleBackColor = true;
+            this.BImprimir.Visible = false;
             // 
             // BEliminar
             // 

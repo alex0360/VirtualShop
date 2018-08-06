@@ -27,13 +27,13 @@ namespace Datos
         public string Nombre { get => _Nombre; set => _Nombre = value; }
         public string Apellidos { get => _Apellidos; set => _Apellidos = value; }
         public string Sexo { get => _Sexo; set => _Sexo = value; }
-        public DateTime Fecha_nacimiento { get => _Fecha_nacimiento; set => _Fecha_nacimiento = value; }
         public string Tipo_documento { get => _Tipo_documento; set => _Tipo_documento = value; }
         public string Num_documento { get => _Num_documento; set => _Num_documento = value; }
         public string Direccion { get => _Direccion; set => _Direccion = value; }
         public string Telefono { get => _Telefono; set => _Telefono = value; }
         public string Email { get => _Email; set => _Email = value; }
         public string TextBuscar { get => _TextBuscar; set => _TextBuscar = value; }
+        public DateTime Fecha_nacimiento { get => _Fecha_nacimiento; set => _Fecha_nacimiento = value; }
 
         /// <summary>
         /// Constructor Vacio
@@ -68,7 +68,7 @@ namespace Datos
             TextBuscar = textBuscar;
         }
         /// <summary>
-        /// Insentar Fila a Tabla.Proveedor
+        /// Insentar Fila a Tabla.Cliente
         /// </summary>
         /// <param name="Cliente">La Instacia de Datos.Cliente</param>
         /// <returns>String:OK, Message.Error, Null</returns>
@@ -91,13 +91,13 @@ namespace Datos
                 SqlParameter ParNombre = new SqlParameter() {
                     ParameterName = "@nombre",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size = 20,
                     Value = Cliente.Nombre
                 }; sqlCommand.Parameters.Add(ParNombre);
                 SqlParameter ParApellidos = new SqlParameter() {
                     ParameterName = "@apellidos",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size = 40,
                     Value = Cliente.Apellidos
                 }; sqlCommand.Parameters.Add(ParApellidos);
                 SqlParameter ParSexo = new SqlParameter() {
@@ -110,17 +110,17 @@ namespace Datos
                     ParameterName = "@fecha_nacimiento",
                     SqlDbType = SqlDbType.Date,
                     Value = Cliente.Fecha_nacimiento
-                }; sqlCommand.Parameters.Add(ParApellidos);
+                }; sqlCommand.Parameters.Add(ParFecha_nacimiento);
                 SqlParameter ParTipo_documento = new SqlParameter() {
                     ParameterName = "@tipo_documento",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size = 20,
                     Value = Cliente.Tipo_documento
                 }; sqlCommand.Parameters.Add(ParTipo_documento);
                 SqlParameter ParNum_documento = new SqlParameter() {
                     ParameterName = "@num_documento",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size = 14,
                     Value = Cliente.Num_documento,
                 }; sqlCommand.Parameters.Add(ParNum_documento);
                 SqlParameter ParDireccion = new SqlParameter() {
@@ -132,7 +132,7 @@ namespace Datos
                 SqlParameter ParTelefono = new SqlParameter() {
                     ParameterName = "@telefono",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size =10,
                     Value = Cliente.Telefono,
                 }; sqlCommand.Parameters.Add(ParTelefono);
                 SqlParameter ParEmail = new SqlParameter() {
@@ -152,7 +152,7 @@ namespace Datos
             return respuesta;
         }
         /// <summary>
-        /// Modificar Fila de la Tabla.Proveedor
+        /// Modificar Fila de la Tabla.Cliente
         /// </summary>
         /// <param name="Clienter">La Instacia de Datos.Cliente</param>
         /// <returns>String:OK, Message.Error, Null</returns>
@@ -175,13 +175,13 @@ namespace Datos
                 SqlParameter ParNombre = new SqlParameter() {
                     ParameterName = "@nombre",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size = 20,
                     Value = Cliente.Nombre
                 }; sqlCommand.Parameters.Add(ParNombre);
                 SqlParameter ParApellidos = new SqlParameter() {
                     ParameterName = "@apellidos",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size = 40,
                     Value = Cliente.Apellidos
                 }; sqlCommand.Parameters.Add(ParApellidos);
                 SqlParameter ParSexo = new SqlParameter() {
@@ -194,17 +194,17 @@ namespace Datos
                     ParameterName = "@fecha_nacimiento",
                     SqlDbType = SqlDbType.Date,
                     Value = Cliente.Fecha_nacimiento
-                }; sqlCommand.Parameters.Add(ParApellidos);
+                }; sqlCommand.Parameters.Add(ParFecha_nacimiento);
                 SqlParameter ParTipo_documento = new SqlParameter() {
                     ParameterName = "@tipo_documento",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size = 20,
                     Value = Cliente.Tipo_documento
                 }; sqlCommand.Parameters.Add(ParTipo_documento);
                 SqlParameter ParNum_documento = new SqlParameter() {
                     ParameterName = "@num_documento",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size = 14,
                     Value = Cliente.Num_documento,
                 }; sqlCommand.Parameters.Add(ParNum_documento);
                 SqlParameter ParDireccion = new SqlParameter() {
@@ -216,7 +216,7 @@ namespace Datos
                 SqlParameter ParTelefono = new SqlParameter() {
                     ParameterName = "@telefono",
                     SqlDbType = SqlDbType.VarChar,
-                    Size = 50,
+                    Size = 10,
                     Value = Cliente.Telefono,
                 }; sqlCommand.Parameters.Add(ParTelefono);
                 SqlParameter ParEmail = new SqlParameter() {
@@ -235,7 +235,7 @@ namespace Datos
             return respuesta;
         }
         /// <summary>
-        /// Elimia Fila Tabla.Proveedor
+        /// Elimia Fila Tabla.Cliente
         /// </summary>
         /// <param name="Cliente">La Instacia de Datos.Cliente</param>
         /// <returns>String:OK, Message.Error, Null</returns>
@@ -253,7 +253,7 @@ namespace Datos
                 SqlParameter ParId = new SqlParameter() {
                     ParameterName = "@idCliente",
                     SqlDbType = SqlDbType.Int,
-                    Direction = ParameterDirection.Output
+                    Value=Cliente.IdCliente
                 }; sqlCommand.Parameters.Add(ParId);
                 respuesta = sqlCommand.ExecuteNonQuery() == 1 ?
                     "Ok" : "No se Elimino el registro";

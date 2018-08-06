@@ -3,39 +3,39 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Precentacion
 {
-    public partial class FormProveedor : Clases.FaderForm
+    public partial class FormCliente : Precentacion.Clases.FaderForm
     {
-        private System.Int32? IdProveedor;
-
-        public FormProveedor()
+        private System.Int32? IdCliente;
+        public FormCliente()
         {
             InitializeComponent();
-            this.TTMensaje.SetToolTip(TBRazon, "Ingrese un Razon Comercial");
-            this.TTMensaje.SetToolTip(CBTipo_documento, "Seleccione un tipo de documento");
-            this.TTMensaje.SetToolTip(CBSector_comercial, "Seleccione un sector comercial");
-            this.TTMensaje.SetToolTip(TBNum_documento, "Numero de documento");
+            this.TTMensaje.SetToolTip(TBNombre, "Ingrese un nombre para cliente");
+            this.TTMensaje.SetToolTip(TBApellidos, "Ingrese un apellido para cliente");
+            this.TTMensaje.SetToolTip(CBTipo_documento, "Selecione el tipo de documento");
+            this.TTMensaje.SetToolTip(TBNum_documento, "Ingrese el numero del documento");
+
         }
-       
+
         // Limpiar los Controles
         private void Clear()
         {
-            IdProveedor = null;
-            TBRazon.Text = null;
-            CBSector_comercial.Text = null;
+            IdCliente = null;
+            TBNombre.Text = null;
+            TBApellidos.Text = null;
+            CBSexo.SelectedItem = null;
+            DTPFecha_nacimiento.ResetText();
             CBTipo_documento.Text = null;
             TBNum_documento.Text = null;
             TBDireccion.Text = null;
             TBTelefono.Text = null;
             TBEmail.Text = null;
-            TBUrl.Text = null;
             CargarComboBox();
+            ComboBoxSOLOLectura();
         }
         // Metodo para Ocultar Columns
         private void OcultarColumns()
@@ -54,7 +54,7 @@ namespace Precentacion
         // !Enabled Editar
         private void Editar(bool valor = false)
         {
-            if (!IdProveedor.Equals(null))
+            if (!IdCliente.Equals(null))
 
                 isNuevo = valor;
         }
@@ -62,7 +62,7 @@ namespace Precentacion
         private System.Boolean isNuevo;
         private System.Boolean Nuevo()
         {
-            if (IdProveedor.Equals(null))
+            if (IdCliente.Equals(null))
             {
                 isNuevo = true;
                 //TBNombre.Focus();
@@ -72,7 +72,7 @@ namespace Precentacion
         // Metodo Mostrar
         private void Mostrar()
         {
-            DGVListado.DataSource = Negocio.Proveedor.Mostar();
+            DGVListado.DataSource = Negocio.Cliente.Mostrar();
             DGVListado.AutoResizeColumns();
             OcultarColumns();
             RowsEliminar();
@@ -81,7 +81,7 @@ namespace Precentacion
         // Metodo Mostrar
         private void BuscarMostar()
         {
-            DGVListado.DataSource = Negocio.Proveedor.BuscarMostar(this.TBBuscar.Text);
+            DGVListado.DataSource = Negocio.Cliente.Buscar_Cliente(this.TBBuscar.Text);
             OcultarColumns();
             RowsEliminar();
             LTotalRegistro.Text = "Total de Regristros: " + Convert.ToString(DGVListado.Rows.Count);
@@ -89,18 +89,25 @@ namespace Precentacion
         // Cargar ComboBox
         private void CargarComboBox()
         {
-            new Negocio.Read(CBSector_comercial, "SCom.vshop");
-            new Negocio.Read(CBTipo_documento, "TDoc.vshop");
+            new Negocio.Read(CBTipo_documento, "TDoCl.vshop");
+        }
+        // Solo Lectura Combobox
+        private void ComboBoxSOLOLectura() {
+            new Negocio.Read(CBSexo);
+            new Negocio.Read(CBTipo_documento);
         }
         #region Eventos
-        private void FormProveedor_Load(object sender, EventArgs e)
+        private void FormCliente_Load(object sender, EventArgs e)
         {
             this.Top = 0;
             this.Left = 0;
             Clear();
             Mostrar();
         }
-        private void TBBuscar_TextChanged(object sender, EventArgs e) => BuscarMostar();
+        private void TBBuscar_TextChanged(object sender, EventArgs e)
+        {
+            BuscarMostar();
+        }
         private void BEliminar_Click(object sender, EventArgs e)
         {
             try
@@ -118,7 +125,7 @@ namespace Precentacion
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             codigo = Convert.ToString(row.Cells[1].Value);
-                            resultado = Negocio.Proveedor.Eliminar(System.Convert.ToInt32(codigo));
+                            resultado = Negocio.Cliente.Eliminar(System.Convert.ToInt32(codigo));
 
                             if (resultado.Equals("Ok"))
                                 MensajeOK("Se elimino Correctamente el registro");
@@ -144,54 +151,54 @@ namespace Precentacion
         }
         private void DGVListado_DoubleClick(object sender, EventArgs e)
         {
-            IdProveedor = Convert.ToInt32(DGVListado.CurrentRow.Cells["idProveedor"].Value);
-            TBRazon.Text = Convert.ToString(DGVListado.CurrentRow.Cells["razon_social"].Value);
-            CBSector_comercial.Text = Convert.ToString(DGVListado.CurrentRow.Cells["sector_comercial"].Value);
+            IdCliente = Convert.ToInt32(DGVListado.CurrentRow.Cells["idCliente"].Value);
+            TBNombre.Text = Convert.ToString(DGVListado.CurrentRow.Cells["nombre"].Value);
+            TBApellidos.Text = Convert.ToString(DGVListado.CurrentRow.Cells["apellidos"].Value);
+            CBSexo.Text = Convert.ToString(DGVListado.CurrentRow.Cells["sexo"].Value);
+            DTPFecha_nacimiento.Value = Convert.ToDateTime(DGVListado.CurrentRow.Cells["fecha_nacimiento"].Value);
             CBTipo_documento.Text = Convert.ToString(DGVListado.CurrentRow.Cells["tipo_documento"].Value);
             TBNum_documento.Text = Convert.ToString(DGVListado.CurrentRow.Cells["num_documento"].Value);
             TBDireccion.Text = Convert.ToString(DGVListado.CurrentRow.Cells["direccion"].Value);
             TBTelefono.Text = Convert.ToString(DGVListado.CurrentRow.Cells["telefono"].Value);
             TBEmail.Text = Convert.ToString(DGVListado.CurrentRow.Cells["email"].Value);
-            TBUrl.Text = Convert.ToString(DGVListado.CurrentRow.Cells["url_web"].Value);
             tabCon.SelectedIndex = 1;
-            
+
             Editar();
         }
+        private void BCancelar_Click(object sender, EventArgs e) => Clear();
         private void BGuardar_Click(object sender, EventArgs e)
         {
             try
             {
                 string respuesta = string.Empty;
 
-                if (TBRazon.Text == string.Empty || CBTipo_documento.SelectedItem == null ||CBSector_comercial.SelectedItem == null || TBNum_documento.Text == string.Empty)
+                if (TBNombre.Text == string.Empty ||TBApellidos.Text == string.Empty || CBTipo_documento.SelectedItem == null || TBNum_documento.Text == string.Empty)
                 {
                     MensajeError();
-                    if(TBRazon.Text.Equals(string.Empty))
-                        EPErrorIcono.SetError(TBRazon, "Ingrese un Razon Social");
-                    if(CBTipo_documento.SelectedItem == null)
+                    if (TBNombre.Text.Equals(string.Empty))
+                        EPErrorIcono.SetError(TBNombre, "Ingrese un nombre");
+                    if (TBApellidos.Text.Equals(string.Empty))
+                        EPErrorIcono.SetError(TBApellidos, "Ingrese un apellido");
+                    if (CBTipo_documento.SelectedItem == null)
                         EPErrorIcono.SetError(CBTipo_documento, "Seleccione un tipo de documento");
-                    if (CBSector_comercial.SelectedItem == null)
-                        EPErrorIcono.SetError(CBSector_comercial, "Seleccione un sector comercial");
                     if (TBNum_documento.Text.Equals(string.Empty))
                         EPErrorIcono.SetError(TBNum_documento, "Ingrese un Numero de Documento");
-                    
-
                 } else
                 {
                     if (Nuevo())
                     {
-                        respuesta = Negocio.Proveedor.Insertar
-                            (System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBRazon.Text.Trim().ToLower()),
-                            CBSector_comercial.Text, CBTipo_documento.Text,
-                            System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBNum_documento.Text.Trim().ToLower()),
-                            TBDireccion.Text.Trim(), TBTelefono.Text.Trim(), TBEmail.Text.Trim().ToLower(),TBUrl.Text.Trim());
+                        respuesta = Negocio.Cliente.Insertar
+                            (System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBNombre.Text.Trim().ToLower()),
+                            System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBApellidos.Text.Trim().ToLower()),
+                            CBSexo.Text,DTPFecha_nacimiento.Value,CBTipo_documento.Text,TBNum_documento.Text.Trim(),
+                            TBDireccion.Text.Trim(), TBTelefono.Text.Trim(), TBEmail.Text.Trim().ToLower());
                     } else
                     {
-                        respuesta = Negocio.Proveedor.Editar(System.Convert.ToInt32(IdProveedor),
-                            System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBRazon.Text.Trim().ToLower()),
-                            CBSector_comercial.Text, CBTipo_documento.Text,
-                            System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBNum_documento.Text.Trim().ToLower()),
-                            TBDireccion.Text.Trim(), TBTelefono.Text.Trim(), TBEmail.Text.Trim().ToLower(), TBUrl.Text.Trim());
+                        respuesta = Negocio.Cliente.Editar(System.Convert.ToInt32(IdCliente),
+                            System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBNombre.Text.Trim().ToLower()),
+                            System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBApellidos.Text.Trim().ToLower()),
+                            CBSexo.Text, DTPFecha_nacimiento.Value, CBTipo_documento.Text, TBNum_documento.Text.Trim(),
+                            TBDireccion.Text.Trim(), TBTelefono.Text.Trim(), TBEmail.Text.Trim().ToLower());
                     }
                     if (respuesta.Equals("Ok"))
                     {
@@ -209,8 +216,6 @@ namespace Precentacion
                 MessageBox.Show(ex.Message + ex.StackTrace, "Excepcion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-        private void BCancelar_Click(object sender, EventArgs e) => Clear();
         #endregion
-
     }
 }

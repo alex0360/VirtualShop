@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Negocio
+﻿namespace Negocio
 {
     /// <summary>
     /// Lectura
@@ -16,7 +10,7 @@ namespace Negocio
         /// </summary>
         /// <param name="ComboBox">Nombre de ComboBox</param>
         /// <param name="File">Ruta/nombre.extencion del Archivo</param>
-        public Read(System.Windows.Forms.ComboBox ComboBox, String File)
+        public Read(System.Windows.Forms.ComboBox ComboBox, System.String File)
         {
             try
             {
@@ -28,7 +22,7 @@ namespace Negocio
                         ComboBox.Items.Add(SR.ReadLine());
                     }
                 }
-            } catch (Exception e) { System.Windows.Forms.MessageBox.Show(e.Message); }
+            } catch (System.Exception e) { System.Windows.Forms.MessageBox.Show(e.Message); }
         }
         /// <summary>
         /// Converte un ComboBox en un Control de solo Lectura

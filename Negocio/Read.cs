@@ -12,8 +12,7 @@
         /// <param name="File">Ruta/nombre.extencion del Archivo</param>
         public Read(System.Windows.Forms.ComboBox ComboBox, System.String File)
         {
-            try
-            {
+            try{
                 ComboBox.Items.Clear();
                 using (System.IO.StreamReader SR = new System.IO.StreamReader(File))
                 {

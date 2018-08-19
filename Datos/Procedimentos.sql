@@ -255,3 +255,61 @@ AS
 DELETE FROM  DBVentas.dbo.Cliente
 WHERE idCliente = @idCliente
 GO
+
+-- Mostrar Trabajadores
+CREATE PROC SpMostrar_Trabajador
+AS
+SELECT TOP 100 * From dbo.Trabajador
+Order by apellidos asc 
+GO
+-- Buscar Trabajadores
+CREATE PROC SpBuscar_Trabajador
+@textBuscar varchar(50)
+AS
+SELECT * FROM dbo.Trabajador
+WHERE apellidos like '%'+@textBuscar+'%' OR nombre like '%'+@textBuscar+'%' OR num_documento like '%'+@textBuscar+'%' 
+ORDER BY apellidos asc
+GO
+-- Insertar Trabajadores
+CREATE PROC SpInsertar_Trabajador
+@idTrabajador int OutPut,
+@nombre varchar(20),
+@apellidos varchar(40),
+@sexo varchar(1),
+@fecha_nacimiento date,
+@num_documento varchar(14),
+@direccion varchar(100),
+@telefono varchar(10),
+@email varchar(50),
+@acesso varchar(20),
+@usuario varchar(20),
+@password varchar(20)
+AS
+Insert INTO Trabajador (nombre, apellidos, sexo, fecha_nacimiento, num_documento, direccion, telefono, email, acesso, usuario, password)
+Values (@nombre, @apellidos, @sexo, @fecha_nacimiento, @num_documento, @direccion, @telefono,@email, @acesso, @usuario, @password)
+GO
+-- Update Trabajadores
+CREATE PROC SpEditar_Trabajador
+@idTrabajador int,
+@nombre varchar(20),
+@apellidos varchar(40),
+@sexo varchar(1),
+@fecha_nacimiento date,
+@num_documento varchar(14),
+@direccion varchar(100),
+@telefono varchar(10),
+@email varchar(50),
+@acesso varchar(20),
+@usuario varchar(20),
+@password varchar(20)
+AS
+Update Trabajador set nombre=@nombre, apellidos=@apellidos, sexo=@sexo, fecha_nacimiento=@fecha_nacimiento, num_documento=@num_documento, direccion=@direccion, telefono=@telefono, email=@email, acesso=@acesso, usuario=@usuario, password=@password
+WHERE idTrabajador = @idTrabajador
+GO
+-- Delete Trabajadores
+CREATE PROC SpEliminar_Trabajador
+@idTrabajador int
+AS
+Delete FROM dbo.Trabajador
+WHERE idTrabajador = @idTrabajador
+GO

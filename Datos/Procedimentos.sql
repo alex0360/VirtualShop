@@ -134,6 +134,7 @@ delete from Articulo
 where idArticulo = @idArticulo
 Go
 
+
 --Mostrar
 Create proc SpMostrar_Proveedor
 as
@@ -256,6 +257,7 @@ DELETE FROM  DBVentas.dbo.Cliente
 WHERE idCliente = @idCliente
 GO
 
+
 -- Mostrar Trabajadores
 CREATE PROC SpMostrar_Trabajador
 AS
@@ -277,6 +279,7 @@ CREATE PROC SpInsertar_Trabajador
 @apellidos varchar(40),
 @sexo varchar(1),
 @fecha_nacimiento date,
+@tipo_documento varchar(20),
 @num_documento varchar(14),
 @direccion varchar(100),
 @telefono varchar(10),
@@ -285,8 +288,8 @@ CREATE PROC SpInsertar_Trabajador
 @usuario varchar(20),
 @password varchar(20)
 AS
-Insert INTO Trabajador (nombre, apellidos, sexo, fecha_nacimiento, num_documento, direccion, telefono, email, acesso, usuario, password)
-Values (@nombre, @apellidos, @sexo, @fecha_nacimiento, @num_documento, @direccion, @telefono,@email, @acesso, @usuario, @password)
+Insert INTO Trabajador (nombre, apellidos, sexo, fecha_nacimiento, tipo_documento, num_documento, direccion, telefono, email, acesso, usuario, password)
+Values (@nombre, @apellidos, @sexo, @fecha_nacimiento, @tipo_documento, @num_documento, @direccion, @telefono,@email, @acesso, @usuario, @password)
 GO
 -- Update Trabajadores
 CREATE PROC SpEditar_Trabajador
@@ -295,6 +298,7 @@ CREATE PROC SpEditar_Trabajador
 @apellidos varchar(40),
 @sexo varchar(1),
 @fecha_nacimiento date,
+@tipo_documento varchar(20),
 @num_documento varchar(14),
 @direccion varchar(100),
 @telefono varchar(10),
@@ -303,7 +307,7 @@ CREATE PROC SpEditar_Trabajador
 @usuario varchar(20),
 @password varchar(20)
 AS
-Update Trabajador set nombre=@nombre, apellidos=@apellidos, sexo=@sexo, fecha_nacimiento=@fecha_nacimiento, num_documento=@num_documento, direccion=@direccion, telefono=@telefono, email=@email, acesso=@acesso, usuario=@usuario, password=@password
+Update Trabajador set nombre=@nombre, apellidos=@apellidos, sexo=@sexo, fecha_nacimiento=@fecha_nacimiento, tipo_documento=@tipo_documento,  num_documento=@num_documento, direccion=@direccion, telefono=@telefono, email=@email, acesso=@acesso, usuario=@usuario, password=@password
 WHERE idTrabajador = @idTrabajador
 GO
 -- Delete Trabajadores

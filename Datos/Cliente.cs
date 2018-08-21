@@ -266,7 +266,7 @@ namespace Datos
         /// <summary>
         /// Carga una obj.Tabla en memoria
         /// </summary>
-        /// <returns>DataTable:Tabla.Proveedor{100Filas},Null</returns>
+        /// <returns>DataTable:Tabla.Cliente{100Filas},Null</returns>
         public DataTable Mostrar()
         {
             DataTable tableResutado = new DataTable("Cliente");
@@ -290,7 +290,7 @@ namespace Datos
         /// Busca en un texto Introducido en Una Tabla.Cliente
         /// </summary>
         /// <param name="Cliente">La Instacia de Datos.Cliente</param>
-        /// <returns>DataTable:Tabla.Categoria{},Null</returns>
+        /// <returns>DataTable:Tabla.Cliente{},Null</returns>
         public DataTable Buscar_Cliente(Cliente Cliente)
         {
             DataTable tableResutado = new DataTable("Cliente");

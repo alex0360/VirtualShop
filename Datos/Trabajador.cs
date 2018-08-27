@@ -160,7 +160,7 @@ namespace Datos
                     SqlDbType = SqlDbType.VarChar,
                     Size = 20,
                     Value = Trabajador.Password
-                };
+                }; sqlCommand.Parameters.Add(ParPassword);
                 respuesta = sqlCommand.ExecuteNonQuery() == 1?
                     "Ok" : "No se ingreso el registro";
             }
@@ -354,6 +354,36 @@ namespace Datos
                 tableResutado = null;
             }
             return tableResutado;
+        }
+        /// <summary>
+        /// Comprueba si el Nombre de Usuario Existe O no
+        /// </summary>
+        /// <param name="Trabajador">Instacia de Trabajador</param>
+        /// <returns>Un Unico valor o Null</returns>
+        public DataTable Buscar_Usuario(Trabajador Trabajador)
+        {
+            DataTable tablaResultado = new DataTable("Trabajador");
+            try {
+                SqlCommand sqlCommand = new SqlCommand {
+                    Connection = Conexion.SqlConnection,
+                    CommandText = "SpBuscarUsuario_Trabajador",
+                    CommandType = CommandType.StoredProcedure
+                };
+                SqlParameter ParBuscar = new SqlParameter() {
+                    ParameterName = "@textBuscar",
+                    SqlDbType = SqlDbType.VarChar,
+                    Size = 50,
+                    Value = Trabajador.TextBuscar
+                };sqlCommand.Parameters.Add(ParBuscar);
+
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                sqlDataAdapter.Fill(tablaResultado);
+
+            } catch(Exception ex) {
+                tablaResultado = null;
+            }
+            return tablaResultado;
+
         }
 
     }

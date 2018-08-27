@@ -8,23 +8,22 @@ using System.Windows.Forms;
 
 namespace Precentacion
 {
-    public partial class FormCliente : Precentacion.Clases.FaderForm
+    public partial class FormTrabajador : Precentacion.Clases.FaderForm
     {
-        private System.Int32? IdCliente;
-        public FormCliente()
+        System.Int32? IdTrabajador;
+        public FormTrabajador()
         {
             InitializeComponent();
-            this.TTMensaje.SetToolTip(TBNombre, "Ingrese un nombre para cliente");
-            this.TTMensaje.SetToolTip(TBApellidos, "Ingrese un apellido para cliente");
+            this.TTMensaje.SetToolTip(TBNombre, "Ingrese un nombre para Trabajador");
+            this.TTMensaje.SetToolTip(TBApellidos, "Ingrese un apellido para Trabajador");
             this.TTMensaje.SetToolTip(CBTipo_documento, "Selecione el tipo de documento");
             this.TTMensaje.SetToolTip(TBNum_documento, "Ingrese el numero del documento");
-
         }
 
         // Limpiar los Controles
         private void Clear()
         {
-            IdCliente = null;
+            IdTrabajador= null;
             TBNombre.Text = null;
             TBApellidos.Text = null;
             CBSexo.SelectedItem = null;
@@ -34,6 +33,9 @@ namespace Precentacion
             TBDireccion.Text = null;
             TBTelefono.Text = null;
             TBEmail.Text = null;
+            CBAcesso.Text = null;
+            TBUsuario.Text = null;
+            TBPassword.Text = null;
             CargarComboBox();
             ComboBoxSOLOLectura();
         }
@@ -42,6 +44,10 @@ namespace Precentacion
         {
             DGVListado.Columns[0].Visible = false;
             DGVListado.Columns[1].Visible = false;
+            DGVListado.Columns["tipo_documento"].Visible = false;
+            DGVListado.Columns["acesso"].Visible = false;
+            DGVListado.Columns["usuario"].Visible = false;
+            DGVListado.Columns["password"].Visible = false;
         }
         // CheckBox MostrarRowsEliminar
         private void RowsEliminar()
@@ -54,7 +60,7 @@ namespace Precentacion
         // !Enabled Editar
         private void Editar(bool valor = false)
         {
-            if (!IdCliente.Equals(null))
+            if (!IdTrabajador.Equals(null))
 
                 isNuevo = valor;
         }
@@ -62,7 +68,7 @@ namespace Precentacion
         private System.Boolean isNuevo;
         private System.Boolean Nuevo()
         {
-            if (IdCliente.Equals(null))
+            if (IdTrabajador.Equals(null))
             {
                 isNuevo = true;
                 //TBNombre.Focus();
@@ -72,7 +78,7 @@ namespace Precentacion
         // Metodo Mostrar
         private void Mostrar()
         {
-            DGVListado.DataSource = Negocio.Cliente.Mostrar();
+            DGVListado.DataSource = Negocio.Trabajador.Mostrar();
             DGVListado.AutoResizeColumns();
             OcultarColumns();
             RowsEliminar();
@@ -81,7 +87,7 @@ namespace Precentacion
         // Metodo Mostrar
         private void BuscarMostar()
         {
-            DGVListado.DataSource = Negocio.Cliente.Buscar_Cliente(this.TBBuscar.Text);
+            DGVListado.DataSource = Negocio.Trabajador.Buscar_Trabajador(this.TBBuscar.Text);
             OcultarColumns();
             RowsEliminar();
             LTotalRegistro.Text = "Total de Regristros: " + Convert.ToString(DGVListado.Rows.Count);
@@ -90,14 +96,17 @@ namespace Precentacion
         private void CargarComboBox()
         {
             new Negocio.Read(CBTipo_documento, "TDocs.vshop");
+            new Negocio.Read(CBAcesso, "TAC.vshop");
         }
         // Solo Lectura Combobox
-        private void ComboBoxSOLOLectura() {
+        private void ComboBoxSOLOLectura()
+        {
             new Negocio.Read(CBSexo);
             new Negocio.Read(CBTipo_documento);
+            new Negocio.Read(CBAcesso);
         }
         #region Eventos
-        private void FormCliente_Load(object sender, EventArgs e)
+        private void FormTrabajador_Load(object sender, EventArgs e)
         {
             this.Top = 0;
             this.Left = 0;
@@ -125,7 +134,7 @@ namespace Precentacion
                         if (Convert.ToBoolean(row.Cells[0].Value))
                         {
                             codigo = Convert.ToString(row.Cells[1].Value);
-                            resultado = Negocio.Cliente.Eliminar(System.Convert.ToInt32(codigo));
+                            resultado = Negocio.Trabajador.Eliminar(System.Convert.ToInt32(codigo));
 
                             if (resultado.Equals("Ok"))
                                 MensajeOK("Se elimino Correctamente el registro");
@@ -151,7 +160,7 @@ namespace Precentacion
         }
         private void DGVListado_DoubleClick(object sender, EventArgs e)
         {
-            IdCliente = Convert.ToInt32(DGVListado.CurrentRow.Cells["idCliente"].Value);
+            IdTrabajador = Convert.ToInt32(DGVListado.CurrentRow.Cells["idTrabajador"].Value);
             TBNombre.Text = Convert.ToString(DGVListado.CurrentRow.Cells["nombre"].Value);
             TBApellidos.Text = Convert.ToString(DGVListado.CurrentRow.Cells["apellidos"].Value);
             CBSexo.Text = Convert.ToString(DGVListado.CurrentRow.Cells["sexo"].Value);
@@ -161,6 +170,9 @@ namespace Precentacion
             TBDireccion.Text = Convert.ToString(DGVListado.CurrentRow.Cells["direccion"].Value);
             TBTelefono.Text = Convert.ToString(DGVListado.CurrentRow.Cells["telefono"].Value);
             TBEmail.Text = Convert.ToString(DGVListado.CurrentRow.Cells["email"].Value);
+            CBAcesso.Text = Convert.ToString(DGVListado.CurrentRow.Cells["acesso"].Value);
+            TBUsuario.Text = Convert.ToString(DGVListado.CurrentRow.Cells["usuario"].Value);
+            TBPassword.Text = Convert.ToString(DGVListado.CurrentRow.Cells["password"].Value);
             tabCon.SelectedIndex = 1;
 
             Editar();
@@ -172,7 +184,7 @@ namespace Precentacion
             {
                 string respuesta = string.Empty;
 
-                if (TBNombre.Text == string.Empty ||TBApellidos.Text == string.Empty || CBTipo_documento.SelectedItem == null || TBNum_documento.Text == string.Empty)
+                if (TBNombre.Text == string.Empty || TBApellidos.Text == string.Empty || CBTipo_documento.SelectedItem == null || TBNum_documento.Text == string.Empty)
                 {
                     MensajeError();
                     if (TBNombre.Text.Equals(string.Empty))
@@ -187,18 +199,20 @@ namespace Precentacion
                 {
                     if (Nuevo())
                     {
-                        respuesta = Negocio.Cliente.Insertar
+                        respuesta = Negocio.Trabajador.Insertar
                             (System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBNombre.Text.Trim().ToLower()),
                             System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBApellidos.Text.Trim().ToLower()),
-                            CBSexo.Text,DTPFecha_nacimiento.Value,CBTipo_documento.Text,TBNum_documento.Text.Trim(),
-                            TBDireccion.Text.Trim(), TBTelefono.Text.Trim(), TBEmail.Text.Trim().ToLower());
+                            CBSexo.Text, DTPFecha_nacimiento.Value, CBTipo_documento.Text, TBNum_documento.Text.Trim(),
+                            TBDireccion.Text.Trim(), TBTelefono.Text.Trim(), TBEmail.Text.Trim().ToLower(),
+                            CBAcesso.Text, TBUsuario.Text.Trim(), TBPassword.Text.Trim());
                     } else
                     {
-                        respuesta = Negocio.Cliente.Editar(System.Convert.ToInt32(IdCliente),
+                        respuesta = Negocio.Trabajador.Editar(System.Convert.ToInt32(IdTrabajador),
                             System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBNombre.Text.Trim().ToLower()),
                             System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(TBApellidos.Text.Trim().ToLower()),
                             CBSexo.Text, DTPFecha_nacimiento.Value, CBTipo_documento.Text, TBNum_documento.Text.Trim(),
-                            TBDireccion.Text.Trim(), TBTelefono.Text.Trim(), TBEmail.Text.Trim().ToLower());
+                            TBDireccion.Text.Trim(), TBTelefono.Text.Trim(), TBEmail.Text.Trim().ToLower(),
+                            CBAcesso.Text, TBUsuario.Text.Trim(), TBPassword.Text.Trim());
                     }
                     if (respuesta.Equals("Ok"))
                     {
@@ -214,6 +228,15 @@ namespace Precentacion
             } catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + ex.StackTrace, "Excepcion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+        private void TBUsuario_TextChanged(object sender, EventArgs e)
+        {        
+            if( Negocio.Trabajador.Buscar_Usuario(TBUsuario.Text) != null)
+            {
+                MensajeError();
+                if (TBUsuario.Text != string.Empty)
+                    EPErrorIcono.SetError(TBUsuario, "El Usuario ya Existe");
             }
         }
         #endregion

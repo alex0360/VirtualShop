@@ -18,6 +18,9 @@ namespace Precentacion
             this.TTMensaje.SetToolTip(TBApellidos, "Ingrese un apellido para Trabajador");
             this.TTMensaje.SetToolTip(CBTipo_documento, "Selecione el tipo de documento");
             this.TTMensaje.SetToolTip(TBNum_documento, "Ingrese el numero del documento");
+            this.TTMensaje.SetToolTip(CBAcesso, "Seleccione el tipo de acesso");
+            this.TTMensaje.SetToolTip(TBUsuario, "Ingrese un nombre de Usuario");
+            this.TTMensaje.SetToolTip(TBPassword, "Ingrese un Password");
         }
 
         // Limpiar los Controles
@@ -184,7 +187,7 @@ namespace Precentacion
             {
                 string respuesta = string.Empty;
 
-                if (TBNombre.Text == string.Empty || TBApellidos.Text == string.Empty || CBTipo_documento.SelectedItem == null || TBNum_documento.Text == string.Empty)
+                if (TBNombre.Text == string.Empty || TBApellidos.Text == string.Empty || CBTipo_documento.SelectedItem == null || CBAcesso.SelectedItem == null || TBNum_documento.Text == string.Empty || TBUsuario.Text == string.Empty || TBPassword.Text == string.Empty)
                 {
                     MensajeError();
                     if (TBNombre.Text.Equals(string.Empty))
@@ -195,6 +198,12 @@ namespace Precentacion
                         EPErrorIcono.SetError(CBTipo_documento, "Seleccione un tipo de documento");
                     if (TBNum_documento.Text.Equals(string.Empty))
                         EPErrorIcono.SetError(TBNum_documento, "Ingrese un Numero de Documento");
+                    if (CBAcesso.SelectedItem == null)
+                        EPErrorIcono.SetError(CBAcesso, "Seleccione un acesso");
+                    if (TBUsuario.Text.Equals(string.Empty))
+                        EPErrorIcono.SetError(TBUsuario, "Ingrese un nombre de Usuario");
+                    if (TBPassword.Text.Equals(string.Empty))
+                        EPErrorIcono.SetError(TBPassword, "Ingrese un Password");
                 } else
                 {
                     if (Nuevo())
@@ -235,7 +244,7 @@ namespace Precentacion
             if( Negocio.Trabajador.Buscar_Usuario(TBUsuario.Text) != null)
             {
                 MensajeError();
-                if (TBUsuario.Text != string.Empty)
+                    MessageBox.Show("Usuario:"+TBUsuario.Text);
                     EPErrorIcono.SetError(TBUsuario, "El Usuario ya Existe");
             }
         }

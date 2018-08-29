@@ -49,12 +49,12 @@
             this.LNombre = new System.Windows.Forms.Label();
             this.LApellidos = new System.Windows.Forms.Label();
             this.PCuanta = new System.Windows.Forms.Panel();
-            this.LAcesso = new System.Windows.Forms.Label();
-            this.LUsuario = new System.Windows.Forms.Label();
-            this.LPassword = new System.Windows.Forms.Label();
-            this.CBAcesso = new System.Windows.Forms.ComboBox();
-            this.TBUsuario = new System.Windows.Forms.TextBox();
             this.TBPassword = new System.Windows.Forms.TextBox();
+            this.TBUsuario = new System.Windows.Forms.TextBox();
+            this.CBAcesso = new System.Windows.Forms.ComboBox();
+            this.LPassword = new System.Windows.Forms.Label();
+            this.LUsuario = new System.Windows.Forms.Label();
+            this.LAcesso = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.EPErrorIcono)).BeginInit();
             this.tabCon.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -78,6 +78,15 @@
             // 
             this.LTitulo.Size = new System.Drawing.Size(155, 31);
             this.LTitulo.Text = "Trabajador";
+            // 
+            // tabCon
+            // 
+            this.tabCon.Location = new System.Drawing.Point(25, 60);
+            this.tabCon.Size = new System.Drawing.Size(822, 402);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Size = new System.Drawing.Size(814, 373);
             // 
             // tabPage1
             // 
@@ -111,7 +120,7 @@
             this.GBMatenimiento.Controls.Add(this.LEmail);
             this.GBMatenimiento.Controls.Add(this.lNum_documento);
             this.GBMatenimiento.Controls.Add(this.LTipo_documento);
-            this.GBMatenimiento.Size = new System.Drawing.Size(737, 309);
+            this.GBMatenimiento.Size = new System.Drawing.Size(776, 309);
             this.GBMatenimiento.Text = "Trabajador";
             this.GBMatenimiento.Controls.SetChildIndex(this.BGuardar, 0);
             this.GBMatenimiento.Controls.SetChildIndex(this.BCancelar, 0);
@@ -360,44 +369,17 @@
             this.PCuanta.Controls.Add(this.LAcesso);
             this.PCuanta.Location = new System.Drawing.Point(488, 45);
             this.PCuanta.Name = "PCuanta";
-            this.PCuanta.Size = new System.Drawing.Size(232, 162);
+            this.PCuanta.Size = new System.Drawing.Size(284, 162);
             this.PCuanta.TabIndex = 33;
             // 
-            // LAcesso
+            // TBPassword
             // 
-            this.LAcesso.AutoSize = true;
-            this.LAcesso.Location = new System.Drawing.Point(18, 22);
-            this.LAcesso.Name = "LAcesso";
-            this.LAcesso.Size = new System.Drawing.Size(58, 17);
-            this.LAcesso.TabIndex = 0;
-            this.LAcesso.Text = "Acesso:";
-            // 
-            // LUsuario
-            // 
-            this.LUsuario.AutoSize = true;
-            this.LUsuario.Location = new System.Drawing.Point(15, 73);
-            this.LUsuario.Name = "LUsuario";
-            this.LUsuario.Size = new System.Drawing.Size(61, 17);
-            this.LUsuario.TabIndex = 0;
-            this.LUsuario.Text = "Usuario:";
-            // 
-            // LPassword
-            // 
-            this.LPassword.AutoSize = true;
-            this.LPassword.Location = new System.Drawing.Point(10, 118);
-            this.LPassword.Name = "LPassword";
-            this.LPassword.Size = new System.Drawing.Size(73, 17);
-            this.LPassword.TabIndex = 0;
-            this.LPassword.Text = "Password:";
-            // 
-            // CBAcesso
-            // 
-            this.CBAcesso.BackColor = System.Drawing.SystemColors.Control;
-            this.CBAcesso.FormattingEnabled = true;
-            this.CBAcesso.Location = new System.Drawing.Point(82, 22);
-            this.CBAcesso.Name = "CBAcesso";
-            this.CBAcesso.Size = new System.Drawing.Size(136, 24);
-            this.CBAcesso.TabIndex = 1;
+            this.TBPassword.BackColor = System.Drawing.SystemColors.Control;
+            this.TBPassword.Location = new System.Drawing.Point(82, 115);
+            this.TBPassword.Name = "TBPassword";
+            this.TBPassword.PasswordChar = '*';
+            this.TBPassword.Size = new System.Drawing.Size(136, 22);
+            this.TBPassword.TabIndex = 2;
             // 
             // TBUsuario
             // 
@@ -408,14 +390,41 @@
             this.TBUsuario.TabIndex = 2;
             this.TBUsuario.TextChanged += new System.EventHandler(this.TBUsuario_TextChanged);
             // 
-            // TBPassword
+            // CBAcesso
             // 
-            this.TBPassword.BackColor = System.Drawing.SystemColors.Control;
-            this.TBPassword.Location = new System.Drawing.Point(82, 115);
-            this.TBPassword.Name = "TBPassword";
-            this.TBPassword.PasswordChar = '*';
-            this.TBPassword.Size = new System.Drawing.Size(136, 22);
-            this.TBPassword.TabIndex = 2;
+            this.CBAcesso.BackColor = System.Drawing.SystemColors.Control;
+            this.CBAcesso.FormattingEnabled = true;
+            this.CBAcesso.Location = new System.Drawing.Point(82, 22);
+            this.CBAcesso.Name = "CBAcesso";
+            this.CBAcesso.Size = new System.Drawing.Size(136, 24);
+            this.CBAcesso.TabIndex = 1;
+            // 
+            // LPassword
+            // 
+            this.LPassword.AutoSize = true;
+            this.LPassword.Location = new System.Drawing.Point(10, 118);
+            this.LPassword.Name = "LPassword";
+            this.LPassword.Size = new System.Drawing.Size(73, 17);
+            this.LPassword.TabIndex = 0;
+            this.LPassword.Text = "Password:";
+            // 
+            // LUsuario
+            // 
+            this.LUsuario.AutoSize = true;
+            this.LUsuario.Location = new System.Drawing.Point(15, 73);
+            this.LUsuario.Name = "LUsuario";
+            this.LUsuario.Size = new System.Drawing.Size(61, 17);
+            this.LUsuario.TabIndex = 0;
+            this.LUsuario.Text = "Usuario:";
+            // 
+            // LAcesso
+            // 
+            this.LAcesso.AutoSize = true;
+            this.LAcesso.Location = new System.Drawing.Point(18, 22);
+            this.LAcesso.Name = "LAcesso";
+            this.LAcesso.Size = new System.Drawing.Size(58, 17);
+            this.LAcesso.TabIndex = 0;
+            this.LAcesso.Text = "Acesso:";
             // 
             // FormTrabajador
             // 

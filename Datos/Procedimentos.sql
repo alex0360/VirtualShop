@@ -317,3 +317,11 @@ AS
 Delete FROM dbo.Trabajador
 WHERE idTrabajador = @idTrabajador
 GO
+
+-- Comprobar si hay Un Usuario Con el Mismo nombre
+CREATE PROC SpBuscarUsuario_Trabajador
+@textBuscar varchar(50)
+AS
+SELECT * FROM dbo.Trabajador
+WHERE usuario LIKE @textBuscar
+Go

@@ -89,7 +89,6 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Size = new System.Drawing.Size(502, 357);
             // 
             // tabPage1
@@ -344,7 +343,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 465);
             this.Name = "FormProveedor";
-            this.Text = "FormProveedor";
+            this.Text = ".:Proveedor:.";
             this.Load += new System.EventHandler(this.FormProveedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.EPErrorIcono)).EndInit();
             this.tabCon.ResumeLayout(false);

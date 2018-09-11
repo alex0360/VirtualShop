@@ -301,6 +301,7 @@ namespace Datos
             }
             return respuesta;
         }
+
         /// <summary>
         /// Carga una obj.Tabla en memoria
         /// </summary>
@@ -324,6 +325,7 @@ namespace Datos
             }
             return tableResutado;
         }
+
         /// <summary>
         /// Busca en un texto Introducido en Una Tabla.Trabajador
         /// </summary>
@@ -355,6 +357,7 @@ namespace Datos
             }
             return tableResutado;
         }
+
         /// <summary>
         /// Comprueba si el Nombre de Usuario Existe O no
         /// </summary>
@@ -379,11 +382,44 @@ namespace Datos
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
                 sqlDataAdapter.Fill(tablaResultado);
 
-            } catch(Exception ex) {
+            } catch {
                 tablaResultado = null;
             }
             return tablaResultado;
 
+        }
+
+        public DataTable Login(Trabajador Trabajador)
+        {
+            DataTable tablaResultado = new DataTable("Trabajador");
+            try
+            {
+                SqlCommand sqlCommand = new SqlCommand {
+                    Connection = Conexion.SqlConnection,
+                    CommandText = "SpLogin",
+                    CommandType = CommandType.StoredProcedure
+                };
+                SqlParameter ParUsuario = new SqlParameter() {
+                    ParameterName = "@usuario",
+                    SqlDbType = SqlDbType.VarChar,
+                    Size = 20,
+                    Value = Trabajador.Usuario
+                }; sqlCommand.Parameters.Add(ParUsuario);
+                SqlParameter ParPassword = new SqlParameter() {
+                    ParameterName = "@password",
+                    SqlDbType = SqlDbType.VarChar,
+                    Size = 20,
+                    Value = Trabajador.Password
+                }; sqlCommand.Parameters.Add(ParPassword);
+
+
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+                sqlDataAdapter.Fill(tablaResultado);
+
+            } catch {
+                tablaResultado = null;
+            }
+            return tablaResultado;
         }
 
     }

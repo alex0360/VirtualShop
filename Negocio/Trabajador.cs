@@ -121,5 +121,14 @@ namespace Negocio
             };
             return Obj.Buscar_Usuario(Obj);
         }
+
+        public static DataTable Login(string usuario, string password)
+        {
+            Obj = new Datos.Trabajador {
+                Usuario = usuario,
+                Password = password
+            };
+            return Obj.Login(Obj);
+        }
     }
 }

@@ -93,6 +93,16 @@ namespace Precentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imagen {
+            get {
+                object obj = ResourceManager.GetObject("imagen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RemoveArchivo {
             get {
                 object obj = ResourceManager.GetObject("RemoveArchivo", resourceCulture);

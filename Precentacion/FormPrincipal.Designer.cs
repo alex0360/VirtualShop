@@ -310,21 +310,21 @@
             // ArticulosTSMI
             // 
             this.ArticulosTSMI.Name = "ArticulosTSMI";
-            this.ArticulosTSMI.Size = new System.Drawing.Size(216, 26);
+            this.ArticulosTSMI.Size = new System.Drawing.Size(168, 26);
             this.ArticulosTSMI.Text = "Articulos";
             this.ArticulosTSMI.Click += new System.EventHandler(this.ArticulosTSMI_Click);
             // 
             // CategoriasTSMI
             // 
             this.CategoriasTSMI.Name = "CategoriasTSMI";
-            this.CategoriasTSMI.Size = new System.Drawing.Size(216, 26);
+            this.CategoriasTSMI.Size = new System.Drawing.Size(168, 26);
             this.CategoriasTSMI.Text = "Categorias";
             this.CategoriasTSMI.Click += new System.EventHandler(this.CategoriasTSMI_Click);
             // 
             // PresentacionTSMI
             // 
             this.PresentacionTSMI.Name = "PresentacionTSMI";
-            this.PresentacionTSMI.Size = new System.Drawing.Size(216, 26);
+            this.PresentacionTSMI.Size = new System.Drawing.Size(168, 26);
             this.PresentacionTSMI.Text = "Presentacion";
             this.PresentacionTSMI.Click += new System.EventHandler(this.PresentacionTSMI_Click);
             // 
@@ -340,13 +340,13 @@
             // IngresosTSMI
             // 
             this.IngresosTSMI.Name = "IngresosTSMI";
-            this.IngresosTSMI.Size = new System.Drawing.Size(216, 26);
+            this.IngresosTSMI.Size = new System.Drawing.Size(152, 26);
             this.IngresosTSMI.Text = "Ingresos";
             // 
             // ProveedorTSMI
             // 
             this.ProveedorTSMI.Name = "ProveedorTSMI";
-            this.ProveedorTSMI.Size = new System.Drawing.Size(216, 26);
+            this.ProveedorTSMI.Size = new System.Drawing.Size(152, 26);
             this.ProveedorTSMI.Text = "Proveedor";
             this.ProveedorTSMI.Click += new System.EventHandler(this.ProveedorTSMI_Click);
             // 
@@ -362,13 +362,13 @@
             // VentasTSMI
             // 
             this.VentasTSMI.Name = "VentasTSMI";
-            this.VentasTSMI.Size = new System.Drawing.Size(216, 26);
+            this.VentasTSMI.Size = new System.Drawing.Size(130, 26);
             this.VentasTSMI.Text = "Ventas";
             // 
             // ClienteTSMI
             // 
             this.ClienteTSMI.Name = "ClienteTSMI";
-            this.ClienteTSMI.Size = new System.Drawing.Size(216, 26);
+            this.ClienteTSMI.Size = new System.Drawing.Size(130, 26);
             this.ClienteTSMI.Text = "Cliente";
             this.ClienteTSMI.Click += new System.EventHandler(this.ClienteTSMI_Click);
             // 
@@ -383,7 +383,7 @@
             // TrabajadoresTSMI
             // 
             this.TrabajadoresTSMI.Name = "TrabajadoresTSMI";
-            this.TrabajadoresTSMI.Size = new System.Drawing.Size(216, 26);
+            this.TrabajadoresTSMI.Size = new System.Drawing.Size(170, 26);
             this.TrabajadoresTSMI.Text = "Trabajadores";
             this.TrabajadoresTSMI.Click += new System.EventHandler(this.TrabajadoresTSMI_Click);
             // 
@@ -429,6 +429,7 @@
             this.Name = "FormPrincipal";
             this.Text = "Virtual Shop";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
@@ -440,7 +441,7 @@
 
         }
         #endregion
-
+        private Precentacion.Clases.Comunes Comunes = new Precentacion.Clases.Comunes();
         private System.Windows.Forms.ToolStrip toolStrip;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel TSSLEstado;

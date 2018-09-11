@@ -14,6 +14,11 @@ namespace Precentacion
     {
         private int childFormNumber = 0;
 
+        public int? IdTrabajador;
+        public string Apellido;
+        public string Nombre;
+        public string Acceso;
+
         public FormPrincipal()
         {
             InitializeComponent();
@@ -21,17 +26,19 @@ namespace Precentacion
         #region Codigo Generado
         private void ShowNewForm(object sender, EventArgs e)
         {
-            Form childForm = new Form();
-            childForm.MdiParent = this;
-            childForm.Text = "Ventana " + childFormNumber++;
+            Form childForm = new Form {
+                MdiParent = this,
+                Text = "Ventana " + childFormNumber++
+            };
             childForm.Show();
         }
-
+        #region abrir y Guardar Files
         private void OpenFile(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
+            OpenFileDialog openFileDialog = new OpenFileDialog {
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal),
+                Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*"
+            };
             if (openFileDialog.ShowDialog(this) == DialogResult.OK)
             {
                 string FileName = openFileDialog.FileName;
@@ -40,50 +47,31 @@ namespace Precentacion
 
         private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
+            SaveFileDialog saveFileDialog = new SaveFileDialog {
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal),
+                Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*"
+            };
             if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
             {
                 string FileName = saveFileDialog.FileName;
             }
         }
+        #endregion
+        #region Una Linia
+        private void ExitToolsStripMenuItem_Click(object sender, EventArgs e) => Close();
 
-        private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e) => toolStrip.Visible = toolBarToolStripMenuItem.Checked;
 
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
+        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e) => statusStrip.Visible = statusBarToolStripMenuItem.Checked;
 
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
+        private void CascadeToolStripMenuItem_Click(object sender, EventArgs e) => LayoutMdi(MdiLayout.Cascade);
 
-        private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.Cascade);
-        }
+        private void TileVerticalToolStripMenuItem_Click(object sender, EventArgs e) => LayoutMdi(MdiLayout.TileVertical);
 
-        private void TileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileVertical);
-        }
+        private void TileHorizontalToolStripMenuItem_Click(object sender, EventArgs e) => LayoutMdi(MdiLayout.TileHorizontal);
 
-        private void TileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileHorizontal);
-        }
-
-        private void ArrangeIconsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.ArrangeIcons);
-        }
-
+        private void ArrangeIconsToolStripMenuItem_Click(object sender, EventArgs e) => LayoutMdi(MdiLayout.ArrangeIcons);
+        #endregion
         private void CloseAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (Form childForm in MdiChildren)
@@ -92,10 +80,16 @@ namespace Precentacion
             }
         }
         #endregion Codigo Generado
+
+        #region Eventos
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+            GestionUsuario();
+        }
         // Cerrar la Aplicacion
         private void SalirTSMI_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Comunes.Cerrar();
         }
         // Open una Categoria
         private void CategoriasTSMI_Click(object sender, EventArgs e)
@@ -141,6 +135,57 @@ namespace Precentacion
                 MdiParent = this
             };  Form.Show();
         }
+        #endregion
+        #region Accesos
+        private void GestionUsuario() {
+            if (Acceso == "Administrador")
+                Administrador();
+            else if (Acceso == "Vendedor")
+                Vendedor();
+            else if (Acceso == " Almacenista")
+                Almacenista();
+            else {
+                TSMIAlmacen.Enabled = false;
+                TSMICompras.Enabled = false;
+                TSMIVentas.Enabled = false;
+                TSMIMantenimiento.Enabled = false;
+                TSMIConsultas.Enabled = false;
+                TSMIHerramienta.Enabled = false;
+                TSBCompras.Enabled = false;
+                TSBVentas.Enabled = false;
+            }
+        }
+        private void Administrador() {
+            TSMIAlmacen.Enabled = true;
+            TSMICompras.Enabled = true;
+            TSMIVentas.Enabled = true;
+            TSMIMantenimiento.Enabled = true;
+            TSMIConsultas.Enabled = true;
+            TSMIHerramienta.Enabled = true;
+            TSBCompras.Enabled = true;
+            TSBVentas.Enabled = true;
+        }
+        private void Vendedor() {
+            TSMIAlmacen.Enabled = false;
+            TSMICompras.Enabled = false;
+            TSMIVentas.Enabled = true;
+            TSMIMantenimiento.Enabled = false;
+            TSMIConsultas.Enabled = true;
+            TSMIHerramienta.Enabled = true;
+            TSBCompras.Enabled = true;
+            TSBVentas.Enabled = true;
+        }
+        private void Almacenista() {
+            TSMIAlmacen.Enabled = true;
+            TSMICompras.Enabled = true;
+            TSMIVentas.Enabled = false;
+            TSMIMantenimiento.Enabled = false;
+            TSMIConsultas.Enabled = true;
+            TSMIHerramienta.Enabled = true;
+            TSBCompras.Enabled = true;
+            TSBVentas.Enabled = false;
+        }
+        #endregion
 
     }
 }

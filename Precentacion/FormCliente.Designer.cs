@@ -58,39 +58,41 @@
             // 
             // BCancelar
             // 
-            this.BCancelar.Location = new System.Drawing.Point(437, 226);
-            this.BCancelar.Size = new System.Drawing.Size(82, 36);
+            this.BCancelar.Location = new System.Drawing.Point(328, 184);
+            this.BCancelar.Size = new System.Drawing.Size(62, 29);
             this.BCancelar.TabIndex = 10;
             this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
             // 
             // BGuardar
             // 
-            this.BGuardar.Location = new System.Drawing.Point(283, 226);
-            this.BGuardar.Size = new System.Drawing.Size(91, 36);
+            this.BGuardar.Location = new System.Drawing.Point(212, 184);
+            this.BGuardar.Size = new System.Drawing.Size(68, 29);
             this.BGuardar.TabIndex = 9;
             this.BGuardar.Click += new System.EventHandler(this.BGuardar_Click);
             // 
             // LTitulo
             // 
-            this.LTitulo.Size = new System.Drawing.Size(130, 31);
+            this.LTitulo.Size = new System.Drawing.Size(106, 26);
             this.LTitulo.Text = "Clientes:";
             // 
             // BImprimir
             // 
-            this.BImprimir.Location = new System.Drawing.Point(528, 15);
+            this.BImprimir.Location = new System.Drawing.Point(366, 13);
             // 
             // tabCon
             // 
-            this.tabCon.Size = new System.Drawing.Size(665, 402);
+            this.tabCon.Size = new System.Drawing.Size(499, 327);
             // 
             // tabPage2
             // 
-            this.tabPage2.Size = new System.Drawing.Size(657, 373);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Size = new System.Drawing.Size(491, 301);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.DGVListado);
-            this.tabPage1.Size = new System.Drawing.Size(657, 373);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Size = new System.Drawing.Size(491, 301);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.BEliminar, 0);
@@ -119,8 +121,8 @@
             this.GBMatenimiento.Controls.Add(this.LApellidos);
             this.GBMatenimiento.Controls.Add(this.LTipo_documento);
             this.GBMatenimiento.Controls.Add(this.LNombre);
-            this.GBMatenimiento.Location = new System.Drawing.Point(24, 32);
-            this.GBMatenimiento.Size = new System.Drawing.Size(568, 288);
+            this.GBMatenimiento.Location = new System.Drawing.Point(18, 26);
+            this.GBMatenimiento.Size = new System.Drawing.Size(426, 234);
             this.GBMatenimiento.Text = "Cliente";
             this.GBMatenimiento.Controls.SetChildIndex(this.BGuardar, 0);
             this.GBMatenimiento.Controls.SetChildIndex(this.BCancelar, 0);
@@ -145,12 +147,12 @@
             // 
             // BEliminar
             // 
-            this.BEliminar.Location = new System.Drawing.Point(388, 15);
+            this.BEliminar.Location = new System.Drawing.Point(261, 13);
             this.BEliminar.Click += new System.EventHandler(this.BEliminar_Click);
             // 
             // TBBuscar
             // 
-            this.TBBuscar.Size = new System.Drawing.Size(198, 22);
+            this.TBBuscar.Size = new System.Drawing.Size(150, 19);
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
             // 
             // CBEliminar
@@ -161,115 +163,116 @@
             // 
             this.CBTipo_documento.BackColor = System.Drawing.SystemColors.Control;
             this.CBTipo_documento.FormattingEnabled = true;
-            this.CBTipo_documento.ItemHeight = 16;
-            this.CBTipo_documento.Location = new System.Drawing.Point(283, 90);
+            this.CBTipo_documento.ItemHeight = 13;
+            this.CBTipo_documento.Location = new System.Drawing.Point(212, 73);
+            this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CBTipo_documento.Name = "CBTipo_documento";
-            this.CBTipo_documento.Size = new System.Drawing.Size(72, 24);
+            this.CBTipo_documento.Size = new System.Drawing.Size(69, 21);
             this.CBTipo_documento.TabIndex = 6;
             // 
             // TBDireccion
             // 
             this.TBDireccion.BackColor = System.Drawing.SystemColors.Control;
-            this.TBDireccion.Location = new System.Drawing.Point(22, 196);
+            this.TBDireccion.Location = new System.Drawing.Point(16, 159);
             this.TBDireccion.Margin = new System.Windows.Forms.Padding(1);
             this.TBDireccion.Multiline = true;
             this.TBDireccion.Name = "TBDireccion";
-            this.TBDireccion.Size = new System.Drawing.Size(180, 66);
+            this.TBDireccion.Size = new System.Drawing.Size(136, 54);
             this.TBDireccion.TabIndex = 5;
             // 
             // TBNum_documento
             // 
             this.TBNum_documento.BackColor = System.Drawing.SystemColors.Control;
-            this.TBNum_documento.Location = new System.Drawing.Point(363, 92);
+            this.TBNum_documento.Location = new System.Drawing.Point(286, 75);
             this.TBNum_documento.Margin = new System.Windows.Forms.Padding(1);
             this.TBNum_documento.Name = "TBNum_documento";
-            this.TBNum_documento.Size = new System.Drawing.Size(155, 22);
+            this.TBNum_documento.Size = new System.Drawing.Size(103, 19);
             this.TBNum_documento.TabIndex = 7;
             // 
             // TBEmail
             // 
             this.TBEmail.BackColor = System.Drawing.SystemColors.Control;
-            this.TBEmail.Location = new System.Drawing.Point(283, 143);
+            this.TBEmail.Location = new System.Drawing.Point(212, 116);
             this.TBEmail.Margin = new System.Windows.Forms.Padding(1);
             this.TBEmail.Name = "TBEmail";
-            this.TBEmail.Size = new System.Drawing.Size(235, 22);
+            this.TBEmail.Size = new System.Drawing.Size(177, 19);
             this.TBEmail.TabIndex = 8;
             // 
             // TBTelefono
             // 
             this.TBTelefono.BackColor = System.Drawing.SystemColors.Control;
-            this.TBTelefono.Location = new System.Drawing.Point(23, 87);
+            this.TBTelefono.Location = new System.Drawing.Point(17, 71);
             this.TBTelefono.Margin = new System.Windows.Forms.Padding(1);
             this.TBTelefono.Name = "TBTelefono";
-            this.TBTelefono.Size = new System.Drawing.Size(115, 22);
+            this.TBTelefono.Size = new System.Drawing.Size(87, 19);
             this.TBTelefono.TabIndex = 3;
             // 
             // TBNombre
             // 
             this.TBNombre.BackColor = System.Drawing.SystemColors.Control;
-            this.TBNombre.Location = new System.Drawing.Point(22, 41);
+            this.TBNombre.Location = new System.Drawing.Point(16, 33);
             this.TBNombre.Margin = new System.Windows.Forms.Padding(1);
             this.TBNombre.Name = "TBNombre";
-            this.TBNombre.Size = new System.Drawing.Size(183, 22);
+            this.TBNombre.Size = new System.Drawing.Size(138, 19);
             this.TBNombre.TabIndex = 1;
             // 
             // LDireccion
             // 
             this.LDireccion.AutoSize = true;
-            this.LDireccion.Location = new System.Drawing.Point(20, 178);
+            this.LDireccion.Location = new System.Drawing.Point(15, 145);
             this.LDireccion.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LDireccion.Name = "LDireccion";
-            this.LDireccion.Size = new System.Drawing.Size(71, 17);
+            this.LDireccion.Size = new System.Drawing.Size(55, 13);
             this.LDireccion.TabIndex = 0;
             this.LDireccion.Text = "Direccion:";
             // 
             // LEmail
             // 
             this.LEmail.AutoSize = true;
-            this.LEmail.Location = new System.Drawing.Point(280, 125);
+            this.LEmail.Location = new System.Drawing.Point(210, 102);
             this.LEmail.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LEmail.Name = "LEmail";
-            this.LEmail.Size = new System.Drawing.Size(46, 17);
+            this.LEmail.Size = new System.Drawing.Size(35, 13);
             this.LEmail.TabIndex = 0;
             this.LEmail.Text = "Email:";
             // 
             // lNum_documento
             // 
             this.lNum_documento.AutoSize = true;
-            this.lNum_documento.Location = new System.Drawing.Point(361, 70);
+            this.lNum_documento.Location = new System.Drawing.Point(271, 57);
             this.lNum_documento.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lNum_documento.Name = "lNum_documento";
-            this.lNum_documento.Size = new System.Drawing.Size(158, 17);
+            this.lNum_documento.Size = new System.Drawing.Size(120, 13);
             this.lNum_documento.TabIndex = 0;
             this.lNum_documento.Text = "Numero de Documento:";
             // 
             // LTelefono
             // 
             this.LTelefono.AutoSize = true;
-            this.LTelefono.Location = new System.Drawing.Point(19, 70);
+            this.LTelefono.Location = new System.Drawing.Point(14, 57);
             this.LTelefono.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LTelefono.Name = "LTelefono";
-            this.LTelefono.Size = new System.Drawing.Size(68, 17);
+            this.LTelefono.Size = new System.Drawing.Size(52, 13);
             this.LTelefono.TabIndex = 0;
             this.LTelefono.Text = "Telefono:";
             // 
             // LTipo_documento
             // 
             this.LTipo_documento.AutoSize = true;
-            this.LTipo_documento.Location = new System.Drawing.Point(280, 70);
+            this.LTipo_documento.Location = new System.Drawing.Point(210, 57);
             this.LTipo_documento.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LTipo_documento.Name = "LTipo_documento";
-            this.LTipo_documento.Size = new System.Drawing.Size(36, 17);
+            this.LTipo_documento.Size = new System.Drawing.Size(28, 13);
             this.LTipo_documento.TabIndex = 0;
             this.LTipo_documento.Text = "Tipo";
             // 
             // LNombre
             // 
             this.LNombre.AutoSize = true;
-            this.LNombre.Location = new System.Drawing.Point(19, 24);
+            this.LNombre.Location = new System.Drawing.Point(14, 20);
             this.LNombre.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LNombre.Name = "LNombre";
-            this.LNombre.Size = new System.Drawing.Size(58, 17);
+            this.LNombre.Size = new System.Drawing.Size(44, 13);
             this.LNombre.TabIndex = 0;
             this.LNombre.Text = "Nombre";
             // 
@@ -281,13 +284,14 @@
             this.DGVListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            this.DGVListado.Location = new System.Drawing.Point(14, 103);
+            this.DGVListado.Location = new System.Drawing.Point(10, 84);
+            this.DGVListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DGVListado.MultiSelect = false;
             this.DGVListado.Name = "DGVListado";
             this.DGVListado.ReadOnly = true;
             this.DGVListado.RowTemplate.Height = 24;
             this.DGVListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVListado.Size = new System.Drawing.Size(624, 202);
+            this.DGVListado.Size = new System.Drawing.Size(468, 164);
             this.DGVListado.TabIndex = 8;
             this.DGVListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellContentClick);
             this.DGVListado.DoubleClick += new System.EventHandler(this.DGVListado_DoubleClick);
@@ -301,68 +305,70 @@
             // LApellidos
             // 
             this.LApellidos.AutoSize = true;
-            this.LApellidos.Location = new System.Drawing.Point(280, 24);
+            this.LApellidos.Location = new System.Drawing.Point(210, 20);
             this.LApellidos.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LApellidos.Name = "LApellidos";
-            this.LApellidos.Size = new System.Drawing.Size(65, 17);
+            this.LApellidos.Size = new System.Drawing.Size(49, 13);
             this.LApellidos.TabIndex = 0;
             this.LApellidos.Text = "Apellidos";
             // 
             // TBApellidos
             // 
             this.TBApellidos.BackColor = System.Drawing.SystemColors.Control;
-            this.TBApellidos.Location = new System.Drawing.Point(283, 41);
+            this.TBApellidos.Location = new System.Drawing.Point(212, 33);
             this.TBApellidos.Margin = new System.Windows.Forms.Padding(1);
             this.TBApellidos.Name = "TBApellidos";
-            this.TBApellidos.Size = new System.Drawing.Size(235, 22);
+            this.TBApellidos.Size = new System.Drawing.Size(177, 19);
             this.TBApellidos.TabIndex = 2;
             // 
             // CBSexo
             // 
             this.CBSexo.BackColor = System.Drawing.SystemColors.Control;
             this.CBSexo.FormattingEnabled = true;
-            this.CBSexo.ItemHeight = 16;
+            this.CBSexo.ItemHeight = 13;
             this.CBSexo.Items.AddRange(new object[] {
             "M",
             "F"});
-            this.CBSexo.Location = new System.Drawing.Point(152, 87);
+            this.CBSexo.Location = new System.Drawing.Point(114, 71);
+            this.CBSexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CBSexo.Name = "CBSexo";
-            this.CBSexo.Size = new System.Drawing.Size(51, 24);
+            this.CBSexo.Size = new System.Drawing.Size(39, 21);
             this.CBSexo.TabIndex = 4;
             this.CBSexo.Text = "F";
             // 
             // LSexo
             // 
             this.LSexo.AutoSize = true;
-            this.LSexo.Location = new System.Drawing.Point(154, 70);
+            this.LSexo.Location = new System.Drawing.Point(116, 57);
             this.LSexo.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LSexo.Name = "LSexo";
-            this.LSexo.Size = new System.Drawing.Size(39, 17);
+            this.LSexo.Size = new System.Drawing.Size(31, 13);
             this.LSexo.TabIndex = 20;
             this.LSexo.Text = "Sexo";
             // 
             // LFecha_nacimiento
             // 
             this.LFecha_nacimiento.AutoSize = true;
-            this.LFecha_nacimiento.Location = new System.Drawing.Point(20, 125);
+            this.LFecha_nacimiento.Location = new System.Drawing.Point(15, 102);
             this.LFecha_nacimiento.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LFecha_nacimiento.Name = "LFecha_nacimiento";
-            this.LFecha_nacimiento.Size = new System.Drawing.Size(143, 17);
+            this.LFecha_nacimiento.Size = new System.Drawing.Size(109, 13);
             this.LFecha_nacimiento.TabIndex = 0;
             this.LFecha_nacimiento.Text = "Fecha de nacimiento:";
             // 
             // DTPFecha_nacimiento
             // 
             this.DTPFecha_nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DTPFecha_nacimiento.Location = new System.Drawing.Point(23, 144);
+            this.DTPFecha_nacimiento.Location = new System.Drawing.Point(17, 117);
+            this.DTPFecha_nacimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DTPFecha_nacimiento.Name = "DTPFecha_nacimiento";
-            this.DTPFecha_nacimiento.Size = new System.Drawing.Size(116, 22);
+            this.DTPFecha_nacimiento.Size = new System.Drawing.Size(88, 19);
             this.DTPFecha_nacimiento.TabIndex = 21;
             // 
             // FormCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(758, 491);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(568, 399);
             this.Name = "FormCliente";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.FormCliente_Load);

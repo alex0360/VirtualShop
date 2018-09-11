@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Comunes.cs" />
     <Compile Include="Clases\FaderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +65,12 @@
     </Compile>
     <Compile Include="FormCliente.Designer.cs">
       <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPresentacion.cs">
       <SubType>Form</SubType>
@@ -121,6 +128,9 @@
     <EmbeddedResource Include="FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPresentacion.resx">
       <DependentUpon>FormPresentacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\addDataBase24x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

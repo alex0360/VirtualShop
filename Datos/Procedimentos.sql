@@ -318,10 +318,115 @@ Delete FROM dbo.Trabajador
 WHERE idTrabajador = @idTrabajador
 GO
 
--- Comprobar si hay Un Usuario Con el Mismo nombre
-CREATE PROC SpBuscarUsuario_Trabajador
-@textBuscar varchar(50)
+--Comprobar si hay Un Usuario Con el Mismo nombre
+Create Proc [dbo].[SpConfirmarLogin]
+@usuario varchar(20)
 AS
-SELECT * FROM dbo.Trabajador
-WHERE usuario LIKE @textBuscar
+Select usuario
+from Trabajador
+where usuario = @usuario
 Go
+
+--Cargar Login
+Create Proc SpLogin
+@usuario varchar(20),
+@password varchar(20)
+AS
+Select idTrabajador, apellidos, nombre, acesso
+from Trabajador
+where usuario = @usuario and password = @password
+GO
+
+--Procedimiento Almacenado para mostrar los Ingreso
+Create Proc SpMostrar_Ingreso
+AS
+Select i.idIngreso, (t.apellidos+' '+t.nombre) as Trabajador,
+p.razon_social as Proveedor, i.fecha, i.tipo_comprobante,
+i.serie, i.correlativo, i.estado, SUM(d.precio_compra*d.stock_inicial) as Total
+From Detalle_ingreso d inner join Ingreso i
+on d.idIngreso = i.idIngreso inner join Proveedor p
+on i.idProveedor = p.idProveedor inner join Trabajador t
+on  i.idTrabajador = t.idTrabajador
+GROUP BY
+i.idIngreso, t.apellidos+' '+t.nombre,
+p.razon_social, i.fecha, i.tipo_comprobante,
+i.serie, i.correlativo, i.estado
+Order By i.idIngreso Desc
+GO
+
+--Mostrar Ingresos entre Fechas
+Create Proc SpBuscar_Ingreso_Fecha
+@textBuscar varchar(20),
+@textBuscar2 varchar(20)
+AS
+Select i.idIngreso, (t.apellidos+' '+t.nombre) as Trabajador,
+p.razon_social as Proveedor, i.fecha, i.tipo_comprobante,
+i.serie, i.correlativo, i.estado, SUM(d.precio_compra*d.stock_inicial) as Total
+From Detalle_ingreso d inner join Ingreso i
+on d.idIngreso = i.idIngreso inner join Proveedor p
+on i.idProveedor = p.idProveedor inner join Trabajador t
+on  i.idTrabajador = t.idTrabajador
+GROUP BY
+i.idIngreso, t.apellidos+' '+t.nombre,
+p.razon_social, i.fecha, i.tipo_comprobante,
+i.serie, i.correlativo, i.estado
+Having i.fecha>=@textBuscar and i.fecha<=@textBuscar2
+Go
+
+--Procediminto insertar ingreso
+Create proc SpInsertar_ingreso
+@idIngreso int = null output,
+@idTrabajador int,
+@idProveedor int,
+@fecha date,
+@tipo_comprobante varchar(20),
+@serie varchar(4),
+@correlativo varchar(7),
+@igv decimal(4,2),
+@estado varchar(7)
+AS
+insert Into Ingreso (idTrabajador, idProveedor, fecha, tipo_comprobante,
+serie, correlativo, igv, dbo.Ingreso.estado)
+values(@idTrabajador, @idProveedor, @fecha,@tipo_comprobante,
+@serie, @correlativo, @igv, @estado)
+--Obtener el Codigo autoGenerado
+Set @idIngreso = @@IDENTITY
+Go
+
+--Procedimiento anular ingreso
+Create Proc SpAnular_ingreso
+@idIngreso int
+as
+UPDATE Ingreso Set estado= 'ANULADO'
+Where idIngreso = @idIngreso
+Go
+
+--Procedimiento para insertar los detalles de ingreso
+Create Proc SpInsertar_detalle_ingreso
+@idDetalle_ingreso int output,
+@idIngreso int,
+@idArticulo int,
+@precio_compra money,
+@precio_venta money,
+@stock_inicial int,
+@stock_actual int,
+@fecha_produccion date,
+@fecha_vencimiento date
+AS
+Insert Into Detalle_ingreso(idIngreso, idArticulo, precio_compra, precio_venta,
+stock_inicial, stock_actual, fecha_produccion, fecha_vencimiento)
+Values (@idIngreso, @idArticulo, @precio_compra, @precio_venta,
+@stock_inicial, @stock_actual, @fecha_produccion, @fecha_vencimiento)
+Go
+
+--Mostrar Detalles de Ingreso
+Create Proc SpMostrar_detalle_ingreso
+@textBuscar int
+AS
+Select d.idArticulo, a.nombre as Articulo, d.precio_compra,
+d.precio_venta, d.stock_inicial, d.fecha_produccion,
+d.fecha_vencimiento,(d.stock_inicial*d.precio_compra) as SubTotal
+From detalle_ingreso d inner join Articulo a
+on d.idArticulo = a.idArticulo
+where d.idIngreso = @textBuscar
+GO

@@ -1,24 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Precentacion
 {
     public partial class FormArticulo : Form
     {
-        private System.Int32? IdArticulo;
-        private System.Int32? FkCategoria;
+        private int? IdArticulo;
+        private int? FkCategoria;
 
         public FormArticulo()
         {
             InitializeComponent();
-            this.tooltMensaje.SetToolTip(tbNombre, "Ingrese un Nombre para la Articulo");
+            tooltMensaje.SetToolTip(tbNombre, "Ingrese un Nombre para la Articulo");
             this.tooltMensaje.SetToolTip(PBImagen, "Seleccion la Imagen del Articulo");
             this.tooltMensaje.SetToolTip(TBCategoria, "Seleccion la Categoria del Articulo");
             this.tooltMensaje.SetToolTip(CBPresentacion, "Seleccion la Presentacion del Articulo");

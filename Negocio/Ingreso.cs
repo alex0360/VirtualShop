@@ -43,9 +43,9 @@ namespace Negocio
             return Obj.Anular(Obj);
         }
 
-        public static System.Data.DataTable Mostar()
+        public static System.Data.DataTable Mostar(int? idIngreso)
         {
-            return new Datos.Ingreso().Mostrar();
+            return new Datos.Ingreso().MostrarDetalles(Convert.ToString(idIngreso));
         }
 
         public static System.Data.DataTable BuscarMostar(string textBuscar, string textBuscar2)

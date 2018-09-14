@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.datagListado = new System.Windows.Forms.DataGridView();
+            this.DGVListado = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.LNumero = new System.Windows.Forms.Label();
             this.DTPFecha_inicio = new System.Windows.Forms.DateTimePicker();
@@ -42,7 +42,7 @@
             this.DTPFecha = new System.Windows.Forms.DateTimePicker();
             this.LFecha = new System.Windows.Forms.Label();
             this.CBComprovante = new System.Windows.Forms.ComboBox();
-            this.TBSerial = new System.Windows.Forms.TextBox();
+            this.TBSerie = new System.Windows.Forms.TextBox();
             this.TBCorrelativo = new System.Windows.Forms.TextBox();
             this.LIvg = new System.Windows.Forms.Label();
             this.TBIgv = new System.Windows.Forms.TextBox();
@@ -60,7 +60,7 @@
             this.LFecha_Vencimiento = new System.Windows.Forms.Label();
             this.LStock_inicial = new System.Windows.Forms.Label();
             this.LFecha_Produccion = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TBStock = new System.Windows.Forms.TextBox();
             this.PBuscarArticulo = new System.Windows.Forms.Panel();
             this.BuscarArticulo = new System.Windows.Forms.Button();
             this.TBArticulo = new System.Windows.Forms.TextBox();
@@ -68,12 +68,13 @@
             this.DGVListados_detalles = new System.Windows.Forms.DataGridView();
             this.LTotal = new System.Windows.Forms.Label();
             this.LTotal_Pagado = new System.Windows.Forms.Label();
+            this.BBuscar_fecha = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.EPErrorIcono)).BeginInit();
             this.tabCon.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.GBMatenimiento.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datagListado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).BeginInit();
             this.PBuscarProvedor.SuspendLayout();
             this.PComprobante.SuspendLayout();
             this.GBArticulo.SuspendLayout();
@@ -114,11 +115,12 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.BBuscar_fecha);
             this.tabPage1.Controls.Add(this.LFecha_Final);
             this.tabPage1.Controls.Add(this.DTPFecha_Final);
             this.tabPage1.Controls.Add(this.LFecha_Inicial);
             this.tabPage1.Controls.Add(this.DTPFecha_inicio);
-            this.tabPage1.Controls.Add(this.datagListado);
+            this.tabPage1.Controls.Add(this.DGVListado);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Size = new System.Drawing.Size(614, 358);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
@@ -127,11 +129,12 @@
             this.tabPage1.Controls.SetChildIndex(this.BImprimir, 0);
             this.tabPage1.Controls.SetChildIndex(this.CBEliminar, 0);
             this.tabPage1.Controls.SetChildIndex(this.LTotalRegistro, 0);
-            this.tabPage1.Controls.SetChildIndex(this.datagListado, 0);
+            this.tabPage1.Controls.SetChildIndex(this.DGVListado, 0);
             this.tabPage1.Controls.SetChildIndex(this.DTPFecha_inicio, 0);
             this.tabPage1.Controls.SetChildIndex(this.LFecha_Inicial, 0);
             this.tabPage1.Controls.SetChildIndex(this.DTPFecha_Final, 0);
             this.tabPage1.Controls.SetChildIndex(this.LFecha_Final, 0);
+            this.tabPage1.Controls.SetChildIndex(this.BBuscar_fecha, 0);
             // 
             // GBMatenimiento
             // 
@@ -163,6 +166,7 @@
             // BEliminar
             // 
             this.BEliminar.Text = "&Anular";
+            this.BEliminar.Click += new System.EventHandler(this.BEliminar_Click);
             // 
             // TBBuscar
             // 
@@ -182,26 +186,27 @@
             this.CBEliminar.Size = new System.Drawing.Size(56, 17);
             this.CBEliminar.Text = "Anular";
             // 
-            // datagListado
+            // DGVListado
             // 
-            this.datagListado.AllowUserToAddRows = false;
-            this.datagListado.AllowUserToDeleteRows = false;
-            this.datagListado.AllowUserToOrderColumns = true;
-            this.datagListado.BackgroundColor = System.Drawing.Color.White;
-            this.datagListado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.datagListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGVListado.AllowUserToAddRows = false;
+            this.DGVListado.AllowUserToDeleteRows = false;
+            this.DGVListado.AllowUserToOrderColumns = true;
+            this.DGVListado.BackgroundColor = System.Drawing.Color.White;
+            this.DGVListado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGVListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            this.datagListado.GridColor = System.Drawing.SystemColors.Control;
-            this.datagListado.Location = new System.Drawing.Point(11, 81);
-            this.datagListado.Margin = new System.Windows.Forms.Padding(2);
-            this.datagListado.MultiSelect = false;
-            this.datagListado.Name = "datagListado";
-            this.datagListado.ReadOnly = true;
-            this.datagListado.RowTemplate.Height = 24;
-            this.datagListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagListado.Size = new System.Drawing.Size(588, 249);
-            this.datagListado.TabIndex = 7;
+            this.DGVListado.GridColor = System.Drawing.SystemColors.Control;
+            this.DGVListado.Location = new System.Drawing.Point(11, 81);
+            this.DGVListado.Margin = new System.Windows.Forms.Padding(2);
+            this.DGVListado.MultiSelect = false;
+            this.DGVListado.Name = "DGVListado";
+            this.DGVListado.ReadOnly = true;
+            this.DGVListado.RowTemplate.Height = 24;
+            this.DGVListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVListado.Size = new System.Drawing.Size(588, 249);
+            this.DGVListado.TabIndex = 7;
+            this.DGVListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DatagListado_CellContentClick);
             // 
             // Eliminar
             // 
@@ -338,14 +343,14 @@
             this.CBComprovante.Size = new System.Drawing.Size(197, 21);
             this.CBComprovante.TabIndex = 19;
             // 
-            // TBSerial
+            // TBSerie
             // 
-            this.TBSerial.BackColor = System.Drawing.SystemColors.Control;
-            this.TBSerial.Location = new System.Drawing.Point(80, 42);
-            this.TBSerial.Margin = new System.Windows.Forms.Padding(2);
-            this.TBSerial.Name = "TBSerial";
-            this.TBSerial.Size = new System.Drawing.Size(58, 19);
-            this.TBSerial.TabIndex = 13;
+            this.TBSerie.BackColor = System.Drawing.SystemColors.Control;
+            this.TBSerie.Location = new System.Drawing.Point(80, 42);
+            this.TBSerie.Margin = new System.Windows.Forms.Padding(2);
+            this.TBSerie.Name = "TBSerie";
+            this.TBSerie.Size = new System.Drawing.Size(58, 19);
+            this.TBSerie.TabIndex = 13;
             // 
             // TBCorrelativo
             // 
@@ -390,7 +395,7 @@
             this.PComprobante.Controls.Add(this.LComprobante);
             this.PComprobante.Controls.Add(this.LNumero);
             this.PComprobante.Controls.Add(this.CBComprovante);
-            this.PComprobante.Controls.Add(this.TBSerial);
+            this.PComprobante.Controls.Add(this.TBSerie);
             this.PComprobante.Controls.Add(this.TBCorrelativo);
             this.PComprobante.Location = new System.Drawing.Point(3, 24);
             this.PComprobante.Margin = new System.Windows.Forms.Padding(2);
@@ -411,7 +416,7 @@
             this.GBArticulo.Controls.Add(this.LFecha_Vencimiento);
             this.GBArticulo.Controls.Add(this.LStock_inicial);
             this.GBArticulo.Controls.Add(this.LFecha_Produccion);
-            this.GBArticulo.Controls.Add(this.textBox1);
+            this.GBArticulo.Controls.Add(this.TBStock);
             this.GBArticulo.Controls.Add(this.PBuscarArticulo);
             this.GBArticulo.Location = new System.Drawing.Point(8, 102);
             this.GBArticulo.Margin = new System.Windows.Forms.Padding(2);
@@ -541,14 +546,14 @@
             this.LFecha_Produccion.TabIndex = 1;
             this.LFecha_Produccion.Text = "Fecha Produccion:";
             // 
-            // textBox1
+            // TBStock
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(73, 67);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(97, 19);
-            this.textBox1.TabIndex = 2;
+            this.TBStock.BackColor = System.Drawing.SystemColors.Control;
+            this.TBStock.Location = new System.Drawing.Point(79, 67);
+            this.TBStock.Margin = new System.Windows.Forms.Padding(2);
+            this.TBStock.Name = "TBStock";
+            this.TBStock.Size = new System.Drawing.Size(97, 19);
+            this.TBStock.TabIndex = 2;
             // 
             // PBuscarArticulo
             // 
@@ -627,6 +632,22 @@
             this.LTotal_Pagado.TabIndex = 25;
             this.LTotal_Pagado.Text = "0.0";
             // 
+            // BBuscar_fecha
+            // 
+            this.BBuscar_fecha.BackgroundImage = global::Precentacion.Properties.Resources.Play;
+            this.BBuscar_fecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BBuscar_fecha.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.BBuscar_fecha.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BBuscar_fecha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BBuscar_fecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BBuscar_fecha.Location = new System.Drawing.Point(184, 29);
+            this.BBuscar_fecha.Margin = new System.Windows.Forms.Padding(2);
+            this.BBuscar_fecha.Name = "BBuscar_fecha";
+            this.BBuscar_fecha.Size = new System.Drawing.Size(22, 21);
+            this.BBuscar_fecha.TabIndex = 21;
+            this.BBuscar_fecha.UseVisualStyleBackColor = true;
+            this.BBuscar_fecha.Click += new System.EventHandler(this.BBuscar_fecha_Click);
+            // 
             // FormIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -642,7 +663,7 @@
             this.tabPage1.PerformLayout();
             this.GBMatenimiento.ResumeLayout(false);
             this.GBMatenimiento.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.datagListado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).EndInit();
             this.PBuscarProvedor.ResumeLayout(false);
             this.PBuscarProvedor.PerformLayout();
             this.PComprobante.ResumeLayout(false);
@@ -659,7 +680,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView datagListado;
+        private System.Windows.Forms.DataGridView DGVListado;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
         private System.Windows.Forms.Label LFecha_Final;
         private System.Windows.Forms.DateTimePicker DTPFecha_Final;
@@ -675,7 +696,7 @@
         private System.Windows.Forms.ComboBox CBComprovante;
         private System.Windows.Forms.TextBox TBCorrelativo;
         private System.Windows.Forms.TextBox TBIgv;
-        private System.Windows.Forms.TextBox TBSerial;
+        private System.Windows.Forms.TextBox TBSerie;
         private System.Windows.Forms.Label LIvg;
         private System.Windows.Forms.Panel PComprobante;
         private System.Windows.Forms.Label LComprobante;
@@ -693,11 +714,12 @@
         private System.Windows.Forms.Label LFecha_Vencimiento;
         private System.Windows.Forms.Label LStock_inicial;
         private System.Windows.Forms.Label LFecha_Produccion;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TBStock;
         private System.Windows.Forms.Button BAdd;
         private System.Windows.Forms.Button BDelete;
         private System.Windows.Forms.Label LTotal_Pagado;
         private System.Windows.Forms.Label LTotal;
         private System.Windows.Forms.DataGridView DGVListados_detalles;
+        private System.Windows.Forms.Button BBuscar_fecha;
     }
 }

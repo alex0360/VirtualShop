@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Precentacion</RootNamespace>
     <AssemblyName>Precentacion</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +48,12 @@
     <Compile Include="Clases\FaderForm.Designer.cs">
       <DependentUpon>FaderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\FormVistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\FormVistas.Designer.cs">
+      <DependentUpon>FormVistas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\Mensaje.cs" />
     <Compile Include="FormArticulo.cs">
       <SubType>Form</SubType>
@@ -65,6 +72,12 @@
     </Compile>
     <Compile Include="FormCliente.Designer.cs">
       <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngreso.Designer.cs">
+      <DependentUpon>FormIngreso.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -96,11 +109,23 @@
     <Compile Include="FormTrabajador.Designer.cs">
       <DependentUpon>FormTrabajador.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormVistaCategoria_Articulo.cs">
+    <Compile Include="FormVistaArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormVistaCategoria_Articulo.Designer.cs">
-      <DependentUpon>FormVistaCategoria_Articulo.cs</DependentUpon>
+    <Compile Include="FormVistaArticulo.Designer.cs">
+      <DependentUpon>FormVistaArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVistaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVistaCategoria.Designer.cs">
+      <DependentUpon>FormVistaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVistaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVistaProveedor.Designer.cs">
+      <DependentUpon>FormVistaProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -119,6 +144,9 @@
     <EmbeddedResource Include="Clases\FaderForm.resx">
       <DependentUpon>FaderForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Clases\FormVistas.resx">
+      <DependentUpon>FormVistas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormArticulo.resx">
       <DependentUpon>FormArticulo.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngreso.resx">
+      <DependentUpon>FormIngreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -143,8 +174,14 @@
     <EmbeddedResource Include="FormTrabajador.resx">
       <DependentUpon>FormTrabajador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormVistaCategoria_Articulo.resx">
-      <DependentUpon>FormVistaCategoria_Articulo.cs</DependentUpon>
+    <EmbeddedResource Include="FormVistaArticulo.resx">
+      <DependentUpon>FormVistaArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVistaCategoria.resx">
+      <DependentUpon>FormVistaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVistaProveedor.resx">
+      <DependentUpon>FormVistaProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -175,6 +212,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

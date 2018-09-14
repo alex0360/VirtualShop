@@ -283,7 +283,7 @@ namespace Precentacion
         }
         private void BSearchCategoria_Click(object sender, EventArgs e)
         {
-            FormVistaCategoria_Articulo formVista = new FormVistaCategoria_Articulo();
+            FormVistaCategoria formVista = new FormVistaCategoria();
             formVista.ShowDialog();
         }
         #endregion

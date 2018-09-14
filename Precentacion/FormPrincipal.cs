@@ -14,7 +14,7 @@ namespace Precentacion
     {
         private int childFormNumber = 0;
 
-        public int? IdTrabajador;
+        public Int32? IdTrabajador;
         public string Apellido;
         public string Nombre;
         public string Acceso;
@@ -135,6 +135,13 @@ namespace Precentacion
                 MdiParent = this
             };  Form.Show();
         }
+        private void IngresosTSMI_Click(object sender, EventArgs e)
+        {
+            FormIngreso Form = new FormIngreso {
+                MdiParent = this
+            };Form.Show();
+            Form.IdTrabajador = this.IdTrabajador;
+        }
         #endregion
         #region Accesos
         private void GestionUsuario() {
@@ -185,7 +192,12 @@ namespace Precentacion
             TSBCompras.Enabled = true;
             TSBVentas.Enabled = false;
         }
+
         #endregion
 
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Comunes.Cerrar();
+        }
     }
 }

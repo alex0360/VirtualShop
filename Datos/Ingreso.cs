@@ -21,8 +21,7 @@ namespace Datos
         private string _Serie;
         private string _Correlativo;
         private decimal _Igv;
-        private string Estado;
-
+        private string _Estado;
         //Propiedades
         //
         public int IdIngreso { get => _IdIngreso; set => _IdIngreso = value; }
@@ -33,8 +32,7 @@ namespace Datos
         public string Serie { get => _Serie; set => _Serie = value; }
         public string Correlativo { get => _Correlativo; set => _Correlativo = value; }
         public decimal Igv { get => _Igv; set => _Igv = value; }
-        public string Estado1 { get => Estado; set => Estado = value; }
-
+        public string Estado { get => _Estado; set => _Estado = value; }
         //Constructores
         //
         public Ingreso() { }
@@ -51,9 +49,14 @@ namespace Datos
             Igv = igv;
             Estado = estado;
         }
-
         //Metodos
         //
+        /// <summary>
+        /// Insertar los datos a la tabla Ingreso
+        /// </summary>
+        /// <param name="Ingreso">Las intancia de Ingreso</param>
+        /// <param name="Detalle">Una lista de Detalles de Ingresos</param>
+        /// <returns>String:OK, Message.Error, Null</returns>
         public string Insertar(Ingreso Ingreso,List<Detalles_ingreso> Detalle)
         {
             string respuesta = null;
@@ -126,7 +129,7 @@ namespace Datos
                 if (respuesta.Equals("Ok"))
                 {
                     //Obtener el Codigo del Ingreso generado
-                    this.IdIngreso = Convert.ToInt32(sqlCommand.Parameters["@idIngreso"]);
+                    this.IdIngreso = Convert.ToInt32(sqlCommand.Parameters["@idIngreso"].Value);
                     foreach (Detalles_ingreso detalle in Detalle)
                     {
                         detalle.IdIngreso = this.IdIngreso;
@@ -146,7 +149,11 @@ namespace Datos
             } finally { Conexion.SqlConnection.Close(); }
             return respuesta;
         }
-
+        /// <summary>
+        /// Anula un Registro de la tabla Ingreso
+        /// </summary>
+        /// <param name="Ingreso">Intacia de Ingreso</param>
+        /// <returns>String:OK, Message.Error, Null</returns>
         public string Anular(Ingreso Ingreso)
         {
             string respuesta = null;
@@ -171,7 +178,10 @@ namespace Datos
             }
             return respuesta;
         }
-
+        /// <summary>
+        /// Muestra los datos de la tabla Ingreso
+        /// </summary>
+        /// <returns>Una DataTable que contiene las columnas</returns>
         public DataTable Mostrar()
         {
             DataTable tableResutado = new DataTable("Ingreso");
@@ -191,7 +201,12 @@ namespace Datos
             }
             return tableResutado;
         }
-
+        /// <summary>
+        /// Muestra los datos de la table con dos algumentos
+        /// </summary>
+        /// <param name="textBuscar">texto con la fecha inicial</param>
+        /// <param name="textBuscar2">texto con la fecha final</param>
+        /// <returns>El resultado de la busqueda</returns>
         public DataTable BuscarFecha(string textBuscar, string textBuscar2)
         {
             DataTable tableResutado = new DataTable("Ingreso");
@@ -224,15 +239,19 @@ namespace Datos
             }
             return tableResutado;
         }
-
+        /// <summary>
+        /// Muestra los detalles de la tabla
+        /// </summary>
+        /// <param name="textBuscar">Filtro para buscar</param>
+        /// <returns>El resultado de la busqueda</returns>
         public DataTable MostrarDetalles(string textBuscar)
         {
-            DataTable tableResutado = new DataTable("Ingreso");
+            DataTable tableResutado = new DataTable("Detalle_ingreso");
             try
             {
                 SqlCommand sqlCommand = new SqlCommand() {
                     Connection = Conexion.SqlConnection,
-                    CommandText = "SpBuscar_Ingreso_Fecha",
+                    CommandText = "SpMostrar_detalle_ingreso",
                     CommandType = CommandType.StoredProcedure
                 };
 
@@ -253,4 +272,3 @@ namespace Datos
         }
     }
 }
-

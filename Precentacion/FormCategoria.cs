@@ -95,12 +95,12 @@ namespace Precentacion
             this.Top = 0;
             this.Left = 0;
             // Saber si agregar una nueva categoria
-            if (FormVistaCategoria_Articulo.GetInstacia)
+            if (FormVistaCategoria.GetInstacia)
             {
                 tabConCategoria.SelectedIndex = 1;
                 Editar(true);
             }
-            FormVistaCategoria_Articulo.GetInstacia = false;
+            FormVistaCategoria.GetInstacia = false;
             Clear();
             Mostrar();
 

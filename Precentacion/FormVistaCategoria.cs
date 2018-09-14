@@ -10,19 +10,17 @@ using System.Windows.Forms;
 
 namespace Precentacion
 {
-    public partial class FormVistaCategoria_Articulo : Form
+    public partial class FormVistaCategoria : Form
     {
-        public FormVistaCategoria_Articulo()
+        public FormVistaCategoria()
         {
             InitializeComponent();
         }
-
         private static bool _Instacia;
         /// <summary>
         /// Para saber si fue instaciada por VistaCategoria
         /// </summary>
-        public static bool GetInstacia
-        {
+        public static bool GetInstacia {
             get { return _Instacia; }
             set { _Instacia = value; }
         }
@@ -38,14 +36,14 @@ namespace Precentacion
             datagListado.DataSource = Negocio.Categoria.Mostar();
             datagListado.AutoResizeColumns();
             OcultarColumns();
-            labMostrarTotal.Text = "Total de Regristros: " + Convert.ToString(datagListado.Rows.Count);
+            LMostratCantidad.Text = "Total de Regristros: " + Convert.ToString(datagListado.Rows.Count);
         }
         // Metodo Mostrar
         private void BuscarMostar()
         {
-            datagListado.DataSource = Negocio.Categoria.BuscarMostar(this.tbBuscar.Text);
+            datagListado.DataSource = Negocio.Categoria.BuscarMostar(this.TBBuscar.Text);
             OcultarColumns();
-            labMostrarTotal.Text = "Total de Regristros: " + Convert.ToString(datagListado.Rows.Count);
+            LMostratCantidad.Text = "Total de Regristros: " + Convert.ToString(datagListado.Rows.Count);
         }
         private void FormVistaCategoria_Articulo_Load(object sender, EventArgs e)
         {
@@ -67,6 +65,14 @@ namespace Precentacion
 
             form.SetCategoria(par1, par2);
             this.Hide();
+            //FormIngreso form = FormIngreso.GetIngreso();
+            //form.SetArticulo(Convert.ToInt32(datagListado.CurrentRow.Cells["idArticulo"].Value),Convert.ToString(datagListado.CurrentRow.Cells["nombre"].Value));
+            //Hide();
+        }
+
+        private void FormVistaCategoria_Load(object sender, EventArgs e)
+        {
+            Mostrar();
         }
     }
 }

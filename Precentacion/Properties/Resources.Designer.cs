@@ -63,6 +63,16 @@ namespace Precentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add {
+            get {
+                object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Addarchivo2 {
             get {
                 object obj = ResourceManager.GetObject("Addarchivo2", resourceCulture);
@@ -76,6 +86,16 @@ namespace Precentacion.Properties {
         internal static System.Drawing.Bitmap addDataBase24x {
             get {
                 object obj = ResourceManager.GetObject("addDataBase24x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete2 {
+            get {
+                object obj = ResourceManager.GetObject("delete2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

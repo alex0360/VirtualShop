@@ -18,7 +18,7 @@ namespace Datos
         private int _IdArticulo;
         private decimal _Precio_compra;
         private decimal _Precio_venta;
-        private int _Stock_inical;
+        private int _Stock_inicial;
         private int _Stock_actual;
         private DateTime _Fecha_produccion;
         private DateTime _Fecha_vencimiento;
@@ -29,7 +29,7 @@ namespace Datos
         public int IdArticulo { get => _IdArticulo; set => _IdArticulo = value; }
         public decimal Precio_compra { get => _Precio_compra; set => _Precio_compra = value; }
         public decimal Precio_venta { get => _Precio_venta; set => _Precio_venta = value; }
-        public int Stock_inical { get => _Stock_inical; set => _Stock_inical = value; }
+        public int Stock_inicial { get => _Stock_inicial; set => _Stock_inicial = value; }
         public int Stock_actual { get => _Stock_actual; set => _Stock_actual = value; }
         public DateTime Fecha_produccion { get => _Fecha_produccion; set => _Fecha_produccion = value; }
         public DateTime Fecha_vencimiento { get => _Fecha_vencimiento; set => _Fecha_vencimiento = value; }
@@ -61,13 +61,20 @@ namespace Datos
             this.IdArticulo = idArticulo;
             this.Precio_compra = precio_compra;
             this.Precio_venta = precio_venta;
-            this.Stock_inical = stock_inicial;
+            this.Stock_inicial = stock_inicial;
             this.Stock_actual = Stock_actual;
             this.Fecha_produccion = fecha_producto;
             this.Fecha_produccion = fecha_vencimiento;
         }
         //Metodos
         //
+        /// <summary>
+        /// Insertar en la tabla detalles de Ingreso
+        /// </summary>
+        /// <param name="Detalle_ingreso">Instancia de Detalle de Ingreso</param>
+        /// <param name="SqlConnection">Instancia de la conexion enviada desde Ingreso</param>
+        /// <param name="SqlTransaction">Instancia de la Transaccion envida desde Ingreso</param>
+        /// <returns></returns>
         public string Insertar(Detalles_ingreso Detalle_ingreso,
             ref SqlConnection SqlConnection, ref SqlTransaction SqlTransaction)
         {
@@ -109,7 +116,7 @@ namespace Datos
                 SqlParameter ParStock_Inicial= new SqlParameter() {
                     ParameterName = "@stock_inicial",
                     SqlDbType = SqlDbType.Int,
-                    Value = Detalle_ingreso.Stock_inical
+                    Value = Detalle_ingreso.Stock_inicial
                 }; sqlCommand.Parameters.Add(ParStock_Inicial);
                 SqlParameter ParStock_Actual= new SqlParameter() {
                     ParameterName = "@stock_actual",
@@ -135,6 +142,5 @@ namespace Datos
             }
             return respuesta;
         }
-
     }
 }

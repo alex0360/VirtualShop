@@ -112,6 +112,7 @@
             this.TBBuscar.Name = "TBBuscar";
             this.TBBuscar.Size = new System.Drawing.Size(134, 20);
             this.TBBuscar.TabIndex = 1;
+            this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged_1);
             // 
             // LNombre
             // 

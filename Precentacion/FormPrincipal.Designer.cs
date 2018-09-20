@@ -72,6 +72,7 @@
             this.ventasPorFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comprasPorFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockDeArticulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSSLUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
@@ -111,7 +112,8 @@
             // 
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSSLEstado});
+            this.TSSLEstado,
+            this.TSSLUsuario});
             this.statusStrip.Location = new System.Drawing.Point(0, 431);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(804, 22);
@@ -414,6 +416,12 @@
             this.stockDeArticulosToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.stockDeArticulosToolStripMenuItem.Text = "Stock de Articulos";
             // 
+            // TSSLUsuario
+            // 
+            this.TSSLUsuario.Name = "TSSLUsuario";
+            this.TSSLUsuario.Size = new System.Drawing.Size(14, 17);
+            this.TSSLUsuario.Text = "#";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -483,6 +491,7 @@
         private System.Windows.Forms.ToolStripMenuItem stockDeArticulosToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton TSBCompras;
         private System.Windows.Forms.ToolStripButton TSBVentas;
+        private System.Windows.Forms.ToolStripStatusLabel TSSLUsuario;
     }
 }
 

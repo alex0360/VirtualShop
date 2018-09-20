@@ -42,7 +42,6 @@ delete from DBVentas.dbo.Categoria
 where idCategoria = @idCategoria
 go
 
-
 --Procedimiento Mostrar Presentacion
 Create Proc SpMostrar_Presentacion
 As
@@ -83,7 +82,6 @@ as
 delete from Presentacion
 where idPresentacion= @idPresentacion
 go
-
 
 --Procedimiento Mostrar Articulo
 create proc SpMostrar_Articulo
@@ -133,7 +131,6 @@ as
 delete from Articulo
 where idArticulo = @idArticulo
 Go
-
 
 --Mostrar
 Create proc SpMostrar_Proveedor
@@ -202,7 +199,6 @@ delete from Proveedor
 where idProveedor = @idProveedor
 Go
 
-
 --Procedimiento Mostrar
 CREATE PROC SpMostrar_Cliente
 AS
@@ -256,7 +252,6 @@ AS
 DELETE FROM  DBVentas.dbo.Cliente
 WHERE idCliente = @idCliente
 GO
-
 
 -- Mostrar Trabajadores
 CREATE PROC SpMostrar_Trabajador
@@ -429,4 +424,154 @@ d.fecha_vencimiento,(d.stock_inicial*d.precio_compra) as SubTotal
 From detalle_ingreso d inner join Articulo a
 on d.idArticulo = a.idArticulo
 where d.idIngreso = @textBuscar
+GO
+
+--Mostrar Ventas
+create proc SpMostrar_venta
+AS
+Select top 100 v.idVenta,
+(t.apellidos +' '+t.nombre) As Trabajador,
+(c.apellidos+' '+c.nombre) As Cliente,
+v.fecha, v.tipo_comprobante, v.serie, v.correlativo,
+sum((d.cantidad*d.precio_venta)-d.descuento) As Total
+From Detalle_venta d Inner Join Venta v
+On d.idVenta= v.idVenta
+Inner Join Cliente c
+On v.idCliente = c.idCliente
+Inner Join Trabajador t
+On v.idTrabajador = t.idTrabajador
+Group by
+v.idVenta,
+(t.apellidos +' '+t.nombre),
+(c.apellidos+' '+c.nombre),
+v.fecha, v.tipo_comprobante, v.serie, v.correlativo
+Order By
+v.idVenta desc
+GO
+
+--Buscar Ventas por fecha
+Create Proc SpBuscar_venta_fecha
+@textBuscar1 varchar(50),
+@textBuscar2 Varchar(50)
+AS
+Select top 100 v.idVenta,
+(t.apellidos +' '+t.nombre) As Trabajador,
+(c.apellidos+' '+c.nombre) As Cliente,
+v.fecha, v.tipo_comprobante, v.serie, v.correlativo,
+sum((d.cantidad*d.precio_venta)-d.descuento) As Total
+From Detalle_venta d Inner Join Venta v
+On d.idVenta= v.idVenta
+Inner Join Cliente c
+On v.idCliente = c.idCliente
+Inner Join Trabajador t
+On v.idTrabajador = t.idTrabajador
+Group by
+v.idVenta,
+(t.apellidos +' '+t.nombre),
+(c.apellidos+' '+c.nombre),
+v.fecha, v.tipo_comprobante, v.serie, v.correlativo
+Having v.fecha>=@textBuscar1 and v.fecha<=@textBuscar2
+Go
+
+--Insertar Ventas
+Create Proc SpInsertar_venta
+@idVenta int = null output,
+@idCliente int,
+@idTrabajador int,
+@fecha date,
+@tipo_comprobante varchar(20),
+@serie varchar(4),
+@correlativo varchar(7),
+@igv decimal(4,2)
+AS
+Insert Into venta (idCliente, idTrabajador,fecha, tipo_comprobante, serie, correlativo, igv)
+values(@idCliente, @idTrabajador,@fecha,@tipo_comprobante,@serie,@correlativo,@igv)
+--Obtener el Codigo Auto Generado
+set @idVenta = @@IDENTITY
+Go
+
+--Eliminar Ventas
+Create Proc SpEliminar_venta
+@idVenta int
+AS
+delete From Venta
+where idVenta = @idVenta
+Go
+
+--Insertar Los Detalles de Ventas
+Create Proc SpInsertar_detalle_venta
+@idDetalle_venta int output,
+@idVenta int,
+@idDetalle_ingreso int,
+@cantidad int,
+@precio_venta money,
+@descuento money
+AS
+Insert Into Detalle_venta(idVenta, idDetalle_ingreso,cantidad, precio_venta, descuento)
+values(@idVenta,@idDetalle_ingreso, @cantidad,@precio_venta, @descuento)
+GO
+
+--Disminucion de Stock despues de una venta
+Create Proc SpDisminuir_stock
+@idDetalle_ingreso int,
+@cantidad int
+AS
+Update Detalle_ingreso set stock_actual = stock_actual -@cantidad
+where idDetalle_ingreso =@idDetalle_ingreso
+Go
+
+--Mostrar Los Detalles de Venta
+Create Proc SpMostrar_detalle_venta
+@textBuscar int
+AS
+Select d.idDetalle_ingreso, a.nombre AS Artuculo,
+d.cantidad, d.precio_venta, d.descuento,
+((d.precio_venta*d.cantidad)-d.descuento) AS subTotal
+From detalle_venta d Inner Join Detalle_ingreso di
+On d.idDetalle_ingreso = di.idDetalle_ingreso
+Inner Join Articulo a
+On di.idArticulo = a.idArticulo
+where d.idVenta =@textBuscar
+Go
+
+--Mostrar Los Articulos para la Venta
+create proc SpBuscar_articulo_venta_nombre
+@textBuscar varchar(50)
+AS
+Select d.idDetalle_ingreso, a.Codigo,a.nombre,
+c.nombre As Categoria, p.nombre AS Presentacion,
+d.stock_actual, d.precio_compra, d.precio_venta,
+d.fecha_vencimiento
+From Articulo a Inner Join Categoria c
+On a.idCategoria = c.idCategoria
+Inner Join Presentacion p
+On a.idPresentacion = p.idPresentacion
+Inner Join Detalle_ingreso d
+On a.idArticulo = d.idArticulo
+Inner Join Ingreso i
+On d.idIngreso = i.idIngreso
+Where a.nombre like @textBuscar + '%'
+AND d.stock_actual>0
+AND i.estado<>'ANULADO'
+GO
+
+--Mostrar Los Articulos para la Venta
+create proc SpBuscar_articulo_venta_Codigo
+@textBuscar varchar(50)
+AS
+Select d.idDetalle_ingreso, a.Codigo,a.nombre,
+c.nombre As Categoria, p.nombre AS Presentacion,
+d.stock_actual, d.precio_compra, d.precio_venta,
+d.fecha_vencimiento
+From Articulo a Inner Join Categoria c
+On a.idCategoria = c.idCategoria
+Inner Join Presentacion p
+On a.idPresentacion = p.idPresentacion
+Inner Join Detalle_ingreso d
+On a.idArticulo = d.idArticulo
+Inner Join Ingreso i
+On d.idIngreso = i.idIngreso
+Where a.Codigo = @textBuscar
+AND d.stock_actual>0
+AND i.estado<>'ANULADO'
 GO

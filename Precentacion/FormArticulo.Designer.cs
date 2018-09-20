@@ -52,28 +52,28 @@
             this.groupb = new System.Windows.Forms.GroupBox();
             this.PFk = new System.Windows.Forms.Panel();
             this.CBPresentacion = new System.Windows.Forms.ComboBox();
+            this.BSearchCategoria = new System.Windows.Forms.Button();
             this.TBCategoria = new System.Windows.Forms.TextBox();
             this.LPresentacion = new System.Windows.Forms.Label();
             this.LCategoria = new System.Windows.Forms.Label();
             this.TBCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.GB = new System.Windows.Forms.GroupBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabCon = new System.Windows.Forms.TabControl();
-            this.lTitulo = new System.Windows.Forms.Label();
-            this.BSearchCategoria = new System.Windows.Forms.Button();
             this.BCargar = new System.Windows.Forms.Button();
             this.BLimpiar = new System.Windows.Forms.Button();
             this.PBImagen = new System.Windows.Forms.PictureBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabCon = new System.Windows.Forms.TabControl();
+            this.lTitulo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagListado)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.groupb.SuspendLayout();
             this.PFk.SuspendLayout();
             this.GB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBImagen)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabCon.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PBImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // errorIcono
@@ -83,18 +83,20 @@
             // labMostrarTotal
             // 
             this.labMostrarTotal.AutoSize = true;
-            this.labMostrarTotal.Location = new System.Drawing.Point(12, 305);
+            this.labMostrarTotal.Location = new System.Drawing.Point(9, 248);
+            this.labMostrarTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labMostrarTotal.Name = "labMostrarTotal";
-            this.labMostrarTotal.Size = new System.Drawing.Size(16, 17);
+            this.labMostrarTotal.Size = new System.Drawing.Size(13, 13);
             this.labMostrarTotal.TabIndex = 6;
             this.labMostrarTotal.Text = "0";
             // 
             // chbEliminar
             // 
             this.chbEliminar.AutoSize = true;
-            this.chbEliminar.Location = new System.Drawing.Point(15, 66);
+            this.chbEliminar.Location = new System.Drawing.Point(11, 54);
+            this.chbEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chbEliminar.Name = "chbEliminar";
-            this.chbEliminar.Size = new System.Drawing.Size(80, 21);
+            this.chbEliminar.Size = new System.Drawing.Size(62, 17);
             this.chbEliminar.TabIndex = 4;
             this.chbEliminar.Text = "Eliminar";
             this.chbEliminar.UseVisualStyleBackColor = true;
@@ -102,18 +104,20 @@
             // 
             // butImprimir
             // 
-            this.butImprimir.Location = new System.Drawing.Point(421, 15);
+            this.butImprimir.Location = new System.Drawing.Point(316, 12);
+            this.butImprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.butImprimir.Name = "butImprimir";
-            this.butImprimir.Size = new System.Drawing.Size(97, 34);
+            this.butImprimir.Size = new System.Drawing.Size(73, 28);
             this.butImprimir.TabIndex = 3;
             this.butImprimir.Text = "&Imprimir";
             this.butImprimir.UseVisualStyleBackColor = true;
             // 
             // butEliminar
             // 
-            this.butEliminar.Location = new System.Drawing.Point(319, 15);
+            this.butEliminar.Location = new System.Drawing.Point(239, 12);
+            this.butEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.butEliminar.Name = "butEliminar";
-            this.butEliminar.Size = new System.Drawing.Size(96, 34);
+            this.butEliminar.Size = new System.Drawing.Size(72, 28);
             this.butEliminar.TabIndex = 2;
             this.butEliminar.Text = "&Eliminar";
             this.butEliminar.UseVisualStyleBackColor = true;
@@ -122,18 +126,20 @@
             // tbBuscar
             // 
             this.tbBuscar.BackColor = System.Drawing.SystemColors.Control;
-            this.tbBuscar.Location = new System.Drawing.Point(80, 21);
+            this.tbBuscar.Location = new System.Drawing.Point(60, 17);
+            this.tbBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbBuscar.Name = "tbBuscar";
-            this.tbBuscar.Size = new System.Drawing.Size(233, 22);
+            this.tbBuscar.Size = new System.Drawing.Size(176, 20);
             this.tbBuscar.TabIndex = 1;
             this.tbBuscar.TextChanged += new System.EventHandler(this.TbBuscar_TextChanged);
             // 
             // lMatenimCategoria
             // 
             this.lMatenimCategoria.AutoSize = true;
-            this.lMatenimCategoria.Location = new System.Drawing.Point(12, 24);
+            this.lMatenimCategoria.Location = new System.Drawing.Point(9, 20);
+            this.lMatenimCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lMatenimCategoria.Name = "lMatenimCategoria";
-            this.lMatenimCategoria.Size = new System.Drawing.Size(62, 17);
+            this.lMatenimCategoria.Size = new System.Drawing.Size(47, 13);
             this.lMatenimCategoria.TabIndex = 0;
             this.lMatenimCategoria.Text = "Nombre:";
             // 
@@ -170,7 +176,8 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.datagListado.DefaultCellStyle = dataGridViewCellStyle2;
             this.datagListado.GridColor = System.Drawing.SystemColors.Control;
-            this.datagListado.Location = new System.Drawing.Point(15, 93);
+            this.datagListado.Location = new System.Drawing.Point(11, 76);
+            this.datagListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.datagListado.MultiSelect = false;
             this.datagListado.Name = "datagListado";
             this.datagListado.ReadOnly = true;
@@ -184,7 +191,7 @@
             this.datagListado.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.datagListado.RowTemplate.Height = 24;
             this.datagListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagListado.Size = new System.Drawing.Size(687, 209);
+            this.datagListado.Size = new System.Drawing.Size(515, 170);
             this.datagListado.TabIndex = 5;
             this.datagListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DatagListado_CellContentClick);
             this.datagListado.DoubleClick += new System.EventHandler(this.DatagListado_DoubleClick);
@@ -198,19 +205,21 @@
             this.tabPage1.Controls.Add(this.butEliminar);
             this.tabPage1.Controls.Add(this.tbBuscar);
             this.tabPage1.Controls.Add(this.lMatenimCategoria);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(720, 336);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(538, 271);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // butCancelar
             // 
-            this.butCancelar.Location = new System.Drawing.Point(540, 250);
+            this.butCancelar.Location = new System.Drawing.Point(405, 203);
+            this.butCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.butCancelar.Name = "butCancelar";
-            this.butCancelar.Size = new System.Drawing.Size(128, 36);
+            this.butCancelar.Size = new System.Drawing.Size(96, 29);
             this.butCancelar.TabIndex = 6;
             this.butCancelar.Text = "&Cancelar";
             this.butCancelar.UseVisualStyleBackColor = true;
@@ -218,9 +227,10 @@
             // 
             // butGuardar
             // 
-            this.butGuardar.Location = new System.Drawing.Point(381, 250);
+            this.butGuardar.Location = new System.Drawing.Point(286, 203);
+            this.butGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.butGuardar.Name = "butGuardar";
-            this.butGuardar.Size = new System.Drawing.Size(128, 36);
+            this.butGuardar.Size = new System.Drawing.Size(96, 29);
             this.butGuardar.TabIndex = 5;
             this.butGuardar.Text = "&Guardar";
             this.butGuardar.UseVisualStyleBackColor = true;
@@ -229,36 +239,40 @@
             // tbDescripcion
             // 
             this.tbDescripcion.BackColor = System.Drawing.SystemColors.Control;
-            this.tbDescripcion.Location = new System.Drawing.Point(108, 129);
+            this.tbDescripcion.Location = new System.Drawing.Point(81, 105);
+            this.tbDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbDescripcion.Multiline = true;
             this.tbDescripcion.Name = "tbDescripcion";
             this.tbDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbDescripcion.Size = new System.Drawing.Size(261, 97);
+            this.tbDescripcion.Size = new System.Drawing.Size(197, 80);
             this.tbDescripcion.TabIndex = 4;
             // 
             // tbNombre
             // 
             this.tbNombre.BackColor = System.Drawing.SystemColors.Control;
-            this.tbNombre.Location = new System.Drawing.Point(108, 59);
+            this.tbNombre.Location = new System.Drawing.Point(81, 48);
+            this.tbNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(261, 22);
+            this.tbNombre.Size = new System.Drawing.Size(197, 20);
             this.tbNombre.TabIndex = 2;
             // 
             // labDescripcion
             // 
             this.labDescripcion.AutoSize = true;
-            this.labDescripcion.Location = new System.Drawing.Point(6, 132);
+            this.labDescripcion.Location = new System.Drawing.Point(4, 107);
+            this.labDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labDescripcion.Name = "labDescripcion";
-            this.labDescripcion.Size = new System.Drawing.Size(86, 17);
+            this.labDescripcion.Size = new System.Drawing.Size(66, 13);
             this.labDescripcion.TabIndex = 3;
             this.labDescripcion.Text = "Descripcion:";
             // 
             // labNombre
             // 
             this.labNombre.AutoSize = true;
-            this.labNombre.Location = new System.Drawing.Point(18, 62);
+            this.labNombre.Location = new System.Drawing.Point(14, 50);
+            this.labNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labNombre.Name = "labNombre";
-            this.labNombre.Size = new System.Drawing.Size(62, 17);
+            this.labNombre.Size = new System.Drawing.Size(47, 13);
             this.labNombre.TabIndex = 1;
             this.labNombre.Text = "Nombre:";
             // 
@@ -274,9 +288,11 @@
             this.groupb.Controls.Add(this.labDescripcion);
             this.groupb.Controls.Add(this.labNombre);
             this.groupb.Controls.Add(this.GB);
-            this.groupb.Location = new System.Drawing.Point(17, 20);
+            this.groupb.Location = new System.Drawing.Point(13, 16);
+            this.groupb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupb.Name = "groupb";
-            this.groupb.Size = new System.Drawing.Size(683, 292);
+            this.groupb.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupb.Size = new System.Drawing.Size(512, 237);
             this.groupb.TabIndex = 0;
             this.groupb.TabStop = false;
             this.groupb.Text = "Articulo";
@@ -288,107 +304,21 @@
             this.PFk.Controls.Add(this.TBCategoria);
             this.PFk.Controls.Add(this.LPresentacion);
             this.PFk.Controls.Add(this.LCategoria);
-            this.PFk.Location = new System.Drawing.Point(400, 18);
+            this.PFk.Location = new System.Drawing.Point(300, 15);
+            this.PFk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PFk.Name = "PFk";
-            this.PFk.Size = new System.Drawing.Size(277, 73);
+            this.PFk.Size = new System.Drawing.Size(208, 59);
             this.PFk.TabIndex = 10;
             // 
             // CBPresentacion
             // 
             this.CBPresentacion.BackColor = System.Drawing.SystemColors.Control;
             this.CBPresentacion.FormattingEnabled = true;
-            this.CBPresentacion.Location = new System.Drawing.Point(104, 39);
+            this.CBPresentacion.Location = new System.Drawing.Point(78, 32);
+            this.CBPresentacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CBPresentacion.Name = "CBPresentacion";
-            this.CBPresentacion.Size = new System.Drawing.Size(164, 24);
+            this.CBPresentacion.Size = new System.Drawing.Size(124, 21);
             this.CBPresentacion.TabIndex = 9;
-            // 
-            // TBCategoria
-            // 
-            this.TBCategoria.BackColor = System.Drawing.SystemColors.Control;
-            this.TBCategoria.Location = new System.Drawing.Point(82, 6);
-            this.TBCategoria.Name = "TBCategoria";
-            this.TBCategoria.Size = new System.Drawing.Size(151, 22);
-            this.TBCategoria.TabIndex = 2;
-            // 
-            // LPresentacion
-            // 
-            this.LPresentacion.AutoSize = true;
-            this.LPresentacion.Location = new System.Drawing.Point(3, 41);
-            this.LPresentacion.Name = "LPresentacion";
-            this.LPresentacion.Size = new System.Drawing.Size(95, 17);
-            this.LPresentacion.TabIndex = 1;
-            this.LPresentacion.Text = "Presentacion:";
-            // 
-            // LCategoria
-            // 
-            this.LCategoria.AutoSize = true;
-            this.LCategoria.Location = new System.Drawing.Point(3, 9);
-            this.LCategoria.Name = "LCategoria";
-            this.LCategoria.Size = new System.Drawing.Size(73, 17);
-            this.LCategoria.TabIndex = 1;
-            this.LCategoria.Text = "Categoria:";
-            // 
-            // TBCodigo
-            // 
-            this.TBCodigo.BackColor = System.Drawing.SystemColors.Control;
-            this.TBCodigo.Location = new System.Drawing.Point(108, 27);
-            this.TBCodigo.Name = "TBCodigo";
-            this.TBCodigo.Size = new System.Drawing.Size(261, 22);
-            this.TBCodigo.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Codigo:";
-            // 
-            // GB
-            // 
-            this.GB.Controls.Add(this.BCargar);
-            this.GB.Controls.Add(this.BLimpiar);
-            this.GB.Controls.Add(this.PBImagen);
-            this.GB.Location = new System.Drawing.Point(400, 109);
-            this.GB.Name = "GB";
-            this.GB.Size = new System.Drawing.Size(213, 135);
-            this.GB.TabIndex = 9;
-            this.GB.TabStop = false;
-            this.GB.Text = "Imagen";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupb);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(720, 336);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Matenimiento";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabCon
-            // 
-            this.tabCon.Controls.Add(this.tabPage1);
-            this.tabCon.Controls.Add(this.tabPage2);
-            this.tabCon.Location = new System.Drawing.Point(30, 57);
-            this.tabCon.Name = "tabCon";
-            this.tabCon.SelectedIndex = 0;
-            this.tabCon.Size = new System.Drawing.Size(728, 365);
-            this.tabCon.TabIndex = 5;
-            // 
-            // lTitulo
-            // 
-            this.lTitulo.AutoSize = true;
-            this.lTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lTitulo.ForeColor = System.Drawing.Color.Maroon;
-            this.lTitulo.Location = new System.Drawing.Point(24, 23);
-            this.lTitulo.Name = "lTitulo";
-            this.lTitulo.Size = new System.Drawing.Size(137, 31);
-            this.lTitulo.TabIndex = 4;
-            this.lTitulo.Text = "Articulos:";
             // 
             // BSearchCategoria
             // 
@@ -398,12 +328,75 @@
             this.BSearchCategoria.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BSearchCategoria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BSearchCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BSearchCategoria.Location = new System.Drawing.Point(239, 5);
+            this.BSearchCategoria.Location = new System.Drawing.Point(179, 4);
+            this.BSearchCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BSearchCategoria.Name = "BSearchCategoria";
-            this.BSearchCategoria.Size = new System.Drawing.Size(35, 30);
+            this.BSearchCategoria.Size = new System.Drawing.Size(26, 24);
             this.BSearchCategoria.TabIndex = 8;
             this.BSearchCategoria.UseVisualStyleBackColor = true;
             this.BSearchCategoria.Click += new System.EventHandler(this.BSearchCategoria_Click);
+            // 
+            // TBCategoria
+            // 
+            this.TBCategoria.BackColor = System.Drawing.SystemColors.Control;
+            this.TBCategoria.Location = new System.Drawing.Point(62, 5);
+            this.TBCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBCategoria.Name = "TBCategoria";
+            this.TBCategoria.Size = new System.Drawing.Size(114, 20);
+            this.TBCategoria.TabIndex = 2;
+            // 
+            // LPresentacion
+            // 
+            this.LPresentacion.AutoSize = true;
+            this.LPresentacion.Location = new System.Drawing.Point(2, 33);
+            this.LPresentacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LPresentacion.Name = "LPresentacion";
+            this.LPresentacion.Size = new System.Drawing.Size(72, 13);
+            this.LPresentacion.TabIndex = 1;
+            this.LPresentacion.Text = "Presentacion:";
+            // 
+            // LCategoria
+            // 
+            this.LCategoria.AutoSize = true;
+            this.LCategoria.Location = new System.Drawing.Point(2, 7);
+            this.LCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LCategoria.Name = "LCategoria";
+            this.LCategoria.Size = new System.Drawing.Size(55, 13);
+            this.LCategoria.TabIndex = 1;
+            this.LCategoria.Text = "Categoria:";
+            // 
+            // TBCodigo
+            // 
+            this.TBCodigo.BackColor = System.Drawing.SystemColors.Control;
+            this.TBCodigo.Location = new System.Drawing.Point(81, 22);
+            this.TBCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBCodigo.Name = "TBCodigo";
+            this.TBCodigo.Size = new System.Drawing.Size(197, 20);
+            this.TBCodigo.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Codigo:";
+            // 
+            // GB
+            // 
+            this.GB.Controls.Add(this.BCargar);
+            this.GB.Controls.Add(this.BLimpiar);
+            this.GB.Controls.Add(this.PBImagen);
+            this.GB.Location = new System.Drawing.Point(300, 89);
+            this.GB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB.Name = "GB";
+            this.GB.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB.Size = new System.Drawing.Size(160, 110);
+            this.GB.TabIndex = 9;
+            this.GB.TabStop = false;
+            this.GB.Text = "Imagen";
             // 
             // BCargar
             // 
@@ -413,9 +406,10 @@
             this.BCargar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BCargar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BCargar.Location = new System.Drawing.Point(145, 33);
+            this.BCargar.Location = new System.Drawing.Point(109, 27);
+            this.BCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BCargar.Name = "BCargar";
-            this.BCargar.Size = new System.Drawing.Size(58, 44);
+            this.BCargar.Size = new System.Drawing.Size(44, 36);
             this.BCargar.TabIndex = 8;
             this.BCargar.UseVisualStyleBackColor = true;
             this.BCargar.Click += new System.EventHandler(this.BCargar_Click);
@@ -428,9 +422,10 @@
             this.BLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.BLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.BLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BLimpiar.Location = new System.Drawing.Point(146, 80);
+            this.BLimpiar.Location = new System.Drawing.Point(110, 65);
+            this.BLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BLimpiar.Name = "BLimpiar";
-            this.BLimpiar.Size = new System.Drawing.Size(57, 47);
+            this.BLimpiar.Size = new System.Drawing.Size(43, 38);
             this.BLimpiar.TabIndex = 8;
             this.BLimpiar.UseVisualStyleBackColor = true;
             this.BLimpiar.Click += new System.EventHandler(this.BLimpiar_Click);
@@ -439,22 +434,61 @@
             // 
             this.PBImagen.BackgroundImage = global::Precentacion.Properties.Resources.File;
             this.PBImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.PBImagen.Location = new System.Drawing.Point(6, 30);
+            this.PBImagen.Location = new System.Drawing.Point(4, 24);
+            this.PBImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PBImagen.Name = "PBImagen";
-            this.PBImagen.Size = new System.Drawing.Size(117, 97);
+            this.PBImagen.Size = new System.Drawing.Size(88, 79);
             this.PBImagen.TabIndex = 7;
             this.PBImagen.TabStop = false;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.groupb);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(538, 271);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Matenimiento";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabCon
+            // 
+            this.tabCon.Controls.Add(this.tabPage1);
+            this.tabCon.Controls.Add(this.tabPage2);
+            this.tabCon.Location = new System.Drawing.Point(22, 46);
+            this.tabCon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCon.Name = "tabCon";
+            this.tabCon.SelectedIndex = 0;
+            this.tabCon.Size = new System.Drawing.Size(546, 297);
+            this.tabCon.TabIndex = 5;
+            // 
+            // lTitulo
+            // 
+            this.lTitulo.AutoSize = true;
+            this.lTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTitulo.ForeColor = System.Drawing.Color.Maroon;
+            this.lTitulo.Location = new System.Drawing.Point(18, 19);
+            this.lTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lTitulo.Name = "lTitulo";
+            this.lTitulo.Size = new System.Drawing.Size(112, 26);
+            this.lTitulo.TabIndex = 4;
+            this.lTitulo.Text = "Articulos:";
+            // 
             // FormArticulo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.tabCon);
             this.Controls.Add(this.lTitulo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormArticulo";
             this.Text = ".:Articulos:.";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormArticulo_FormClosing);
             this.Load += new System.EventHandler(this.FormArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagListado)).EndInit();
@@ -465,9 +499,9 @@
             this.PFk.ResumeLayout(false);
             this.PFk.PerformLayout();
             this.GB.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PBImagen)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabCon.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PBImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

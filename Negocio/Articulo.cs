@@ -75,7 +75,7 @@ namespace Negocio
         /// Invoca el metodo Datos.Articulo.Mostar
         /// </summary>
         /// <returns>DataTable:Tabla.Articulo{100Filas},Null</returns>
-        public static System.Data.DataTable Mostar()
+        public static System.Data.DataTable Mostrar()
         {
             return new Datos.Articulo().Mostrar();
         }
@@ -89,8 +89,19 @@ namespace Negocio
         {
             Obj = new Datos.Articulo {
                 TextBuscar = textBuscar
-            };
+            };            
             return Obj.MostrarNombre(Obj);
+        }
+
+        public void AdjustColumn(System.Windows.Forms.DataGridView DataGridView)
+        {
+            DataGridView.Columns["idArticulo"].DisplayIndex = 0;
+            DataGridView.Columns["codigo"].DisplayIndex = 1; 
+            DataGridView.Columns["nombre"].DisplayIndex = 2;  
+            DataGridView.Columns["descripcion"].DisplayIndex = 4;/*3*/  DataGridView.Columns["descripcion"].Width = 150;
+            DataGridView.Columns["imagen"].DisplayIndex = 3;/*4*/  DataGridView.Columns["imagen"].Width = 100;
+            DataGridView.Columns["idCategoria"].DisplayIndex = 5;
+            DataGridView.Columns["idPresentacion"].DisplayIndex = 6;
         }
     }
 }

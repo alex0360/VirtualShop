@@ -14,7 +14,7 @@ namespace Precentacion
     {
         private int childFormNumber = 0;
 
-        public Int32? IdTrabajador;
+        public int? IdTrabajador;
         public string Apellido;
         public string Nombre;
         public string Acceso;
@@ -137,14 +137,15 @@ namespace Precentacion
         }
         private void IngresosTSMI_Click(object sender, EventArgs e)
         {
-            FormIngreso Form = new FormIngreso {
-                MdiParent = this
-            };Form.Show();
+            FormIngreso Form = FormIngreso.GetIngreso();
+            Form.MdiParent = this;
+            Form.Show();
             Form.IdTrabajador = this.IdTrabajador;
         }
         #endregion
         #region Accesos
         private void GestionUsuario() {
+            TSSLUsuario.Text = Nombre + " " + Apellido;
             if (Acceso == "Administrador")
                 Administrador();
             else if (Acceso == "Vendedor")

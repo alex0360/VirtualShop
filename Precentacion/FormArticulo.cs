@@ -85,6 +85,7 @@ namespace Precentacion
         // Metodo para Ocultar Columns
         private void OcultarColumns()
         {
+            new Negocio.Articulo().AdjustColumn(datagListado);
             datagListado.Columns[0].Visible = false;
             datagListado.Columns[1].Visible = false;
             datagListado.Columns[6].Visible = false;
@@ -122,7 +123,7 @@ namespace Precentacion
         // Metodo Mostrar
         private void Mostrar()
         {
-            datagListado.DataSource = Negocio.Articulo.Mostar();
+            datagListado.DataSource = Negocio.Articulo.Mostrar();
             datagListado.AutoResizeColumns();
             OcultarColumns();
             RowsEliminar();
@@ -280,6 +281,7 @@ namespace Precentacion
             FormVistaCategoria formVista = new FormVistaCategoria();
             formVista.ShowDialog();
         }
+        private void FormArticulo_FormClosing(object sender, FormClosingEventArgs e) => _Instacia = null;
         #endregion
     }
 }

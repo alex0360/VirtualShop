@@ -93,7 +93,7 @@ namespace Datos
                     Value = Ingreso.Fecha
                 }; sqlCommand.Parameters.Add(ParFecha);
                 SqlParameter ParTipo_Descripcion = new SqlParameter() {
-                    ParameterName = "@tipo_descripcion",
+                    ParameterName = "@tipo_comprobante",
                     SqlDbType = SqlDbType.VarChar,
                     Size = 20,
                     Value = Ingreso.Tipo_comprobante

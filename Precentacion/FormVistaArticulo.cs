@@ -20,13 +20,14 @@ namespace Precentacion
         // Metodo para Ocultar Columns
         private void OcultarColumns()
         {
+            new Negocio.Articulo().AdjustColumn(datagListado);
             datagListado.Columns[0].Visible = false;
             datagListado.Columns[1].Visible = false;
         }
         //Metodo Mostrar
         private void Mostrar()
         {
-            datagListado.DataSource = Negocio.Articulo.Mostar();
+            datagListado.DataSource = Negocio.Articulo.Mostrar();
             datagListado.AutoResizeColumns();
             OcultarColumns();
             LMostratCantidad.Text = "Total de Regristros: " + Convert.ToString(datagListado.Rows.Count);
@@ -52,7 +53,11 @@ namespace Precentacion
         private void DatagListado_DoubleClick(object sender, EventArgs e)
         {
             FormIngreso form = FormIngreso.GetIngreso();
-            form.SetArticulo(Convert.ToInt32(datagListado.CurrentRow.Cells["idArticulo"].Value), Convert.ToString(datagListado.CurrentRow.Cells["nombre"].Value));
+
+            var Parm1 = Convert.ToInt32(datagListado.CurrentRow.Cells["idArticulo"].Value);
+            var Parm2 = Convert.ToString(datagListado.CurrentRow.Cells["nombre"].Value);
+
+            form.SetArticulo(idArticulo: Parm1, nombre: Parm2);
             Hide();
         }
         
@@ -60,5 +65,7 @@ namespace Precentacion
         {
             Mostrar();
         }
+
+      
     }
 }

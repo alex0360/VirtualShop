@@ -74,5 +74,10 @@ namespace Precentacion
         {
             Mostrar();
         }
+
+        private void TBBuscar_TextChanged_1(object sender, EventArgs e)
+        {
+            BuscarMostar();
+        }
     }
 }

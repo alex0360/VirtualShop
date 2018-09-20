@@ -117,13 +117,2008 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DTPFecha_Produccion.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LFecha_Produccion.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;TBCorrelativo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DGVListados_detalles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 201</value>
+  </data>
+  <data name="LTotalRegistro.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;CBEliminar.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;BImprimir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PBuscarArticulo.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="PComprobante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 68</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LPrecio_venta.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="LStock_inicial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 69</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Produccion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LTotal_Pagado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 307</value>
+  </data>
+  <data name="LArticulo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Produccion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BCancelar.Name" xml:space="preserve">
+    <value>BCancelar</value>
+  </data>
+  <data name="&gt;&gt;LStock_inicial.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="BGuardar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 293</value>
+  </data>
+  <data name="LArticulo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>534, 67</value>
+  </data>
+  <data name="TBPrecio_venta.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Vencimiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="&gt;&gt;BEliminar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DGVListado.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="BDelete.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha.Text" xml:space="preserve">
+    <value>Fecha:</value>
+  </data>
+  <data name="&gt;&gt;TBBuscar.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;DGVListado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Final.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lProveedor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;CBEliminar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BImprimir.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DTPFecha_Vencimiento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 20</value>
+  </data>
+  <data name="TBCorrelativo.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="LFecha_Produccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="TBStock.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LFecha_Vencimiento.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LStock_inicial.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TBArticulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 7</value>
+  </data>
+  <data name="BAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>534, 27</value>
+  </data>
+  <data name="BEliminar.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LBuscar.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="LComprobante.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LFecha_Produccion.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DTPFecha_Vencimiento.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BBuscarProveedor.Name" xml:space="preserve">
+    <value>BBuscarProveedor</value>
+  </data>
+  <data name="&gt;&gt;BuscarArticulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="BBuscarProveedor.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CBComprobante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 21</value>
+  </data>
+  <data name="LComprobante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="&gt;&gt;lProveedor.Parent" xml:space="preserve">
+    <value>PBuscarProvedor</value>
+  </data>
+  <data name="PComprobante.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Produccion.Text" xml:space="preserve">
+    <value>Fecha Produccion:</value>
+  </data>
+  <data name="&gt;&gt;EPErrorIcono.Name" xml:space="preserve">
+    <value>EPErrorIcono</value>
+  </data>
+  <data name="LBuscar.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PBuscarProvedor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="DTPFecha_Produccion.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="DTPFecha_Final.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 31</value>
+  </data>
+  <data name="TBPrecio_venta.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LPrecio_compra.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TBPrecio_venta.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="LStock_inicial.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LTotal.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TBPrecio_venta.Name" xml:space="preserve">
+    <value>TBPrecio_venta</value>
+  </data>
+  <data name="BEliminar.Text" xml:space="preserve">
+    <value>&amp;Anular</value>
+  </data>
+  <data name="DTPFecha_Produccion.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Eliminar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LFecha_Vencimiento.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LPrecio_compra.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;LTotalRegistro.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="GBMatenimiento.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LPrecio_compra.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PComprobante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BDelete.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LPrecio_venta.Name" xml:space="preserve">
+    <value>LPrecio_venta</value>
+  </data>
+  <data name="DGVListados_detalles.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LNumero.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TBIgv.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormIngreso</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Produccion.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="LTotal_Pagado.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BDelete.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BAdd.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LComprobante.Parent" xml:space="preserve">
+    <value>PComprobante</value>
+  </data>
+  <data name="&gt;&gt;LTitulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Vencimiento.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DTPFecha_Vencimiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 70</value>
+  </data>
+  <data name="GBArticulo.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CBEliminar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 61</value>
+  </data>
+  <data name="LComprobante.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lProveedor.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LBuscar.Name" xml:space="preserve">
+    <value>LBuscar</value>
+  </data>
+  <data name="LFecha_Final.Text" xml:space="preserve">
+    <value>Fecha Inicial</value>
+  </data>
+  <data name="DTPFecha_Vencimiento.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabCon</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Produccion.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="LFecha_Final.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="LTotal_Pagado.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LFecha_Inicial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="BuscarArticulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 4</value>
+  </data>
+  <data name="&gt;&gt;BBuscar_fecha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LPrecio_venta.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Vencimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BAdd.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBPrecio_venta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="DTPFecha.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LFecha_Produccion.Name" xml:space="preserve">
+    <value>LFecha_Produccion</value>
+  </data>
+  <data name="BGuardar.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Vencimiento.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LStock_inicial.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBPrecio_compra.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LArticulo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="DGVListado.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TBIgv.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;BuscarArticulo.Name" xml:space="preserve">
+    <value>BuscarArticulo</value>
+  </data>
+  <data name="&gt;&gt;tabCon.Name" xml:space="preserve">
+    <value>tabCon</value>
+  </data>
+  <data name="lProveedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="BGuardar.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TBBuscar.Name" xml:space="preserve">
+    <value>TBBuscar</value>
+  </data>
+  <data name="LFecha_Inicial.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="DTPFecha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="LBuscar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LTotalRegistro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LFecha_Vencimiento.Text" xml:space="preserve">
+    <value>Fecha Vencimiento:</value>
+  </data>
+  <data name="LNumero.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="GBArticulo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TBCorrelativo.Parent" xml:space="preserve">
+    <value>PComprobante</value>
+  </data>
+  <data name="LArticulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 10</value>
+  </data>
+  <data name="lProveedor.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;TBSerie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LPrecio_venta.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LComprobante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBStock.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BCancelar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 293</value>
+  </data>
+  <data name="BCancelar.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;CBComprobante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LStock_inicial.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="PBuscarArticulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 34</value>
+  </data>
+  <data name="DGVListados_detalles.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;LPrecio_compra.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LTitulo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Final.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;BImprimir.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="PComprobante.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LPrecio_venta.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_inicio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LNumero.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 45</value>
+  </data>
+  <data name="tabCon.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LPrecio_venta.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LTotal.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="DTPFecha_Produccion.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BuscarArticulo.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="DTPFecha_inicio.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Produccion.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DTPFecha_Produccion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 33</value>
+  </data>
+  <data name="&gt;&gt;TBStock.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="&gt;&gt;TBPrecio_compra.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Precentacion.Clases.FaderForm, Precentacion, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PBuscarProvedor.Name" xml:space="preserve">
+    <value>PBuscarProvedor</value>
+  </data>
+  <data name="tabPage2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TBArticulo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="DGVListados_detalles.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="LFecha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="TBPrecio_venta.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GBArticulo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;BGuardar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LFecha.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="DTPFecha_Final.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 19</value>
+  </data>
+  <data name="LFecha_Final.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LTotal.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TBSerie.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;BDelete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LNumero.Text" xml:space="preserve">
+    <value>Numero:</value>
+  </data>
+  <data name="PComprobante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 24</value>
+  </data>
+  <data name="&gt;&gt;LStock_inicial.Name" xml:space="preserve">
+    <value>LStock_inicial</value>
+  </data>
+  <data name="BBuscarProveedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 4</value>
+  </data>
+  <data name="&gt;&gt;LTotalRegistro.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TBPrecio_venta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_inicio.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="TBArticulo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;LPrecio_compra.Name" xml:space="preserve">
+    <value>LPrecio_compra</value>
+  </data>
+  <data name="CBEliminar.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LPrecio_compra.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ingreso</value>
+  </data>
+  <data name="LComprobante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="LIvg.Text" xml:space="preserve">
+    <value>IGV(Itbs):</value>
+  </data>
+  <data name="&gt;&gt;Eliminar.Name" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="&gt;&gt;LIvg.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LTotalRegistro.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LFecha_Produccion.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="BBuscar_fecha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="LTotal.Text" xml:space="preserve">
+    <value>Total Pagas:</value>
+  </data>
+  <data name="LFecha_Vencimiento.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LBuscar.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BDelete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="LFecha.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LNumero.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="BDelete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="BuscarArticulo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;BDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LComprobante.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LTotal_Pagado.Text" xml:space="preserve">
+    <value>0.0</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DTPFecha_inicio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 31</value>
+  </data>
+  <data name="DGVListados_detalles.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PBuscarProvedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 42</value>
+  </data>
+  <data name="TBSerie.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;LTotal.Name" xml:space="preserve">
+    <value>LTotal</value>
+  </data>
+  <data name="&gt;&gt;BCancelar.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="&gt;&gt;TBProveedor.Parent" xml:space="preserve">
+    <value>PBuscarProvedor</value>
+  </data>
+  <data name="BImprimir.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BEliminar.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;BBuscarProveedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PBuscarArticulo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GBArticulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LFecha_Inicial.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CBComprobante.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="BDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;TBProveedor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LTotal_Pagado.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;EPErrorIcono.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DTPFecha_Vencimiento.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TBStock.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="DTPFecha_Produccion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;TBPrecio_compra.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DTPFecha_Vencimiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 19</value>
+  </data>
+  <data name="&gt;&gt;DGVListados_detalles.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Vencimiento.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="LTotal_Pagado.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LTitulo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PBuscarProvedor.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="LIvg.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;LNumero.Parent" xml:space="preserve">
+    <value>PComprobante</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Vencimiento.Name" xml:space="preserve">
+    <value>LFecha_Vencimiento</value>
+  </data>
+  <data name="BBuscarProveedor.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;TBCorrelativo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DTPFecha_inicio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 19</value>
+  </data>
+  <data name="LComprobante.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="DGVListados_detalles.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TBStock.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LStock_inicial.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TBPrecio_compra.Name" xml:space="preserve">
+    <value>TBPrecio_compra</value>
+  </data>
+  <data name="LTotal_Pagado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 13</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Produccion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LStock_inicial.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="DGVListados_detalles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>573, 89</value>
+  </data>
+  <data name="CBComprobante.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TBArticulo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TBProveedor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BuscarArticulo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;GBArticulo.Name" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="DGVListado.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;DTPFecha.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LPrecio_venta.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;LIvg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Final.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BCancelar.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="BBuscar_fecha.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="LIvg.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;PBuscarProvedor.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LPrecio_compra.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TBStock.Name" xml:space="preserve">
+    <value>TBStock</value>
+  </data>
+  <data name="&gt;&gt;TBArticulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LNumero.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="DTPFecha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 19</value>
+  </data>
+  <data name="LFecha_Inicial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 12</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Inicial.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TBBuscar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 1</value>
+  </data>
+  <data name="&gt;&gt;TBPrecio_venta.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="BDelete.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;BEliminar.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LTotal.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="TBSerie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;LArticulo.Name" xml:space="preserve">
+    <value>LArticulo</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>679, 459</value>
+  </data>
+  <data name="&gt;&gt;TBProveedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBStock.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBPrecio_compra.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TBBuscar.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Inicial.Name" xml:space="preserve">
+    <value>LFecha_Inicial</value>
+  </data>
+  <data name="LTitulo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PBuscarProvedor.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TBPrecio_venta.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CBEliminar.Name" xml:space="preserve">
+    <value>CBEliminar</value>
+  </data>
+  <data name="LPrecio_venta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="LFecha_Final.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Vencimiento.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;BEliminar.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;BGuardar.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="&gt;&gt;LPrecio_venta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PBuscarArticulo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PBuscarProvedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 24</value>
+  </data>
+  <data name="PBuscarArticulo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="TBIgv.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TBIgv.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tabCon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LFecha.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BImprimir.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TBSerie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 42</value>
+  </data>
+  <data name="BDelete.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;LArticulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PComprobante.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Produccion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 15</value>
+  </data>
+  <data name="LFecha_Inicial.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;TBPrecio_compra.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="BBuscar_fecha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 29</value>
+  </data>
+  <data name="&gt;&gt;CBEliminar.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lProveedor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TBArticulo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="BImprimir.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Inicial.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LIvg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="PBuscarArticulo.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;LBuscar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LFecha_Vencimiento.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GBMatenimiento.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LNumero.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LTitulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 15</value>
+  </data>
+  <data name="PBuscarArticulo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="TBBuscar.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BuscarArticulo.Parent" xml:space="preserve">
+    <value>PBuscarArticulo</value>
+  </data>
+  <data name="LArticulo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BAdd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="DTPFecha_Final.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="CBEliminar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LArticulo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;GBArticulo.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="&gt;&gt;TBSerie.Name" xml:space="preserve">
+    <value>TBSerie</value>
+  </data>
+  <data name="&gt;&gt;LPrecio_compra.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LNumero.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="DTPFecha.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>614, 358</value>
+  </data>
+  <data name="LArticulo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="LStock_inicial.Text" xml:space="preserve">
+    <value>Stock Inicial:</value>
+  </data>
+  <data name="CBComprobante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 12</value>
+  </data>
+  <data name="&gt;&gt;DGVListado.Name" xml:space="preserve">
+    <value>DGVListado</value>
+  </data>
+  <data name="&gt;&gt;DGVListados_detalles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LTotal_Pagado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LTotal.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="TBPrecio_venta.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BDelete.Name" xml:space="preserve">
+    <value>BDelete</value>
+  </data>
+  <data name="&gt;&gt;BBuscar_fecha.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="CBComprobante.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="TBPrecio_compra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 19</value>
+  </data>
+  <data name="BAdd.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;BCancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBPrecio_compra.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BGuardar.Name" xml:space="preserve">
+    <value>BGuardar</value>
+  </data>
+  <data name="&gt;&gt;GBMatenimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Final.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="BBuscarProveedor.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="LBuscar.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;TBCorrelativo.Name" xml:space="preserve">
+    <value>TBCorrelativo</value>
+  </data>
+  <data name="LPrecio_venta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 51</value>
+  </data>
+  <data name="DTPFecha_inicio.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LPrecio_compra.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabCon</value>
+  </data>
+  <data name="LPrecio_compra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="LTotalRegistro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 333</value>
+  </data>
+  <data name="Eliminar.HeaderText" xml:space="preserve">
+    <value>Eleminar</value>
+  </data>
+  <data name="DTPFecha_Final.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="LFecha_Produccion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="&gt;&gt;lProveedor.Name" xml:space="preserve">
+    <value>lProveedor</value>
+  </data>
+  <data name="LComprobante.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LIvg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 79</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Final.Name" xml:space="preserve">
+    <value>DTPFecha_Final</value>
+  </data>
+  <data name="DTPFecha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 79</value>
+  </data>
+  <data name="BAdd.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LIvg.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PBuscarArticulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 17</value>
+  </data>
+  <data name="TBIgv.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBArticulo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BAdd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="TBProveedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 19</value>
+  </data>
+  <data name="LFecha_Inicial.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBPrecio_compra.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBPrecio_compra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 21</value>
+  </data>
+  <data name="BBuscarProveedor.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LArticulo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PBuscarProvedor.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DTPFecha_Final.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBCorrelativo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 81</value>
+  </data>
+  <data name="LNumero.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LFecha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DTPFecha_Final.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Inicial.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;LTotalRegistro.Name" xml:space="preserve">
+    <value>LTotalRegistro</value>
+  </data>
+  <data name="&gt;&gt;LNumero.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBSerie.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DGVListado.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="DGVListado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="LFecha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="TBSerie.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BBuscar_fecha.Name" xml:space="preserve">
+    <value>BBuscar_fecha</value>
+  </data>
+  <data name="TBCorrelativo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 19</value>
+  </data>
+  <data name="lProveedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 7</value>
+  </data>
+  <data name="LFecha_Final.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LStock_inicial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="LTotal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 307</value>
+  </data>
+  <data name="LPrecio_compra.Text" xml:space="preserve">
+    <value>Precio de Compra:</value>
+  </data>
+  <data name="TBProveedor.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LTotal_Pagado.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="TBProveedor.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_inicio.Name" xml:space="preserve">
+    <value>DTPFecha_inicio</value>
+  </data>
+  <data name="LTotal.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BImprimir.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LTitulo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BBuscar_fecha.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DGVListado.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Inicial.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="DTPFecha_inicio.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;LComprobante.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PBuscarProvedor.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;PBuscarArticulo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBIgv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 19</value>
+  </data>
+  <data name="BAdd.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GBMatenimiento.Text" xml:space="preserve">
+    <value>Ingreso</value>
+  </data>
+  <data name="&gt;&gt;CBComprobante.Parent" xml:space="preserve">
+    <value>PComprobante</value>
+  </data>
+  <data name="tabCon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>622, 384</value>
+  </data>
+  <data name="LArticulo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BCancelar.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BAdd.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Final.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="LIvg.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBStock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 67</value>
+  </data>
+  <data name="TBProveedor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 5</value>
+  </data>
+  <data name="BEliminar.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lProveedor.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabCon.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GBMatenimiento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TBPrecio_venta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 19</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Final.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBSerie.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DTPFecha_Produccion.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GBArticulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>578, 94</value>
+  </data>
+  <data name="&gt;&gt;TTMensaje.Name" xml:space="preserve">
+    <value>TTMensaje</value>
+  </data>
+  <data name="tabPage1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BBuscarProveedor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;CBComprobante.Name" xml:space="preserve">
+    <value>CBComprobante</value>
+  </data>
+  <data name="LComprobante.Text" xml:space="preserve">
+    <value>Comprobante:</value>
+  </data>
+  <data name="&gt;&gt;DGVListado.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="DGVListado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>588, 249</value>
+  </data>
+  <data name="&gt;&gt;PComprobante.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="TBPrecio_compra.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lProveedor.Text" xml:space="preserve">
+    <value>Proveedor:</value>
+  </data>
+  <data name="&gt;&gt;DGVListados_detalles.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TBStock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBSerie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 19</value>
+  </data>
+  <data name="LTotal_Pagado.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LTotal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LTotal.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DGVListado.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBProveedor.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LFecha_Vencimiento.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LFecha_Vencimiento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>418, 54</value>
+  </data>
+  <data name="&gt;&gt;BAdd.Name" xml:space="preserve">
+    <value>BAdd</value>
+  </data>
+  <data name="BBuscarProveedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 24</value>
+  </data>
+  <data name="&gt;&gt;BEliminar.Name" xml:space="preserve">
+    <value>BEliminar</value>
+  </data>
+  <data name="CBEliminar.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TBPrecio_venta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 51</value>
+  </data>
+  <data name="&gt;&gt;TBProveedor.Name" xml:space="preserve">
+    <value>TBProveedor</value>
+  </data>
+  <data name="&gt;&gt;CBComprobante.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LFecha.Name" xml:space="preserve">
+    <value>LFecha</value>
+  </data>
+  <data name="DTPFecha_Vencimiento.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;LTotal_Pagado.Name" xml:space="preserve">
+    <value>LTotal_Pagado</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="GBArticulo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BDelete.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="CBComprobante.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LPrecio_venta.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BGuardar.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="BAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;TBBuscar.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="LArticulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="PBuscarProvedor.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LTotal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="LTitulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 26</value>
+  </data>
+  <data name="BuscarArticulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 24</value>
+  </data>
+  <data name="LComprobante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 15</value>
+  </data>
+  <data name="BuscarArticulo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="LIvg.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="DGVListado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 81</value>
+  </data>
+  <data name="&gt;&gt;PComprobante.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_inicio.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Vencimiento.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="&gt;&gt;LTotal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LNumero.Name" xml:space="preserve">
+    <value>LNumero</value>
+  </data>
+  <data name="DTPFecha_inicio.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="GBArticulo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TBStock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 19</value>
+  </data>
+  <data name="CBEliminar.Text" xml:space="preserve">
+    <value>Anular</value>
+  </data>
+  <data name="LPrecio_venta.Text" xml:space="preserve">
+    <value>Precio de Venta:</value>
+  </data>
+  <data name="TBBuscar.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LStock_inicial.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha.Name" xml:space="preserve">
+    <value>DTPFecha</value>
+  </data>
+  <data name="TBBuscar.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>614, 358</value>
+  </data>
+  <data name="GBArticulo.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;TBBuscar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LFecha_Produccion.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LPrecio_compra.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LIvg.Name" xml:space="preserve">
+    <value>LIvg</value>
+  </data>
+  <data name="&gt;&gt;TBArticulo.Parent" xml:space="preserve">
+    <value>PBuscarArticulo</value>
+  </data>
+  <data name="LFecha_Inicial.Text" xml:space="preserve">
+    <value>Fecha Inicial</value>
+  </data>
+  <data name="PComprobante.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="tabPage1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LBuscar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 2</value>
+  </data>
+  <data name="TBPrecio_compra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="TBIgv.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="GBMatenimiento.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LPrecio_venta.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LTitulo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LTotal.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Final.Name" xml:space="preserve">
+    <value>LFecha_Final</value>
+  </data>
+  <data name="LTitulo.Text" xml:space="preserve">
+    <value>Ingreso en Almacen</value>
+  </data>
+  <data name="DTPFecha_Final.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;GBMatenimiento.Name" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="LIvg.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TBProveedor.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="DTPFecha.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BCancelar.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBArticulo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBBuscar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="BBuscar_fecha.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="TBCorrelativo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="LFecha.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="BBuscar_fecha.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TBStock.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lProveedor.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DTPFecha_inicio.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Vencimiento.Name" xml:space="preserve">
+    <value>DTPFecha_Vencimiento</value>
+  </data>
+  <data name="PBuscarArticulo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBCorrelativo.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LBuscar.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Inicial.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TBIgv.Name" xml:space="preserve">
+    <value>TBIgv</value>
+  </data>
+  <data name="BuscarArticulo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LComprobante.Name" xml:space="preserve">
+    <value>LComprobante</value>
+  </data>
+  <data name="&gt;&gt;LFecha_Produccion.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="BEliminar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LBuscar.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BuscarArticulo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Produccion.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LTitulo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LPrecio_compra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 21</value>
+  </data>
+  <data name="LStock_inicial.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LTotal_Pagado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="TBCorrelativo.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TBCorrelativo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 42</value>
+  </data>
+  <data name="tabCon.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BBuscarProveedor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BGuardar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BCancelar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LFecha_Vencimiento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DTPFecha.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabCon.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;LArticulo.Parent" xml:space="preserve">
+    <value>PBuscarArticulo</value>
+  </data>
+  <data name="GBArticulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 102</value>
+  </data>
+  <data name="GBMatenimiento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>588, 332</value>
+  </data>
+  <data name="&gt;&gt;TBSerie.Parent" xml:space="preserve">
+    <value>PComprobante</value>
+  </data>
+  <data name="TBIgv.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="LComprobante.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BGuardar.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="BBuscar_fecha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="LIvg.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;BAdd.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="LFecha.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LFecha_Final.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DGVListados_detalles.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LTotalRegistro.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LFecha_Final.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="&gt;&gt;PBuscarArticulo.Name" xml:space="preserve">
+    <value>PBuscarArticulo</value>
+  </data>
+  <data name="&gt;&gt;TBArticulo.Name" xml:space="preserve">
+    <value>TBArticulo</value>
+  </data>
+  <data name="GBArticulo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;PBuscarProvedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BBuscar_fecha.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tabCon.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LTotal_Pagado.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="lProveedor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LTotal_Pagado.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BBuscar_fecha.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CBComprobante.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LPrecio_compra.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
+  </data>
+  <data name="PComprobante.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="DTPFecha.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="TBSerie.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="BBuscarProveedor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="BAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="DTPFecha_Vencimiento.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BuscarArticulo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DTPFecha_inicio.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LBuscar.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TTMensaje.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBStock.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LFecha_Final.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TBArticulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 19</value>
+  </data>
+  <data name="CBComprobante.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="BBuscarProveedor.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="LTotalRegistro.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BBuscar_fecha.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;LTitulo.Name" xml:space="preserve">
+    <value>LTitulo</value>
+  </data>
+  <data name="LArticulo.Text" xml:space="preserve">
+    <value>Articulo:</value>
+  </data>
+  <data name="DTPFecha_Produccion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 19</value>
+  </data>
+  <data name="LFecha_Final.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 12</value>
+  </data>
+  <data name="&gt;&gt;LStock_inicial.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TBBuscar.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BuscarArticulo.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="GBMatenimiento.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tabPage2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;PBuscarArticulo.Parent" xml:space="preserve">
+    <value>GBArticulo</value>
+  </data>
+  <data name="&gt;&gt;GBMatenimiento.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="BuscarArticulo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BBuscarProveedor.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TBIgv.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="LNumero.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="LFecha.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;LPrecio_venta.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LFecha_Inicial.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BImprimir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 15</value>
+  </data>
+  <data name="CBEliminar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 17</value>
+  </data>
+  <data name="&gt;&gt;LIvg.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="&gt;&gt;BBuscarProveedor.Parent" xml:space="preserve">
+    <value>PBuscarProvedor</value>
+  </data>
+  <data name="&gt;&gt;TBIgv.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="TBCorrelativo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LFecha_Vencimiento.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TBIgv.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 79</value>
+  </data>
+  <data name="CBEliminar.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LFecha_Final.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DGVListados_detalles.Name" xml:space="preserve">
+    <value>DGVListados_detalles</value>
+  </data>
+  <data name="TBArticulo.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PComprobante.Name" xml:space="preserve">
+    <value>PComprobante</value>
+  </data>
+  <data name="TBProveedor.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lProveedor.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BImprimir.Name" xml:space="preserve">
+    <value>BImprimir</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha_Produccion.Name" xml:space="preserve">
+    <value>DTPFecha_Produccion</value>
+  </data>
+  <data name="LNumero.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;GBArticulo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DTPFecha.Parent" xml:space="preserve">
+    <value>GBMatenimiento</value>
+  </data>
+  <data name="&gt;&gt;PComprobante.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DTPFecha_Final.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="PBuscarProvedor.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lProveedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabCon.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BBuscar_fecha.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <metadata name="EPErrorIcono.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="TTMensaje.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>139, 17</value>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es-419</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
   <metadata name="Eliminar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="TTMensaje.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>139, 17</value>
   </metadata>
 </root>

@@ -52,7 +52,11 @@ namespace Precentacion
         private void DatagListado_DoubleClick(object sender, EventArgs e)
         {
             FormIngreso form = FormIngreso.GetIngreso();
-            form.SetArticulo(Convert.ToInt32(datagListado.CurrentRow.Cells["idProveedor"].Value), Convert.ToString(datagListado.CurrentRow.Cells["nombre"].Value));
+
+            var Parm1 = Convert.ToInt32(datagListado.CurrentRow.Cells["idProveedor"].Value);
+            var Parm2 = Convert.ToString(datagListado.CurrentRow.Cells["razon_social"].Value);
+
+            form.SetProveedor(idProveedor: Parm1, razon_social: Parm2);
             Hide();
         }
 

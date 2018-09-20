@@ -156,6 +156,9 @@
     <EmbeddedResource Include="FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormIngreso.es-419.resx">
+      <DependentUpon>FormIngreso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormIngreso.resx">
       <DependentUpon>FormIngreso.cs</DependentUpon>
     </EmbeddedResource>

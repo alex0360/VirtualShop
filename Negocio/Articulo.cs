@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Negocio
+﻿namespace Negocio
 {
     public class Articulo
     {
@@ -20,7 +14,8 @@ namespace Negocio
         /// <param name="idCategoria">fk de la tabla.Categoria</param>
         /// <param name="idPresentacion">fk de la tabla.Presentacion</param>
         /// <returns>El resultado de Datos.Articulo.Insertar</returns>
-        public static string Insertar(string codigo, string nombre, string descripcion, byte[] imagen, int idCategoria, int idPresentacion)
+        public static string Insertar(string codigo, string nombre, string descripcion, 
+            byte[] imagen, int idCategoria, int idPresentacion)
         {
             Obj = new Datos.Articulo {
                 Codigo = codigo,
@@ -32,7 +27,6 @@ namespace Negocio
             };
             return Obj.Insertar(Obj);
         }
-
         /// <summary>
         /// Invoca el metodo Editar Datos.Articulo
         /// </summary>
@@ -44,7 +38,8 @@ namespace Negocio
         /// <param name="idCategoria">fk de la tabla.Categoria</param>
         /// <param name="idPresentacion">fk de la tabla.Presentacion</param>
         /// <returns>El resultado de Datos.Articulo.Editar</returns>
-        public static string Editar(int idArticulo, string codigo, string nombre, string descripcion, byte[] imagen, int idCategoria, int idPresentacion)
+        public static string Editar(int idArticulo, string codigo, string nombre, string descripcion, 
+            byte[] imagen, int idCategoria, int idPresentacion)
         {
             Obj = new Datos.Articulo{
                 IdArticulo = idArticulo,
@@ -57,7 +52,6 @@ namespace Negocio
             };
             return Obj.Editar(Obj);
         }
-
         /// <summary>
         /// Invoca el metodo Eliminar Datos.Articulo
         /// </summary>
@@ -70,16 +64,11 @@ namespace Negocio
             };
             return Obj.Eliminar(Obj);
         }
-
         /// <summary>
         /// Invoca el metodo Datos.Articulo.Mostar
         /// </summary>
         /// <returns>DataTable:Tabla.Articulo{100Filas},Null</returns>
-        public static System.Data.DataTable Mostrar()
-        {
-            return new Datos.Articulo().Mostrar();
-        }
-
+        public static System.Data.DataTable Mostrar() => new Datos.Articulo().Mostrar();
         /// <summary>
         /// Invoca el metodo Datos.Articulo.BuscarMostar
         /// </summary>
@@ -92,7 +81,6 @@ namespace Negocio
             };            
             return Obj.MostrarNombre(Obj);
         }
-
         public void AdjustColumn(System.Windows.Forms.DataGridView DataGridView)
         {
             DataGridView.Columns["idArticulo"].DisplayIndex = 0;

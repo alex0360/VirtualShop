@@ -27,9 +27,7 @@
         /// Converte un ComboBox en un Control de solo Lectura
         /// </summary>
         /// <param name="ComboBox">Nombre de ComboBox</param>
-        public Read(System.Windows.Forms.ComboBox ComboBox)
-        {
+        public Read(System.Windows.Forms.ComboBox ComboBox) => 
             ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-        }
     }
 }

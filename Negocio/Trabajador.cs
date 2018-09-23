@@ -94,10 +94,7 @@ namespace Negocio
         /// Mustra los datos de la Tabla.Trabajador
         /// </summary>
         /// <returns>DataTable:Tabla.Trabajador{100Filas},Null</returns>
-        public static DataTable Mostrar()
-        {
-            return new Datos.Trabajador().Mostrar();
-        }
+        public static DataTable Mostrar() => new Datos.Trabajador().Mostrar();
         /// <summary>
         /// Invoca el metodo Datos.Trabajador.BuscarMostar
         /// </summary>
@@ -121,7 +118,12 @@ namespace Negocio
             };
             return Obj.Buscar_Usuario(Obj);
         }
-
+        /// <summary>
+        /// Cargar el Login 
+        /// </summary>
+        /// <param name="usuario">Usuario</param>
+        /// <param name="password">PassWord</param>
+        /// <returns>Resultado{Si concidio o no}</returns>
         public static DataTable Login(string usuario, string password)
         {
             Obj = new Datos.Trabajador {

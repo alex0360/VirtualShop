@@ -9,7 +9,6 @@ namespace Negocio
     public class Proveedor
     {
         private static Datos.Proveedor Obj = null;
-
         /// <summary>
         /// Insertando los datos a la tabla.Proveedor
         /// </summary>
@@ -38,7 +37,6 @@ namespace Negocio
         };
             return Obj.Insertar(Obj);
         }
-
         /// <summary>
         /// Invoca el metodo Editar Datos.Proveedor
         /// </summary>
@@ -68,7 +66,6 @@ namespace Negocio
         };
             return Obj.Editar(Obj);
         }
-
         /// <summary>
         /// Invoca el metodo Eliminar Datos.Proveedor
         /// </summary>
@@ -81,16 +78,11 @@ namespace Negocio
             };
             return Obj.Eliminar(Obj);
         }
-
         /// <summary>
         /// Invoca el metodo Datos.Proveedor.Mostar
         /// </summary>
         /// <returns>DataTable:Tabla.Proveedor{100Filas},Null</returns>
-        public static System.Data.DataTable Mostar()
-        {
-            return new Datos.Proveedor().Mostrar();
-        }
-
+        public static System.Data.DataTable Mostar() => new Datos.Proveedor().Mostrar();
         /// <summary>
         /// Invoca el metodo Datos.Proveedor.BuscarMostar
         /// </summary>

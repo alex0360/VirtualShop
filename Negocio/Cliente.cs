@@ -9,7 +9,6 @@ namespace Negocio
     public class Cliente
     {
         private static Datos.Cliente Obj = null;
-
         /// <summary>
         /// Insertando los datos a la tabla.Cliente
         /// </summary>
@@ -86,10 +85,7 @@ namespace Negocio
         /// Muestra los datos de una tabla
         /// </summary>
         /// <returns>DataTable:Tabla.Cliente{200Filas},Null</returns>
-        public static System.Data.DataTable Mostrar()
-        {
-            return new Datos.Cliente().Mostrar();
-        }
+        public static System.Data.DataTable Mostrar() => new Datos.Cliente().Mostrar();
         /// <summary>
         /// Invoca el metodo Datos.Cliente.BuscarMostar
         /// </summary>

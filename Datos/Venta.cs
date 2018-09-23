@@ -29,25 +29,46 @@ namespace Datos
         public string Estado { get => _Estado; set => _Estado = value; }
 
         //Constructores
+        /// <summary>
+        /// Constructor sin parametros
+        /// </summary>
         public Venta()
         {
 
         }
+        /// <summary>
+        /// Constructor con parametros
+        /// </summary>
+        /// <param name="idVenta">Primary Key</param>
+        /// <param name="idCliente">Forent Key</param>
+        /// <param name="idTrabajador">Forent Key</param>
+        /// <param name="fecha">Fecha de </param>
+        /// <param name="tipo_comprobante">Tipo de Comprobante{ticket,Factura, ect}</param>
+        /// <param name="serie">Numero de Serie</param>
+        /// <param name="correlativo">Numero de Relacion</param>
+        /// <param name="igv">Itbs</param>
+        /// <param name="estado">Estado {Anulado o Activo}</param>
         public Venta(int idVenta, int idCliente, int idTrabajador, 
             DateTime fecha, string tipo_comprobante, string serie, 
             string correlativo, decimal igv, string estado)
         {
-            this.IdVenta = idVenta;
-            this.IdCliente = idCliente;
-            this.IdTrabajador = idTrabajador;
-            this.Fecha = fecha;
-            this.Tipo_Comprobante = tipo_comprobante;
-            this.Serie = serie;
-            this.Correlativo = correlativo;
-            this.Igv = igv;
-            this.Estado = estado;
+            IdVenta = idVenta;
+            IdCliente = idCliente;
+            IdTrabajador = idTrabajador;
+            Fecha = fecha;
+            Tipo_Comprobante = tipo_comprobante;
+            Serie = serie;
+            Correlativo = correlativo;
+            Igv = igv;
+            Estado = estado;
         }
         //Métodos
+        /// <summary>
+        /// Insertar Venta 
+        /// </summary>
+        /// <param name="Venta">instacia de la Clase Venta</param>
+        /// <param name="detalles">Lista de Detalles</param>
+        /// <returns>Insercion Correcta o no Correcta</returns>
         public string Insertar(Venta Venta, List<Detalle_venta> detalles)
         {
             string respuesta = null;
@@ -140,11 +161,11 @@ namespace Datos
                 {
                     //Obtenemos el codigo del ingreso que se genero por la base de datos
 
-                    this.IdVenta = Convert.ToInt32(SqlCommand.Parameters["@idVenta"].Value);
+                    IdVenta = Convert.ToInt32(SqlCommand.Parameters["@idVenta"].Value);
                     foreach (Detalle_venta detalle in detalles)
                     {
                         //Establecemos el codigo del ingreso que se autogenero
-                        detalle.IdVenta = this.IdVenta;
+                        detalle.IdVenta = IdVenta;
                         //Llamamos al metodo insertar de la clase DetalleIngreso
                         //y le pasamos la conexion y la transaccion que debe de usar
                         respuesta = detalle.Insertar(detalle, ref Conexion.SqlConnection, ref SqlTransaction);
@@ -184,7 +205,11 @@ namespace Datos
             return respuesta;
 
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Venta"></param>
+        /// <returns>Una Eliminacion o Correcta</returns>
         public string Eliminar(Venta Venta)
         {
             string respuesta = null;
@@ -215,7 +240,12 @@ namespace Datos
             }
             return respuesta;
         }
-        //Disminuir Stock
+        /// <summary>
+        /// Disminucion del Stock Cuando
+        /// </summary>
+        /// <param name="idDetalle_ingreso"></param>
+        /// <param name="cantidad"></param>
+        /// <returns></returns>
         public string DisminuirStock(int idDetalle_ingreso, int cantidad)
         {
             string respuesta = null;
@@ -255,9 +285,10 @@ namespace Datos
             }
             return respuesta;
         }
-
-
-        //Método Mostrar
+        /// <summary>
+        /// Mostrar los detalles de las ventas
+        /// </summary>
+        /// <returns>Un DataTable con 100 Registros</returns>
         public DataTable Mostrar()
         {
             DataTable Resultado = new DataTable("Venta");
@@ -268,7 +299,6 @@ namespace Datos
                     CommandText = "SpMostrar_venta",
                     CommandType = CommandType.StoredProcedure
                 };
-
                 SqlDataAdapter SqlDataAdapter = new SqlDataAdapter(SqlCommand);
                 SqlDataAdapter.Fill(Resultado);
 
@@ -279,9 +309,12 @@ namespace Datos
             return Resultado;
 
         }
-
-
-        //Método BuscarFechas
+        /// <summary>
+        /// Mostrar los detalles de las ventas por dos filtros
+        /// </summary>
+        /// <param name="TextBuscar1"></param>
+        /// <param name="TextBuscar2"></param>
+        /// <returns></returns>
         public DataTable BuscarFechas(string TextBuscar1, string TextBuscar2)
         {
             DataTable DtResultado = new DataTable("Venta");
@@ -320,9 +353,12 @@ namespace Datos
             return DtResultado;
 
         }
-
-        //Método BuscarFechas
-        public DataTable MostrarDetalle(string textBuscar)
+        /// <summary>
+        /// Mostrar los detalles de las ventas por un filtro
+        /// </summary>
+        /// <param name="textBuscar">Fecha para filtrar la busqueda</param>
+        /// <returns>Un DataTable con los resultados de un dia</returns>
+        public DataTable Mostrar(string textBuscar)
         {
             DataTable Resultado = new DataTable("Detalle_venta");
             try
@@ -352,6 +388,11 @@ namespace Datos
             return Resultado;
 
         }
+        /// <summary>
+        /// Muestra los articulos por Nombre
+        /// </summary>
+        /// <param name="textBuscar">Nombre del Articulo a buscar</param>
+        /// <returns>Un DataTable con los resultados de un nombre</returns>
         public DataTable MostrarArticulo_Venta_Nombre(string textBuscar)
         {
             DataTable Resultado = new DataTable("Articulo");
@@ -381,6 +422,11 @@ namespace Datos
             return Resultado;
 
         }
+        /// <summary>
+        /// Muestra los articulos por Codigo
+        /// </summary>
+        /// <param name="textBuscar">Codigo del Articulo a buscar</param>
+        /// <returns>Un DataTable con los resultados de un codigo</returns>
         public DataTable MostrarArticulo_Venta_Codigo(string textBuscar)
         {
             DataTable Resultado = new DataTable("Articulo");

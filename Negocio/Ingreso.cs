@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Negocio
 {
@@ -43,20 +40,10 @@ namespace Negocio
             return Obj.Anular(Obj);
         }
 
-        public static System.Data.DataTable Mostrar()
-        {
-            return new Datos.Ingreso().Mostrar();
-        }
+        public static System.Data.DataTable Mostrar() => new Datos.Ingreso().Mostrar();
 
-        public static System.Data.DataTable Mostar(int? idIngreso)
-        {
-            return new Datos.Ingreso().MostrarDetalles(Convert.ToString(idIngreso));
-        }
+        public static System.Data.DataTable Mostar(int? idIngreso) => new Datos.Ingreso().MostrarDetalles(Convert.ToString(idIngreso));
 
-        public static System.Data.DataTable BuscarMostar(string textBuscar, string textBuscar2)
-        {
-            Obj = new Datos.Ingreso();
-            return Obj.BuscarFecha(textBuscar,textBuscar2);
-        }
+        public static System.Data.DataTable BuscarMostar(string textBuscar, string textBuscar2) => new Datos.Ingreso().BuscarFecha(textBuscar, textBuscar2);
     }
 }

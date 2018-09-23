@@ -18,7 +18,6 @@
                 };
             return ObjCategoria.Insertar(ObjCategoria);
         }
-
         /// <summary>
         /// Invoca el metodo Editar Datos.Categoria
         /// </summary>
@@ -34,7 +33,6 @@
             };
             return ObjCategoria.Editar(ObjCategoria);
         }
-
         /// <summary>
         /// Invoca el metodo Eliminar Datos.Categoria
         /// </summary>
@@ -46,16 +44,11 @@
             };
             return ObjCategoria.Eliminar(ObjCategoria);
         }
-
         /// <summary>
         /// Invoca el metodo Datos.DCategoria.Mostar
         /// </summary>
         /// <returns>DataTable:Tabla.Categoria{200Filas},Null</returns>
-        public static System.Data.DataTable Mostar()
-        {
-            return new Datos.Categoria().Mostrar();
-        }
-
+        public static System.Data.DataTable Mostar() => new Datos.Categoria().Mostrar();
         /// <summary>
         /// Invoca el metodo Datos.DCategoria.BuscarMostar
         /// </summary>

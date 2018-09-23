@@ -3,7 +3,6 @@
     public class Presentacion
     {
         private static Datos.Presentacion ObjPresentacion = null;
-
         /// <summary>
         /// Invoca el metodo Insertar Datos.Presentacion
         /// </summary>
@@ -18,7 +17,6 @@
             };
             return ObjPresentacion.Insertar(ObjPresentacion);
         }
-
         /// <summary>
         /// Invoca el metodo Editar Datos.Presentacion
         /// </summary>
@@ -35,7 +33,6 @@
             };
             return ObjPresentacion.Editar(ObjPresentacion);
         }
-
         /// <summary>
         /// Invoca el metodo Eliminar Datos.Presentacion
         /// </summary>
@@ -48,16 +45,11 @@
             };
             return ObjPresentacion.Eliminar(ObjPresentacion);
         }
-
         /// <summary>
         /// Invoca el metodo Datos.Presentacion.Mostar
         /// </summary>
         /// <returns>DataTable:Tabla.Presentacion{100Filas},Null</returns>
-        public static System.Data.DataTable Mostar()
-        {
-            return new Datos.Presentacion().Mostrar();
-        }
-
+        public static System.Data.DataTable Mostar() => new Datos.Presentacion().Mostrar();
         /// <summary>
         /// Invoca el metodo Datos.Presentacion.BuscarMostar
         /// </summary>

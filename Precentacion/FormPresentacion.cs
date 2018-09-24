@@ -10,6 +10,7 @@ namespace Precentacion
         public FormPresentacion()
         {
             InitializeComponent();
+            _ReSize();
             this.tooltMensaje.SetToolTip(tbNombre, "Ingrese un Nombre para la Presentacion");
         }
 
@@ -95,6 +96,7 @@ namespace Precentacion
 
             Clear();
             Mostrar();
+            ReSize._get_initial_size();
         }
         private void ButBuscar_Click(object sender, EventArgs e) => BuscarMostar();
         private void TbBuscar_TextChanged(object sender, EventArgs e) => BuscarMostar();
@@ -190,5 +192,15 @@ namespace Precentacion
 
         #endregion
 
+        #region ReSize
+        private Clases.ReSize ReSize;
+        private void _ReSize()
+        {
+            ReSize = new Clases.ReSize(this);
+            this.Load += FormPresentacion_Load;
+            this.Resize += _Resize;
+        }
+        private void _Resize(object sender, EventArgs e) => ReSize._resize();
+        #endregion
     }
 }

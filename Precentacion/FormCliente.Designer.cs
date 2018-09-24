@@ -72,6 +72,7 @@
             // 
             // LTitulo
             // 
+            this.LTitulo.Location = new System.Drawing.Point(14, 21);
             this.LTitulo.Size = new System.Drawing.Size(106, 26);
             this.LTitulo.Text = "Clientes:";
             // 
@@ -81,18 +82,19 @@
             // 
             // tabCon
             // 
-            this.tabCon.Size = new System.Drawing.Size(499, 327);
+            this.tabCon.Location = new System.Drawing.Point(10, 62);
+            this.tabCon.Size = new System.Drawing.Size(548, 327);
             // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Size = new System.Drawing.Size(491, 301);
+            this.tabPage2.Size = new System.Drawing.Size(540, 301);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.DGVListado);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Size = new System.Drawing.Size(491, 301);
+            this.tabPage1.Size = new System.Drawing.Size(540, 301);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.BEliminar, 0);
@@ -165,7 +167,7 @@
             this.CBTipo_documento.FormattingEnabled = true;
             this.CBTipo_documento.ItemHeight = 13;
             this.CBTipo_documento.Location = new System.Drawing.Point(212, 73);
-            this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2);
             this.CBTipo_documento.Name = "CBTipo_documento";
             this.CBTipo_documento.Size = new System.Drawing.Size(69, 21);
             this.CBTipo_documento.TabIndex = 6;
@@ -285,7 +287,7 @@
             this.DGVListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.DGVListado.Location = new System.Drawing.Point(10, 84);
-            this.DGVListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DGVListado.Margin = new System.Windows.Forms.Padding(2);
             this.DGVListado.MultiSelect = false;
             this.DGVListado.Name = "DGVListado";
             this.DGVListado.ReadOnly = true;
@@ -330,7 +332,7 @@
             "M",
             "F"});
             this.CBSexo.Location = new System.Drawing.Point(114, 71);
-            this.CBSexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CBSexo.Margin = new System.Windows.Forms.Padding(2);
             this.CBSexo.Name = "CBSexo";
             this.CBSexo.Size = new System.Drawing.Size(39, 21);
             this.CBSexo.TabIndex = 4;
@@ -360,7 +362,7 @@
             // 
             this.DTPFecha_nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DTPFecha_nacimiento.Location = new System.Drawing.Point(17, 117);
-            this.DTPFecha_nacimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DTPFecha_nacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.DTPFecha_nacimiento.Name = "DTPFecha_nacimiento";
             this.DTPFecha_nacimiento.Size = new System.Drawing.Size(88, 19);
             this.DTPFecha_nacimiento.TabIndex = 21;
@@ -372,6 +374,7 @@
             this.Name = "FormCliente";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.FormCliente_Load);
+            this.Resize += new System.EventHandler(this._Resize);
             ((System.ComponentModel.ISupportInitialize)(this.EPErrorIcono)).EndInit();
             this.tabCon.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

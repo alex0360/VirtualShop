@@ -15,6 +15,7 @@ namespace Precentacion
         public FormVistaCategoria()
         {
             InitializeComponent();
+            _ReSize();
         }
         private static bool _Instacia;
         /// <summary>
@@ -45,13 +46,6 @@ namespace Precentacion
             OcultarColumns();
             LMostratCantidad.Text = "Total de Regristros: " + Convert.ToString(datagListado.Rows.Count);
         }
-        private void FormVistaCategoria_Articulo_Load(object sender, EventArgs e)
-        {
-            this.Top = 0;
-            this.Left = 0;
-
-            Mostrar();
-        }
         private void TbBuscar_TextChanged(object sender, EventArgs e)
         {
             BuscarMostar();
@@ -73,11 +67,22 @@ namespace Precentacion
         private void FormVistaCategoria_Load(object sender, EventArgs e)
         {
             Mostrar();
+            ReSize._get_initial_size();
         }
 
         private void TBBuscar_TextChanged_1(object sender, EventArgs e)
         {
             BuscarMostar();
         }
+        #region ReSize
+        private Clases.ReSize ReSize;
+        private void _ReSize()
+        {
+            ReSize = new Clases.ReSize(this);
+            this.Load += FormVistaCategoria_Load;
+            this.Resize += _Resize;
+        }
+        private void _Resize(object sender, EventArgs e) => ReSize._resize();
+        #endregion
     }
 }

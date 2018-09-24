@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lTitulo = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupb = new System.Windows.Forms.GroupBox();
@@ -67,19 +64,19 @@
             this.lTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lTitulo.ForeColor = System.Drawing.Color.Maroon;
-            this.lTitulo.Location = new System.Drawing.Point(12, 31);
+            this.lTitulo.Location = new System.Drawing.Point(12, 24);
             this.lTitulo.Name = "lTitulo";
-            this.lTitulo.Size = new System.Drawing.Size(194, 31);
+            this.lTitulo.Size = new System.Drawing.Size(158, 26);
             this.lTitulo.TabIndex = 2;
             this.lTitulo.Text = "Presentacion:";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupb);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(417, 336);
+            this.tabPage2.Size = new System.Drawing.Size(411, 339);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Matenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -134,7 +131,7 @@
             this.tbNombre.BackColor = System.Drawing.SystemColors.Control;
             this.tbNombre.Location = new System.Drawing.Point(107, 47);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(261, 22);
+            this.tbNombre.Size = new System.Drawing.Size(261, 19);
             this.tbNombre.TabIndex = 2;
             // 
             // labDescripcion
@@ -142,7 +139,7 @@
             this.labDescripcion.AutoSize = true;
             this.labDescripcion.Location = new System.Drawing.Point(15, 91);
             this.labDescripcion.Name = "labDescripcion";
-            this.labDescripcion.Size = new System.Drawing.Size(86, 17);
+            this.labDescripcion.Size = new System.Drawing.Size(66, 13);
             this.labDescripcion.TabIndex = 3;
             this.labDescripcion.Text = "Descripcion:";
             // 
@@ -151,7 +148,7 @@
             this.labNombre.AutoSize = true;
             this.labNombre.Location = new System.Drawing.Point(15, 50);
             this.labNombre.Name = "labNombre";
-            this.labNombre.Size = new System.Drawing.Size(62, 17);
+            this.labNombre.Size = new System.Drawing.Size(47, 13);
             this.labNombre.TabIndex = 1;
             this.labNombre.Text = "Nombre:";
             // 
@@ -162,7 +159,7 @@
             this.tabCon.Location = new System.Drawing.Point(18, 65);
             this.tabCon.Name = "tabCon";
             this.tabCon.SelectedIndex = 0;
-            this.tabCon.Size = new System.Drawing.Size(425, 365);
+            this.tabCon.Size = new System.Drawing.Size(419, 365);
             this.tabCon.TabIndex = 3;
             // 
             // tabPage1
@@ -174,10 +171,10 @@
             this.tabPage1.Controls.Add(this.butEliminar);
             this.tabPage1.Controls.Add(this.tbBuscar);
             this.tabPage1.Controls.Add(this.lMatenimCategoria);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(417, 336);
+            this.tabPage1.Size = new System.Drawing.Size(411, 339);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -189,38 +186,14 @@
             this.datagListado.AllowUserToOrderColumns = true;
             this.datagListado.BackgroundColor = System.Drawing.Color.White;
             this.datagListado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagListado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.datagListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagListado.DefaultCellStyle = dataGridViewCellStyle2;
             this.datagListado.GridColor = System.Drawing.SystemColors.Control;
             this.datagListado.Location = new System.Drawing.Point(15, 125);
             this.datagListado.MultiSelect = false;
             this.datagListado.Name = "datagListado";
             this.datagListado.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagListado.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.datagListado.RowTemplate.Height = 24;
             this.datagListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagListado.Size = new System.Drawing.Size(374, 168);
@@ -239,7 +212,7 @@
             this.labMostrarTotal.AutoSize = true;
             this.labMostrarTotal.Location = new System.Drawing.Point(12, 305);
             this.labMostrarTotal.Name = "labMostrarTotal";
-            this.labMostrarTotal.Size = new System.Drawing.Size(16, 17);
+            this.labMostrarTotal.Size = new System.Drawing.Size(13, 13);
             this.labMostrarTotal.TabIndex = 6;
             this.labMostrarTotal.Text = "0";
             // 
@@ -248,7 +221,7 @@
             this.chbEliminar.AutoSize = true;
             this.chbEliminar.Location = new System.Drawing.Point(15, 98);
             this.chbEliminar.Name = "chbEliminar";
-            this.chbEliminar.Size = new System.Drawing.Size(80, 21);
+            this.chbEliminar.Size = new System.Drawing.Size(62, 17);
             this.chbEliminar.TabIndex = 4;
             this.chbEliminar.Text = "Eliminar";
             this.chbEliminar.UseVisualStyleBackColor = true;
@@ -276,9 +249,9 @@
             // tbBuscar
             // 
             this.tbBuscar.BackColor = System.Drawing.SystemColors.Control;
-            this.tbBuscar.Location = new System.Drawing.Point(80, 21);
+            this.tbBuscar.Location = new System.Drawing.Point(65, 21);
             this.tbBuscar.Name = "tbBuscar";
-            this.tbBuscar.Size = new System.Drawing.Size(104, 22);
+            this.tbBuscar.Size = new System.Drawing.Size(119, 19);
             this.tbBuscar.TabIndex = 1;
             this.tbBuscar.TextChanged += new System.EventHandler(this.TbBuscar_TextChanged);
             // 
@@ -287,7 +260,7 @@
             this.lMatenimCategoria.AutoSize = true;
             this.lMatenimCategoria.Location = new System.Drawing.Point(12, 24);
             this.lMatenimCategoria.Name = "lMatenimCategoria";
-            this.lMatenimCategoria.Size = new System.Drawing.Size(62, 17);
+            this.lMatenimCategoria.Size = new System.Drawing.Size(47, 13);
             this.lMatenimCategoria.TabIndex = 0;
             this.lMatenimCategoria.Text = "Nombre:";
             // 
@@ -297,7 +270,7 @@
             // 
             // FormPresentacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(466, 447);
@@ -308,6 +281,7 @@
             this.Name = "FormPresentacion";
             this.Text = "Presentacion";
             this.Load += new System.EventHandler(this.FormPresentacion_Load);
+            this.Resize += new System.EventHandler(this._Resize);
             this.tabPage2.ResumeLayout(false);
             this.groupb.ResumeLayout(false);
             this.groupb.PerformLayout();

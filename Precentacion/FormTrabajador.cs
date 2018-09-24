@@ -14,6 +14,7 @@ namespace Precentacion
         public FormTrabajador()
         {
             InitializeComponent();
+            _ReSize();
             this.TTMensaje.SetToolTip(TBNombre, "Ingrese un nombre para Trabajador");
             this.TTMensaje.SetToolTip(TBApellidos, "Ingrese un apellido para Trabajador");
             this.TTMensaje.SetToolTip(CBTipo_documento, "Selecione el tipo de documento");
@@ -115,6 +116,7 @@ namespace Precentacion
             this.Left = 0;
             Clear();
             Mostrar();
+            ReSize._get_initial_size();
         }
         private void TBBuscar_TextChanged(object sender, EventArgs e)
         {
@@ -248,6 +250,16 @@ namespace Precentacion
                     EPErrorIcono.SetError(TBUsuario, "El Usuario ya Existe");
             }
         }
+        #endregion
+        #region ReSize
+        private Clases.ReSize ReSize;
+        private void _ReSize()
+        {
+            ReSize = new Clases.ReSize(this);
+            this.Load += FormTrabajador_Load;
+            this.Resize += _Resize;
+        }
+        private void _Resize(object sender, EventArgs e) => ReSize._resize();
         #endregion
     }
 }

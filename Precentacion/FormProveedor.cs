@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Precentacion
@@ -17,12 +10,12 @@ namespace Precentacion
         public FormProveedor()
         {
             InitializeComponent();
+            _ReSize();
             this.TTMensaje.SetToolTip(TBRazon, "Ingrese un Razon Comercial");
             this.TTMensaje.SetToolTip(CBTipo_documento, "Seleccione un tipo de documento");
             this.TTMensaje.SetToolTip(CBSector_comercial, "Seleccione un sector comercial");
             this.TTMensaje.SetToolTip(TBNum_documento, "Numero de documento");
-        }
-       
+        }       
         // Limpiar los Controles
         private void Clear()
         {
@@ -99,6 +92,7 @@ namespace Precentacion
             this.Left = 0;
             Clear();
             Mostrar();
+            ReSize._get_initial_size();
         }
         private void TBBuscar_TextChanged(object sender, EventArgs e) => BuscarMostar();
         private void BEliminar_Click(object sender, EventArgs e)
@@ -210,6 +204,16 @@ namespace Precentacion
             }
         }
         private void BCancelar_Click(object sender, EventArgs e) => Clear();
+        #endregion
+        #region ReSize
+        private Clases.ReSize ReSize;
+        private void _ReSize()
+        {
+            ReSize = new Clases.ReSize(this);
+            this.Load += FormProveedor_Load;
+            this.Resize += _Resize;
+        }
+        private void _Resize(object sender, EventArgs e) => ReSize._resize();
         #endregion
 
     }

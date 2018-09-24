@@ -37,6 +37,7 @@
             this.DTPFecha_Final = new System.Windows.Forms.DateTimePicker();
             this.LFecha_Final = new System.Windows.Forms.Label();
             this.PBuscarProvedor = new System.Windows.Forms.Panel();
+            this.BBuscarProveedor = new System.Windows.Forms.Button();
             this.TBProveedor = new System.Windows.Forms.TextBox();
             this.lProveedor = new System.Windows.Forms.Label();
             this.DTPFecha = new System.Windows.Forms.DateTimePicker();
@@ -49,6 +50,8 @@
             this.LComprobante = new System.Windows.Forms.Label();
             this.PComprobante = new System.Windows.Forms.Panel();
             this.GBArticulo = new System.Windows.Forms.GroupBox();
+            this.BAdd = new System.Windows.Forms.Button();
+            this.BDelete = new System.Windows.Forms.Button();
             this.LPrecio_compra = new System.Windows.Forms.Label();
             this.DTPFecha_Vencimiento = new System.Windows.Forms.DateTimePicker();
             this.DTPFecha_Produccion = new System.Windows.Forms.DateTimePicker();
@@ -60,15 +63,12 @@
             this.LFecha_Produccion = new System.Windows.Forms.Label();
             this.TBStock = new System.Windows.Forms.TextBox();
             this.PBuscarArticulo = new System.Windows.Forms.Panel();
+            this.BuscarArticulo = new System.Windows.Forms.Button();
             this.TBArticulo = new System.Windows.Forms.TextBox();
             this.LArticulo = new System.Windows.Forms.Label();
             this.DGVListados_detalles = new System.Windows.Forms.DataGridView();
             this.LTotal = new System.Windows.Forms.Label();
             this.LTotal_Pagado = new System.Windows.Forms.Label();
-            this.BBuscarProveedor = new System.Windows.Forms.Button();
-            this.BAdd = new System.Windows.Forms.Button();
-            this.BDelete = new System.Windows.Forms.Button();
-            this.BuscarArticulo = new System.Windows.Forms.Button();
             this.BBuscar_fecha = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.EPErrorIcono)).BeginInit();
             this.tabCon.SuspendLayout();
@@ -328,6 +328,21 @@
             this.PBuscarProvedor.Name = "PBuscarProvedor";
             this.TTMensaje.SetToolTip(this.PBuscarProvedor, resources.GetString("PBuscarProvedor.ToolTip"));
             // 
+            // BBuscarProveedor
+            // 
+            resources.ApplyResources(this.BBuscarProveedor, "BBuscarProveedor");
+            this.BBuscarProveedor.BackgroundImage = global::Precentacion.Properties.Resources.searchDataBase24x;
+            this.EPErrorIcono.SetError(this.BBuscarProveedor, resources.GetString("BBuscarProveedor.Error"));
+            this.BBuscarProveedor.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.BBuscarProveedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BBuscarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.EPErrorIcono.SetIconAlignment(this.BBuscarProveedor, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("BBuscarProveedor.IconAlignment"))));
+            this.EPErrorIcono.SetIconPadding(this.BBuscarProveedor, ((int)(resources.GetObject("BBuscarProveedor.IconPadding"))));
+            this.BBuscarProveedor.Name = "BBuscarProveedor";
+            this.TTMensaje.SetToolTip(this.BBuscarProveedor, resources.GetString("BBuscarProveedor.ToolTip"));
+            this.BBuscarProveedor.UseVisualStyleBackColor = true;
+            this.BBuscarProveedor.Click += new System.EventHandler(this.BBuscarProveedor_Click);
+            // 
             // TBProveedor
             // 
             resources.ApplyResources(this.TBProveedor, "TBProveedor");
@@ -464,6 +479,36 @@
             this.GBArticulo.TabStop = false;
             this.TTMensaje.SetToolTip(this.GBArticulo, resources.GetString("GBArticulo.ToolTip"));
             // 
+            // BAdd
+            // 
+            resources.ApplyResources(this.BAdd, "BAdd");
+            this.BAdd.BackgroundImage = global::Precentacion.Properties.Resources.add;
+            this.EPErrorIcono.SetError(this.BAdd, resources.GetString("BAdd.Error"));
+            this.BAdd.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.BAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.EPErrorIcono.SetIconAlignment(this.BAdd, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("BAdd.IconAlignment"))));
+            this.EPErrorIcono.SetIconPadding(this.BAdd, ((int)(resources.GetObject("BAdd.IconPadding"))));
+            this.BAdd.Name = "BAdd";
+            this.TTMensaje.SetToolTip(this.BAdd, resources.GetString("BAdd.ToolTip"));
+            this.BAdd.UseVisualStyleBackColor = true;
+            this.BAdd.Click += new System.EventHandler(this.BAdd_Click);
+            // 
+            // BDelete
+            // 
+            resources.ApplyResources(this.BDelete, "BDelete");
+            this.BDelete.BackgroundImage = global::Precentacion.Properties.Resources.delete2;
+            this.EPErrorIcono.SetError(this.BDelete, resources.GetString("BDelete.Error"));
+            this.BDelete.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.BDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.EPErrorIcono.SetIconAlignment(this.BDelete, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("BDelete.IconAlignment"))));
+            this.EPErrorIcono.SetIconPadding(this.BDelete, ((int)(resources.GetObject("BDelete.IconPadding"))));
+            this.BDelete.Name = "BDelete";
+            this.TTMensaje.SetToolTip(this.BDelete, resources.GetString("BDelete.ToolTip"));
+            this.BDelete.UseVisualStyleBackColor = true;
+            this.BDelete.Click += new System.EventHandler(this.BDelete_Click);
+            // 
             // LPrecio_compra
             // 
             resources.ApplyResources(this.LPrecio_compra, "LPrecio_compra");
@@ -575,6 +620,21 @@
             this.PBuscarArticulo.Name = "PBuscarArticulo";
             this.TTMensaje.SetToolTip(this.PBuscarArticulo, resources.GetString("PBuscarArticulo.ToolTip"));
             // 
+            // BuscarArticulo
+            // 
+            resources.ApplyResources(this.BuscarArticulo, "BuscarArticulo");
+            this.BuscarArticulo.BackgroundImage = global::Precentacion.Properties.Resources.searchDataBase24x;
+            this.EPErrorIcono.SetError(this.BuscarArticulo, resources.GetString("BuscarArticulo.Error"));
+            this.BuscarArticulo.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.BuscarArticulo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BuscarArticulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.EPErrorIcono.SetIconAlignment(this.BuscarArticulo, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("BuscarArticulo.IconAlignment"))));
+            this.EPErrorIcono.SetIconPadding(this.BuscarArticulo, ((int)(resources.GetObject("BuscarArticulo.IconPadding"))));
+            this.BuscarArticulo.Name = "BuscarArticulo";
+            this.TTMensaje.SetToolTip(this.BuscarArticulo, resources.GetString("BuscarArticulo.ToolTip"));
+            this.BuscarArticulo.UseVisualStyleBackColor = true;
+            this.BuscarArticulo.Click += new System.EventHandler(this.BuscarArticulo_Click);
+            // 
             // TBArticulo
             // 
             resources.ApplyResources(this.TBArticulo, "TBArticulo");
@@ -624,66 +684,6 @@
             this.LTotal_Pagado.Name = "LTotal_Pagado";
             this.TTMensaje.SetToolTip(this.LTotal_Pagado, resources.GetString("LTotal_Pagado.ToolTip"));
             // 
-            // BBuscarProveedor
-            // 
-            resources.ApplyResources(this.BBuscarProveedor, "BBuscarProveedor");
-            this.BBuscarProveedor.BackgroundImage = global::Precentacion.Properties.Resources.searchDataBase24x;
-            this.EPErrorIcono.SetError(this.BBuscarProveedor, resources.GetString("BBuscarProveedor.Error"));
-            this.BBuscarProveedor.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.BBuscarProveedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BBuscarProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.EPErrorIcono.SetIconAlignment(this.BBuscarProveedor, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("BBuscarProveedor.IconAlignment"))));
-            this.EPErrorIcono.SetIconPadding(this.BBuscarProveedor, ((int)(resources.GetObject("BBuscarProveedor.IconPadding"))));
-            this.BBuscarProveedor.Name = "BBuscarProveedor";
-            this.TTMensaje.SetToolTip(this.BBuscarProveedor, resources.GetString("BBuscarProveedor.ToolTip"));
-            this.BBuscarProveedor.UseVisualStyleBackColor = true;
-            this.BBuscarProveedor.Click += new System.EventHandler(this.BBuscarProveedor_Click);
-            // 
-            // BAdd
-            // 
-            resources.ApplyResources(this.BAdd, "BAdd");
-            this.BAdd.BackgroundImage = global::Precentacion.Properties.Resources.add;
-            this.EPErrorIcono.SetError(this.BAdd, resources.GetString("BAdd.Error"));
-            this.BAdd.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.BAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.EPErrorIcono.SetIconAlignment(this.BAdd, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("BAdd.IconAlignment"))));
-            this.EPErrorIcono.SetIconPadding(this.BAdd, ((int)(resources.GetObject("BAdd.IconPadding"))));
-            this.BAdd.Name = "BAdd";
-            this.TTMensaje.SetToolTip(this.BAdd, resources.GetString("BAdd.ToolTip"));
-            this.BAdd.UseVisualStyleBackColor = true;
-            this.BAdd.Click += new System.EventHandler(this.BAdd_Click);
-            // 
-            // BDelete
-            // 
-            resources.ApplyResources(this.BDelete, "BDelete");
-            this.BDelete.BackgroundImage = global::Precentacion.Properties.Resources.delete2;
-            this.EPErrorIcono.SetError(this.BDelete, resources.GetString("BDelete.Error"));
-            this.BDelete.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.BDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.EPErrorIcono.SetIconAlignment(this.BDelete, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("BDelete.IconAlignment"))));
-            this.EPErrorIcono.SetIconPadding(this.BDelete, ((int)(resources.GetObject("BDelete.IconPadding"))));
-            this.BDelete.Name = "BDelete";
-            this.TTMensaje.SetToolTip(this.BDelete, resources.GetString("BDelete.ToolTip"));
-            this.BDelete.UseVisualStyleBackColor = true;
-            this.BDelete.Click += new System.EventHandler(this.BDelete_Click);
-            // 
-            // BuscarArticulo
-            // 
-            resources.ApplyResources(this.BuscarArticulo, "BuscarArticulo");
-            this.BuscarArticulo.BackgroundImage = global::Precentacion.Properties.Resources.searchDataBase24x;
-            this.EPErrorIcono.SetError(this.BuscarArticulo, resources.GetString("BuscarArticulo.Error"));
-            this.BuscarArticulo.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.BuscarArticulo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BuscarArticulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.EPErrorIcono.SetIconAlignment(this.BuscarArticulo, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("BuscarArticulo.IconAlignment"))));
-            this.EPErrorIcono.SetIconPadding(this.BuscarArticulo, ((int)(resources.GetObject("BuscarArticulo.IconPadding"))));
-            this.BuscarArticulo.Name = "BuscarArticulo";
-            this.TTMensaje.SetToolTip(this.BuscarArticulo, resources.GetString("BuscarArticulo.ToolTip"));
-            this.BuscarArticulo.UseVisualStyleBackColor = true;
-            this.BuscarArticulo.Click += new System.EventHandler(this.BuscarArticulo_Click);
-            // 
             // BBuscar_fecha
             // 
             resources.ApplyResources(this.BBuscar_fecha, "BBuscar_fecha");
@@ -706,6 +706,7 @@
             this.TTMensaje.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormIngreso_FormClosing);
             this.Load += new System.EventHandler(this.FormIngreso_Load);
+            this.Resize += new System.EventHandler(this._Resize);
             ((System.ComponentModel.ISupportInitialize)(this.EPErrorIcono)).EndInit();
             this.tabCon.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.labMostrarTotal = new System.Windows.Forms.Label();
             this.chbEliminar = new System.Windows.Forms.CheckBox();
@@ -94,7 +94,7 @@
             // 
             this.chbEliminar.AutoSize = true;
             this.chbEliminar.Location = new System.Drawing.Point(11, 54);
-            this.chbEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.chbEliminar.Name = "chbEliminar";
             this.chbEliminar.Size = new System.Drawing.Size(62, 17);
             this.chbEliminar.TabIndex = 4;
@@ -105,7 +105,7 @@
             // butImprimir
             // 
             this.butImprimir.Location = new System.Drawing.Point(316, 12);
-            this.butImprimir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.butImprimir.Margin = new System.Windows.Forms.Padding(2);
             this.butImprimir.Name = "butImprimir";
             this.butImprimir.Size = new System.Drawing.Size(73, 28);
             this.butImprimir.TabIndex = 3;
@@ -115,7 +115,7 @@
             // butEliminar
             // 
             this.butEliminar.Location = new System.Drawing.Point(239, 12);
-            this.butEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.butEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.butEliminar.Name = "butEliminar";
             this.butEliminar.Size = new System.Drawing.Size(72, 28);
             this.butEliminar.TabIndex = 2;
@@ -127,7 +127,7 @@
             // 
             this.tbBuscar.BackColor = System.Drawing.SystemColors.Control;
             this.tbBuscar.Location = new System.Drawing.Point(60, 17);
-            this.tbBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(176, 20);
             this.tbBuscar.TabIndex = 1;
@@ -156,39 +156,39 @@
             this.datagListado.AllowUserToOrderColumns = true;
             this.datagListado.BackgroundColor = System.Drawing.Color.White;
             this.datagListado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagListado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagListado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.datagListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagListado.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagListado.DefaultCellStyle = dataGridViewCellStyle5;
             this.datagListado.GridColor = System.Drawing.SystemColors.Control;
             this.datagListado.Location = new System.Drawing.Point(11, 76);
-            this.datagListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datagListado.Margin = new System.Windows.Forms.Padding(2);
             this.datagListado.MultiSelect = false;
             this.datagListado.Name = "datagListado";
             this.datagListado.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagListado.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagListado.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.datagListado.RowTemplate.Height = 24;
             this.datagListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagListado.Size = new System.Drawing.Size(515, 170);
@@ -206,9 +206,9 @@
             this.tabPage1.Controls.Add(this.tbBuscar);
             this.tabPage1.Controls.Add(this.lMatenimCategoria);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(538, 271);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
@@ -217,7 +217,7 @@
             // butCancelar
             // 
             this.butCancelar.Location = new System.Drawing.Point(405, 203);
-            this.butCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.butCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.butCancelar.Name = "butCancelar";
             this.butCancelar.Size = new System.Drawing.Size(96, 29);
             this.butCancelar.TabIndex = 6;
@@ -228,7 +228,7 @@
             // butGuardar
             // 
             this.butGuardar.Location = new System.Drawing.Point(286, 203);
-            this.butGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.butGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.butGuardar.Name = "butGuardar";
             this.butGuardar.Size = new System.Drawing.Size(96, 29);
             this.butGuardar.TabIndex = 5;
@@ -240,7 +240,7 @@
             // 
             this.tbDescripcion.BackColor = System.Drawing.SystemColors.Control;
             this.tbDescripcion.Location = new System.Drawing.Point(81, 105);
-            this.tbDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.tbDescripcion.Multiline = true;
             this.tbDescripcion.Name = "tbDescripcion";
             this.tbDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -251,7 +251,7 @@
             // 
             this.tbNombre.BackColor = System.Drawing.SystemColors.Control;
             this.tbNombre.Location = new System.Drawing.Point(81, 48);
-            this.tbNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNombre.Margin = new System.Windows.Forms.Padding(2);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(197, 20);
             this.tbNombre.TabIndex = 2;
@@ -289,9 +289,9 @@
             this.groupb.Controls.Add(this.labNombre);
             this.groupb.Controls.Add(this.GB);
             this.groupb.Location = new System.Drawing.Point(13, 16);
-            this.groupb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupb.Margin = new System.Windows.Forms.Padding(2);
             this.groupb.Name = "groupb";
-            this.groupb.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupb.Padding = new System.Windows.Forms.Padding(2);
             this.groupb.Size = new System.Drawing.Size(512, 237);
             this.groupb.TabIndex = 0;
             this.groupb.TabStop = false;
@@ -305,7 +305,7 @@
             this.PFk.Controls.Add(this.LPresentacion);
             this.PFk.Controls.Add(this.LCategoria);
             this.PFk.Location = new System.Drawing.Point(300, 15);
-            this.PFk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PFk.Margin = new System.Windows.Forms.Padding(2);
             this.PFk.Name = "PFk";
             this.PFk.Size = new System.Drawing.Size(208, 59);
             this.PFk.TabIndex = 10;
@@ -315,7 +315,7 @@
             this.CBPresentacion.BackColor = System.Drawing.SystemColors.Control;
             this.CBPresentacion.FormattingEnabled = true;
             this.CBPresentacion.Location = new System.Drawing.Point(78, 32);
-            this.CBPresentacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CBPresentacion.Margin = new System.Windows.Forms.Padding(2);
             this.CBPresentacion.Name = "CBPresentacion";
             this.CBPresentacion.Size = new System.Drawing.Size(124, 21);
             this.CBPresentacion.TabIndex = 9;
@@ -329,7 +329,7 @@
             this.BSearchCategoria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BSearchCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BSearchCategoria.Location = new System.Drawing.Point(179, 4);
-            this.BSearchCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BSearchCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.BSearchCategoria.Name = "BSearchCategoria";
             this.BSearchCategoria.Size = new System.Drawing.Size(26, 24);
             this.BSearchCategoria.TabIndex = 8;
@@ -340,7 +340,7 @@
             // 
             this.TBCategoria.BackColor = System.Drawing.SystemColors.Control;
             this.TBCategoria.Location = new System.Drawing.Point(62, 5);
-            this.TBCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.TBCategoria.Name = "TBCategoria";
             this.TBCategoria.Size = new System.Drawing.Size(114, 20);
             this.TBCategoria.TabIndex = 2;
@@ -369,7 +369,7 @@
             // 
             this.TBCodigo.BackColor = System.Drawing.SystemColors.Control;
             this.TBCodigo.Location = new System.Drawing.Point(81, 22);
-            this.TBCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.TBCodigo.Name = "TBCodigo";
             this.TBCodigo.Size = new System.Drawing.Size(197, 20);
             this.TBCodigo.TabIndex = 2;
@@ -390,9 +390,9 @@
             this.GB.Controls.Add(this.BLimpiar);
             this.GB.Controls.Add(this.PBImagen);
             this.GB.Location = new System.Drawing.Point(300, 89);
-            this.GB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB.Margin = new System.Windows.Forms.Padding(2);
             this.GB.Name = "GB";
-            this.GB.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GB.Padding = new System.Windows.Forms.Padding(2);
             this.GB.Size = new System.Drawing.Size(160, 110);
             this.GB.TabIndex = 9;
             this.GB.TabStop = false;
@@ -407,7 +407,7 @@
             this.BCargar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.BCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BCargar.Location = new System.Drawing.Point(109, 27);
-            this.BCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BCargar.Margin = new System.Windows.Forms.Padding(2);
             this.BCargar.Name = "BCargar";
             this.BCargar.Size = new System.Drawing.Size(44, 36);
             this.BCargar.TabIndex = 8;
@@ -423,7 +423,7 @@
             this.BLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.BLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BLimpiar.Location = new System.Drawing.Point(110, 65);
-            this.BLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.BLimpiar.Name = "BLimpiar";
             this.BLimpiar.Size = new System.Drawing.Size(43, 38);
             this.BLimpiar.TabIndex = 8;
@@ -435,7 +435,7 @@
             this.PBImagen.BackgroundImage = global::Precentacion.Properties.Resources.File;
             this.PBImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.PBImagen.Location = new System.Drawing.Point(4, 24);
-            this.PBImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PBImagen.Margin = new System.Windows.Forms.Padding(2);
             this.PBImagen.Name = "PBImagen";
             this.PBImagen.Size = new System.Drawing.Size(88, 79);
             this.PBImagen.TabIndex = 7;
@@ -445,9 +445,9 @@
             // 
             this.tabPage2.Controls.Add(this.groupb);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(538, 271);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Matenimiento";
@@ -458,7 +458,7 @@
             this.tabCon.Controls.Add(this.tabPage1);
             this.tabCon.Controls.Add(this.tabPage2);
             this.tabCon.Location = new System.Drawing.Point(22, 46);
-            this.tabCon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabCon.Margin = new System.Windows.Forms.Padding(2);
             this.tabCon.Name = "tabCon";
             this.tabCon.SelectedIndex = 0;
             this.tabCon.Size = new System.Drawing.Size(546, 297);
@@ -482,14 +482,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(588, 366);
             this.Controls.Add(this.tabCon);
             this.Controls.Add(this.lTitulo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormArticulo";
             this.Text = ".:Articulos:.";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormArticulo_FormClosing);
             this.Load += new System.EventHandler(this.FormArticulo_Load);
+            this.Resize += new System.EventHandler(this._Resize);
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagListado)).EndInit();
             this.tabPage1.ResumeLayout(false);

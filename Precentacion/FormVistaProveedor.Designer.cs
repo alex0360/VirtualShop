@@ -113,6 +113,7 @@
             this.Name = "FormVistaProveedor";
             this.Text = "Proveedor";
             this.Load += new System.EventHandler(this.FormVistaProveedor_Load);
+            this.Resize += new System.EventHandler(this._Resize);
             this.TCListado.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

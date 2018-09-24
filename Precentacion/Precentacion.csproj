@@ -55,6 +55,7 @@
       <DependentUpon>FormVistas.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Mensaje.cs" />
+    <Compile Include="Clases\ReSize.cs" />
     <Compile Include="FormArticulo.cs">
       <SubType>Form</SubType>
     </Compile>

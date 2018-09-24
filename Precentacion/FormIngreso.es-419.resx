@@ -132,7 +132,7 @@
     <value>NoControl</value>
   </data>
   <data name="LTitulo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 23</value>
+    <value>14, 21</value>
   </data>
   <data name="LTitulo.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 26</value>
@@ -140,11 +140,17 @@
   <data name="BImprimir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="tabCon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 60</value>
+  </data>
   <data name="tabCon.Size" type="System.Drawing.Size, System.Drawing">
     <value>629, 384</value>
   </data>
   <data name="LTotalRegistro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="LTotalRegistro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 332</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
     <value>621, 358</value>
@@ -165,10 +171,10 @@
     <value>74, 20</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>621, 358</value>
+    <value>660, 358</value>
   </data>
   <data name="TBBuscar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 1</value>
+    <value>143, 59</value>
   </data>
   <data name="TBBuscar.Size" type="System.Drawing.Size, System.Drawing">
     <value>228, 20</value>
@@ -176,16 +182,58 @@
   <data name="LBuscar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="LBuscar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 65</value>
+  </data>
   <data name="BEliminar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="CBEliminar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="LFecha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LIvg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TBIgv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="DTPFecha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="GBArticulo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 103</value>
+  </data>
+  <data name="GBArticulo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>582, 94</value>
+  </data>
+  <data name="LTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="LTotal_Pagado.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="LTotal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LNumero.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BBuscarProveedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TBProveedor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="lProveedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TBSerie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="TBCorrelativo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="LComprobante.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -233,52 +281,10 @@
   <data name="LArticulo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="GBArticulo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 103</value>
-  </data>
-  <data name="GBArticulo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>582, 94</value>
-  </data>
-  <data name="DTPFecha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 20</value>
-  </data>
-  <data name="LComprobante.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="LNumero.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="TBSerie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
-  </data>
-  <data name="TBCorrelativo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
-  </data>
-  <data name="BBuscarProveedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="TBProveedor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 20</value>
-  </data>
-  <data name="lProveedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="TBIgv.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
-  </data>
-  <data name="LIvg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="LFecha.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>724, 459</value>
+    <value>643, 459</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

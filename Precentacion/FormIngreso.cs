@@ -19,6 +19,7 @@ namespace Precentacion
         public FormIngreso()
         {
             InitializeComponent();
+            _ReSize();
             base.TTMensaje.SetToolTip(this.TBProveedor, "Seleccione el Proveedor");
             base.TTMensaje.SetToolTip(this.TBSerie, "Ingrese la Serie");
             base.TTMensaje.SetToolTip(this.TBCorrelativo, "Ingrese el número del comprobante");
@@ -349,8 +350,19 @@ namespace Precentacion
             Left = 0;
             Mostrar();
             Clear();
+            ReSize._get_initial_size();
         }
         private void FormIngreso_FormClosing(object sender, FormClosingEventArgs e) => _Instancia = null;
+        #endregion
+        #region ReSize
+        private Clases.ReSize ReSize;
+        private void _ReSize()
+        {
+            ReSize = new Clases.ReSize(this);
+            this.Load += FormIngreso_Load;
+            this.Resize += _Resize;
+        }
+        private void _Resize(object sender, EventArgs e) => ReSize._resize();
         #endregion
     }
 }

@@ -50,6 +50,7 @@
             this.TCListado.SelectedIndex = 0;
             this.TCListado.Size = new System.Drawing.Size(323, 320);
             this.TCListado.TabIndex = 7;
+            this.TCListado.Resize += new System.EventHandler(this._Resize);
             // 
             // tabPage1
             // 
@@ -110,7 +111,7 @@
             this.TBBuscar.Location = new System.Drawing.Point(76, 17);
             this.TBBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.TBBuscar.Name = "TBBuscar";
-            this.TBBuscar.Size = new System.Drawing.Size(134, 20);
+            this.TBBuscar.Size = new System.Drawing.Size(167, 20);
             this.TBBuscar.TabIndex = 1;
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged_1);
             // 
@@ -133,9 +134,9 @@
             this.LTitulo.Location = new System.Drawing.Point(12, 12);
             this.LTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LTitulo.Name = "LTitulo";
-            this.LTitulo.Size = new System.Drawing.Size(70, 26);
+            this.LTitulo.Size = new System.Drawing.Size(127, 26);
             this.LTitulo.TabIndex = 6;
-            this.LTitulo.Text = "Titulo";
+            this.LTitulo.Text = "Categorias";
             // 
             // FormVistaCategoria
             // 
@@ -147,6 +148,7 @@
             this.Name = "FormVistaCategoria";
             this.Text = "FormVistaCategoria";
             this.Load += new System.EventHandler(this.FormVistaCategoria_Load);
+            this.Resize += new System.EventHandler(this._Resize);
             this.TCListado.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

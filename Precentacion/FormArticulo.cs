@@ -12,6 +12,7 @@ namespace Precentacion
         public FormArticulo()
         {
             InitializeComponent();
+            _ReSize();
             tooltMensaje.SetToolTip(tbNombre, "Ingrese un Nombre para la Articulo");
             this.tooltMensaje.SetToolTip(PBImagen, "Seleccion la Imagen del Articulo");
             this.tooltMensaje.SetToolTip(TBCategoria, "Seleccion la Categoria del Articulo");
@@ -159,6 +160,7 @@ namespace Precentacion
             this.Left = 0;
 
             Mostrar();
+            ReSize._get_initial_size();
         }
         private void ChbEliminar_CheckedChanged(object sender, EventArgs e) => RowsEliminar();
         private void ButEliminar_Click(object sender, EventArgs e)
@@ -282,6 +284,17 @@ namespace Precentacion
             formVista.ShowDialog();
         }
         private void FormArticulo_FormClosing(object sender, FormClosingEventArgs e) => _Instacia = null;
+        #endregion
+
+        #region ReSize
+        private Clases.ReSize ReSize;
+        private void _ReSize()
+        {
+            ReSize = new Clases.ReSize(this);
+            this.Load += FormArticulo_Load;
+            this.Resize += _Resize;
+        }
+        private void _Resize(object sender, EventArgs e) => ReSize._resize();
         #endregion
     }
 }

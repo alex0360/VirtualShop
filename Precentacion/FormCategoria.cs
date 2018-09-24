@@ -6,11 +6,14 @@ namespace Precentacion
     public partial class FormCategoria : Form
     {
         private System.Int32? IdCategoria;
-
+        private Clases.ReSize ReSize;
         public FormCategoria()
         {
             InitializeComponent();
+            ReSize = new Clases.ReSize(this);
             this.tooltMensaje.SetToolTip(this.tbNombre, "Ingrese un Nombre para la Categoria");
+            this.Load += FormCategoria_Load;
+            this.Resize += FormCategoria_Resize;
         }
         
         // Mensaje de informacion       
@@ -82,7 +85,7 @@ namespace Precentacion
         // Metodo Mostrar
         private void BuscarMostar()
         {
-            datagListado.DataSource = Negocio.Categoria.BuscarMostar(this.tbBuscar.Text);
+            datagListado.DataSource = Negocio.Categoria.BuscarMostar(this.TBBuscar.Text);
             OcultarColumns();
             RowsEliminar();
             labMostrarTotal.Text = "Total de Regristros: " + Convert.ToString(datagListado.Rows.Count);
@@ -92,6 +95,7 @@ namespace Precentacion
         // Cuando esta Cargando el Formulario
         private void FormCategoria_Load(object sender, EventArgs e)
         {
+            ReSize._get_initial_size();
             this.Top = 0;
             this.Left = 0;
             // Saber si agregar una nueva categoria
@@ -207,6 +211,8 @@ namespace Precentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
+        // Resize
+        private void FormCategoria_Resize(object sender, EventArgs e) => ReSize._resize();
         #endregion
     }
 }

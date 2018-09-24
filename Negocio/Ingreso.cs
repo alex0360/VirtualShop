@@ -43,7 +43,10 @@ namespace Negocio
         public static System.Data.DataTable Mostrar() => new Datos.Ingreso().Mostrar();
 
         public static System.Data.DataTable Mostar(int? idIngreso) => new Datos.Ingreso().MostrarDetalles(Convert.ToString(idIngreso));
-
+        public void AdjustColumn(System.Windows.Forms.DataGridView DataGridView)
+        {
+            
+        }
         public static System.Data.DataTable BuscarMostar(string textBuscar, string textBuscar2) => new Datos.Ingreso().BuscarFecha(textBuscar, textBuscar2);
     }
 }

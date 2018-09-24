@@ -42,5 +42,10 @@
         public void Cerrar() {
             System.Windows.Forms.Application.Exit();
         }
+
+        public void Now(System.Windows.Forms.DateTimePicker DateTimePicker)
+        {
+            DateTimePicker.Value = System.DateTime.Now;
+        }
     }
 }

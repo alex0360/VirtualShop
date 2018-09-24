@@ -126,7 +126,8 @@ namespace Precentacion
             DGVListado.DataSource = Negocio.Ingreso.Mostrar();
             DGVListado.AutoResizeColumns();
             OcultarColumns();
-            RowsEliminar();        
+            RowsEliminar();
+            CargarFechaActual();
             LTotalRegistro.Text = "Total de Regristros: " + Convert.ToString(DGVListado.Rows.Count);
         }
 
@@ -142,7 +143,7 @@ namespace Precentacion
         private void MostrarDetalles()
         {
             DGVListados_detalles.DataSource = Negocio.Ingreso.Mostar(IdIngreso);
-            OcultarColumns();
+            DGVListados_detalles.Columns[0].Visible = false;
         }
         // Crear La tabla
         private void CrearTabla() {
@@ -161,6 +162,13 @@ namespace Precentacion
         private void CargarComboBox()
         {
             new Negocio.Read(CBComprobante, "LCom.vshop");
+        }
+        private void CargarFechaActual() {
+            new Clases.Comunes().Now(DTPFecha_inicio);
+            new Clases.Comunes().Now(DTPFecha_Final);
+            new Clases.Comunes().Now(DTPFecha);
+            new Clases.Comunes().Now(DTPFecha_Produccion);
+            new Clases.Comunes().Now(DTPFecha_Vencimiento);
         }
         // Solo Lectura Combobox
         private void ComboBoxSOLOLectura()

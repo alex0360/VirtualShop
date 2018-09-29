@@ -9,7 +9,7 @@
             SqlConnection =
                 new System.Data.SqlClient.SqlConnection
                     (System.Configuration.ConfigurationManager.AppSettings
-                        ["ConectionStringDBVentas"]);
+                        ["DBVentasConectionString"]);
             if (SqlConnection.State == System.Data.ConnectionState.Closed) SqlConnection.Open();
 
             return SqlConnection;

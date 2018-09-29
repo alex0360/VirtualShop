@@ -45,7 +45,6 @@
     <Compile Include="Articulo.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="Cliente.cs" />
-    <Compile Include="Conexion.cs" />
     <Compile Include="Ingreso.cs" />
     <Compile Include="Presentacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

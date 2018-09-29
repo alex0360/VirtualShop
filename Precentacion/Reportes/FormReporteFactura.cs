@@ -26,7 +26,9 @@ namespace Precentacion
                 this.spReporte_FacturaTableAdapter1.Fill(this.dataSetPrincipal1.SpReporte_Factura, IdVenta);
                 this.reportViewer1.RefreshReport();
             }
-            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            catch (Exception ex) { MessageBox.Show(ex.ToString());
+                this.reportViewer1.RefreshReport();
+            }
         }
     }
 }

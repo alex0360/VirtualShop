@@ -104,6 +104,9 @@
     </Compile>
     <Compile Include="Clases\Mensaje.cs" />
     <Compile Include="Clases\ReSize.cs" />
+    <Compile Include="DataSetPrincipal.cs">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetPrincipal.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

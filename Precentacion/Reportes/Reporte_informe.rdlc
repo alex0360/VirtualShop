@@ -548,7 +548,7 @@
             <Top>2.88417in</Top>
             <Left>0.47792in</Left>
             <Height>0.5in</Height>
-            <Width>7.22917in</Width>
+            <Width>7.22916in</Width>
             <Visibility>
               <Hidden>true</Hidden>
             </Visibility>
@@ -987,111 +987,6 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Direccion_Empresa">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!Direccion_Empresa.Value</Value>
-                    <Style>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Direccion_Empresa</rd:DefaultName>
-            <Top>0.56472in</Top>
-            <Left>0.47792in</Left>
-            <Height>0.25in</Height>
-            <Width>1.89583in</Width>
-            <ZIndex>14</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Telefono_Empresa">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!Telefono_Empresa.Value</Value>
-                    <Style>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Telefono_Empresa</rd:DefaultName>
-            <Top>0.87028in</Top>
-            <Left>0.47792in</Left>
-            <Height>0.25in</Height>
-            <Width>1.89583in</Width>
-            <ZIndex>15</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Mas_Empresa">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!Mas_Empresa.Value</Value>
-                    <Style>
-                      <FontSize>11pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Mas_Empresa</rd:DefaultName>
-            <Top>1.16194in</Top>
-            <Left>0.4675in</Left>
-            <Height>0.25in</Height>
-            <Width>1.89583in</Width>
-            <ZIndex>16</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Textbox Name="fecha">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
@@ -1113,7 +1008,7 @@
             <Left>0.64458in</Left>
             <Height>0.25in</Height>
             <Width>2.29167in</Width>
-            <ZIndex>17</ZIndex>
+            <ZIndex>14</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -1144,7 +1039,7 @@
             <Left>7.73833in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
-            <ZIndex>18</ZIndex>
+            <ZIndex>15</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -1175,7 +1070,7 @@
             <Left>6.51958in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
-            <ZIndex>19</ZIndex>
+            <ZIndex>16</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -1206,7 +1101,7 @@
             <Left>6.70708in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
-            <ZIndex>20</ZIndex>
+            <ZIndex>17</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -1237,7 +1132,7 @@
             <Left>6.70708in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
-            <ZIndex>21</ZIndex>
+            <ZIndex>18</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -1268,7 +1163,7 @@
             <Left>6.70708in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
-            <ZIndex>22</ZIndex>
+            <ZIndex>19</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -1299,7 +1194,7 @@
             <Left>5.54042in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
-            <ZIndex>23</ZIndex>
+            <ZIndex>20</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1329,7 +1224,7 @@
             <Left>5.54042in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
-            <ZIndex>24</ZIndex>
+            <ZIndex>21</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1359,7 +1254,7 @@
             <Left>5.54042in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
-            <ZIndex>25</ZIndex>
+            <ZIndex>22</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1416,6 +1311,7 @@
     </ReportParameter>
     <ReportParameter Name="Mas_Empresa">
       <DataType>String</DataType>
+      <Nullable>true</Nullable>
       <AllowBlank>true</AllowBlank>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>

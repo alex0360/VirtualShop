@@ -575,3 +575,29 @@ Where a.Codigo = @textBuscar
 AND d.stock_actual>0
 AND i.estado<>'ANULADO'
 GO
+
+-- Mostrar Facturas
+Create Proc SpReporte_Factura
+@idVenta int
+AS
+select 
+v.idVenta,(t.apellidos+' '+t.nombre) AS Trabajador,
+(c.apellidos+' '+c.nombre) AS Cliente,
+c.direccion, c.telefono, c.num_documento,
+v.fecha, v.tipo_comprobante, v.serie, v.correlativo,v.igv,
+a.nombre,
+dv.precio_venta, dv.cantidad, dv.descuento,
+(dv.cantidad*dv.precio_venta-dv.descuento) AS Total_Parcial
+from Detalle_venta dv Inner Join Detalle_ingreso di
+On dv.idDetalle_ingreso = di.idDetalle_ingreso
+Inner Join Articulo a
+On a.idArticulo = di.idDetalle_ingreso
+Inner Join Venta v
+On v.idVenta = dv.idDetalle_venta
+Inner Join Cliente c
+On v.idCliente = c.idCliente
+Inner Join Trabajador t
+On t.idTrabajador = v.idTrabajador
+Where
+v.idVenta = @idVenta
+Go

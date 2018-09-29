@@ -372,6 +372,16 @@ namespace Precentacion
             }
 
         }
+
+        private void BComprobante_Click(object sender, EventArgs e)
+        {
+            FormReporteFactura form = new FormReporteFactura
+            {
+                IdVenta = Convert.ToInt32(DGVListado.CurrentRow.Cells["idVenta"].Value)
+            };
+            form.ShowDialog();
+        }
+
         private void FormVentas_FormClosing(object sender, FormClosingEventArgs e) => _Instancia = null;
         private void FormVentas_Load(object sender, EventArgs e)
         {

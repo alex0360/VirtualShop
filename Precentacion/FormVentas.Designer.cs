@@ -37,6 +37,7 @@
             this.DTPFecha_inicio = new System.Windows.Forms.DateTimePicker();
             this.DGVListados_detalles = new System.Windows.Forms.DataGridView();
             this.GBArticulo = new System.Windows.Forms.GroupBox();
+            this.MUDCantidad = new System.Windows.Forms.NumericUpDown();
             this.BAdd = new System.Windows.Forms.Button();
             this.BDelete = new System.Windows.Forms.Button();
             this.DTPFecha_Vencimiento = new System.Windows.Forms.DateTimePicker();
@@ -68,7 +69,7 @@
             this.LFecha = new System.Windows.Forms.Label();
             this.LTotal_Pagado = new System.Windows.Forms.Label();
             this.LTotal = new System.Windows.Forms.Label();
-            this.MUDCantidad = new System.Windows.Forms.NumericUpDown();
+            this.BComprobante = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.EPErrorIcono)).BeginInit();
             this.tabCon.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -77,10 +78,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListados_detalles)).BeginInit();
             this.GBArticulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MUDCantidad)).BeginInit();
             this.PBuscarArticulo.SuspendLayout();
             this.PComprobante.SuspendLayout();
             this.PBuscarCliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MUDCantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // BCancelar
@@ -101,7 +102,7 @@
             // 
             // BImprimir
             // 
-            this.BImprimir.Location = new System.Drawing.Point(425, 26);
+            this.BImprimir.Location = new System.Drawing.Point(363, 26);
             // 
             // tabCon
             // 
@@ -116,6 +117,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.BComprobante);
             this.tabPage1.Controls.Add(this.BBuscar_fecha);
             this.tabPage1.Controls.Add(this.LFecha_Final);
             this.tabPage1.Controls.Add(this.DTPFecha_Final);
@@ -136,6 +138,7 @@
             this.tabPage1.Controls.SetChildIndex(this.DTPFecha_Final, 0);
             this.tabPage1.Controls.SetChildIndex(this.LFecha_Final, 0);
             this.tabPage1.Controls.SetChildIndex(this.BBuscar_fecha, 0);
+            this.tabPage1.Controls.SetChildIndex(this.BComprobante, 0);
             // 
             // GBMatenimiento
             // 
@@ -166,7 +169,7 @@
             // 
             // BEliminar
             // 
-            this.BEliminar.Location = new System.Drawing.Point(307, 26);
+            this.BEliminar.Location = new System.Drawing.Point(248, 26);
             this.BEliminar.Click += new System.EventHandler(this.BEliminar_Click);
             // 
             // TBBuscar
@@ -307,6 +310,19 @@
             this.GBArticulo.Size = new System.Drawing.Size(582, 94);
             this.GBArticulo.TabIndex = 30;
             this.GBArticulo.TabStop = false;
+            // 
+            // MUDCantidad
+            // 
+            this.MUDCantidad.BackColor = System.Drawing.SystemColors.Control;
+            this.MUDCantidad.Location = new System.Drawing.Point(57, 65);
+            this.MUDCantidad.Name = "MUDCantidad";
+            this.MUDCantidad.Size = new System.Drawing.Size(58, 19);
+            this.MUDCantidad.TabIndex = 22;
+            this.MUDCantidad.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // BAdd
             // 
@@ -658,18 +674,15 @@
             this.LTotal.TabIndex = 32;
             this.LTotal.Text = "Total Pagas:";
             // 
-            // MUDCantidad
+            // BComprobante
             // 
-            this.MUDCantidad.BackColor = System.Drawing.SystemColors.Control;
-            this.MUDCantidad.Location = new System.Drawing.Point(57, 65);
-            this.MUDCantidad.Name = "MUDCantidad";
-            this.MUDCantidad.Size = new System.Drawing.Size(58, 19);
-            this.MUDCantidad.TabIndex = 22;
-            this.MUDCantidad.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.BComprobante.Location = new System.Drawing.Point(479, 26);
+            this.BComprobante.Name = "BComprobante";
+            this.BComprobante.Size = new System.Drawing.Size(121, 33);
+            this.BComprobante.TabIndex = 27;
+            this.BComprobante.Text = "&Comprobante";
+            this.BComprobante.UseVisualStyleBackColor = true;
+            this.BComprobante.Click += new System.EventHandler(this.BComprobante_Click);
             // 
             // FormVenta
             // 
@@ -692,13 +705,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGVListados_detalles)).EndInit();
             this.GBArticulo.ResumeLayout(false);
             this.GBArticulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MUDCantidad)).EndInit();
             this.PBuscarArticulo.ResumeLayout(false);
             this.PBuscarArticulo.PerformLayout();
             this.PComprobante.ResumeLayout(false);
             this.PComprobante.PerformLayout();
             this.PBuscarCliente.ResumeLayout(false);
             this.PBuscarCliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MUDCantidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -747,5 +760,6 @@
         private System.Windows.Forms.TextBox TBDescuento;
         private System.Windows.Forms.TextBox TBStockActual;
         private System.Windows.Forms.NumericUpDown MUDCantidad;
+        private System.Windows.Forms.Button BComprobante;
     }
 }

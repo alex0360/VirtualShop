@@ -21,9 +21,9 @@ namespace Negocio
         /// <param name="estado">Estado {Anulado o Activo}</param>
         /// <param name="Detalles">DataTable</param>
         /// <returns>Un resultado{Ok, Null}</returns>
-        public static string Insertar(int idCliente, int idTrabajador, DateTime fecha,
+        public static string Insertar( int idTrabajador, int idCliente, DateTime fecha,
             string tipo_comprobante, string serie, string correlativo,
-            decimal igv, string estado, DataTable Detalles)
+            decimal igv, DataTable Detalles)
         {
             Obj = new Datos.Venta {
                 IdCliente = idCliente,
@@ -32,17 +32,16 @@ namespace Negocio
                 Tipo_Comprobante = tipo_comprobante,
                 Serie = serie,
                 Correlativo = correlativo,
-                Igv = igv,
-                Estado = estado
+                Igv = igv
             };
             List<Datos.Detalle_venta> detalles = new List<Datos.Detalle_venta>();
             foreach (DataRow row in Detalles.Rows)
             {
                 Datos.Detalle_venta detalle = new Datos.Detalle_venta {
                     IdDetalle_Ingreso = Convert.ToInt32(row["idDetalle_ingreso"].ToString()),
-                    Cantidad = Convert.ToInt32(row["cantidad"].ToString()),
+                    Cantidad = Convert.ToInt32(row["Cantidad"].ToString()),
                     Precio_venta = Convert.ToDecimal(row["precio_venta"].ToString()),
-                    Descuento = Convert.ToDecimal(row["descuento"].ToString())
+                    Descuento = Convert.ToDecimal(row["Descuento"].ToString())
                 };
                 detalles.Add(detalle);
             }
@@ -77,7 +76,7 @@ namespace Negocio
         /// </summary>
         /// <param name="textBuscar">Fecha para filtrar la busqueda</param>
         /// <returns>Un DataTable con los resultados de un dia</returns>
-        public static DataTable Mostrar(string textBuscar) => new Datos.Venta().Mostrar(textBuscar);
+        public static DataTable Mostrar(int? textBuscar) => new Datos.Venta().Mostrar(Convert.ToString(textBuscar));
         /// <summary>
         /// Muestra los articulos por Nombre
         /// </summary>

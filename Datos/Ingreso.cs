@@ -62,6 +62,7 @@ namespace Datos
             string respuesta = null;
             try
             {
+                if (Conexion.SqlConnection.State == System.Data.ConnectionState.Closed) Conexion.SqlConnection.Open();
                 //Establecer Trasaccion
                 SqlTransaction SqlTransaction =
                     Conexion.SqlConnection.BeginTransaction();

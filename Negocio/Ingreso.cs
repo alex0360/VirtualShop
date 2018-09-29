@@ -42,7 +42,7 @@ namespace Negocio
 
         public static System.Data.DataTable Mostrar() => new Datos.Ingreso().Mostrar();
 
-        public static System.Data.DataTable Mostar(int? idIngreso) => new Datos.Ingreso().MostrarDetalles(Convert.ToString(idIngreso));
+        public static System.Data.DataTable Mostrar(int? idIngreso) => new Datos.Ingreso().MostrarDetalles(Convert.ToString(idIngreso));
         public void AdjustColumn(System.Windows.Forms.DataGridView DataGridView)
         {
             

@@ -42,7 +42,7 @@ namespace Precentacion
         private void TbBuscar_TextChanged(object sender, EventArgs e) => BuscarMostar();
         private void DatagListado_DoubleClick(object sender, EventArgs e)
         {
-            FormIngreso form = FormIngreso.GetIngreso();
+            FormIngreso form = FormIngreso.GetInstancia();
 
             var Parm1 = Convert.ToInt32(datagListado.CurrentRow.Cells["idArticulo"].Value);
             var Parm2 = Convert.ToString(datagListado.CurrentRow.Cells["nombre"].Value);

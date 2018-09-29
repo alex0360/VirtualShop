@@ -79,10 +79,10 @@ namespace Negocio
             return Obj.Eliminar(Obj);
         }
         /// <summary>
-        /// Invoca el metodo Datos.Proveedor.Mostar
+        /// Invoca el metodo Datos.Proveedor.Mostrar
         /// </summary>
         /// <returns>DataTable:Tabla.Proveedor{100Filas},Null</returns>
-        public static System.Data.DataTable Mostar() => new Datos.Proveedor().Mostrar();
+        public static System.Data.DataTable Mostrar() => new Datos.Proveedor().Mostrar();
         /// <summary>
         /// Invoca el metodo Datos.Proveedor.BuscarMostar
         /// </summary>

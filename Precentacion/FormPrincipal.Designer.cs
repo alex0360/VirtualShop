@@ -35,6 +35,7 @@
             this.TSBVentas = new System.Windows.Forms.ToolStripButton();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.TSSLEstado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.TSSLUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TSMIVer = new System.Windows.Forms.ToolStripMenuItem();
             this.toolBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,7 +73,6 @@
             this.ventasPorFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comprasPorFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockDeArticulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSSLUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
@@ -125,6 +125,12 @@
             this.TSSLEstado.Name = "TSSLEstado";
             this.TSSLEstado.Size = new System.Drawing.Size(213, 17);
             this.TSSLEstado.Text = "Sistema de ventas www.constante.com";
+            // 
+            // TSSLUsuario
+            // 
+            this.TSSLUsuario.Name = "TSSLUsuario";
+            this.TSSLUsuario.Size = new System.Drawing.Size(14, 17);
+            this.TSSLUsuario.Text = "#";
             // 
             // TSMIVer
             // 
@@ -363,13 +369,14 @@
             // VentasTSMI
             // 
             this.VentasTSMI.Name = "VentasTSMI";
-            this.VentasTSMI.Size = new System.Drawing.Size(111, 22);
+            this.VentasTSMI.Size = new System.Drawing.Size(180, 22);
             this.VentasTSMI.Text = "Ventas";
+            this.VentasTSMI.Click += new System.EventHandler(this.VentasTSMI_Click);
             // 
             // ClienteTSMI
             // 
             this.ClienteTSMI.Name = "ClienteTSMI";
-            this.ClienteTSMI.Size = new System.Drawing.Size(111, 22);
+            this.ClienteTSMI.Size = new System.Drawing.Size(180, 22);
             this.ClienteTSMI.Text = "Cliente";
             this.ClienteTSMI.Click += new System.EventHandler(this.ClienteTSMI_Click);
             // 
@@ -415,12 +422,6 @@
             this.stockDeArticulosToolStripMenuItem.Name = "stockDeArticulosToolStripMenuItem";
             this.stockDeArticulosToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.stockDeArticulosToolStripMenuItem.Text = "Stock de Articulos";
-            // 
-            // TSSLUsuario
-            // 
-            this.TSSLUsuario.Name = "TSSLUsuario";
-            this.TSSLUsuario.Size = new System.Drawing.Size(14, 17);
-            this.TSSLUsuario.Text = "#";
             // 
             // FormPrincipal
             // 

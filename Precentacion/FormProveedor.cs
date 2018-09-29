@@ -65,7 +65,7 @@ namespace Precentacion
         // Metodo Mostrar
         private void Mostrar()
         {
-            DGVListado.DataSource = Negocio.Proveedor.Mostar();
+            DGVListado.DataSource = Negocio.Proveedor.Mostrar();
             DGVListado.AutoResizeColumns();
             OcultarColumns();
             RowsEliminar();

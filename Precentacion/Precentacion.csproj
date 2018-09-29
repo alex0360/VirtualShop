@@ -56,6 +56,11 @@
     </Compile>
     <Compile Include="Clases\Mensaje.cs" />
     <Compile Include="Clases\ReSize.cs" />
+    <Compile Include="DataSetPrincipal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,17 +115,35 @@
     <Compile Include="FormTrabajador.Designer.cs">
       <DependentUpon>FormTrabajador.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVentas.Designer.cs">
+      <DependentUpon>FormVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVistaArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormVistaArticulo.Designer.cs">
       <DependentUpon>FormVistaArticulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormVistaArticuloVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVistaArticuloVenta.Designer.cs">
+      <DependentUpon>FormVistaArticuloVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVistaCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormVistaCategoria.Designer.cs">
       <DependentUpon>FormVistaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVistaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVistaCliente.Designer.cs">
+      <DependentUpon>FormVistaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="FormVistaProveedor.cs">
       <SubType>Form</SubType>
@@ -133,6 +156,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -178,11 +206,20 @@
     <EmbeddedResource Include="FormTrabajador.resx">
       <DependentUpon>FormTrabajador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormVentas.resx">
+      <DependentUpon>FormVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormVistaArticulo.resx">
       <DependentUpon>FormVistaArticulo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormVistaArticuloVenta.resx">
+      <DependentUpon>FormVistaArticuloVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormVistaCategoria.resx">
       <DependentUpon>FormVistaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVistaCliente.resx">
+      <DependentUpon>FormVistaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVistaProveedor.resx">
       <DependentUpon>FormVistaProveedor.cs</DependentUpon>
@@ -194,6 +231,21 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="DataSetPrincipal.xsc">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPrincipal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPrincipal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetPrincipal.xss">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Resources\searchDataBase.png" />
   </ItemGroup>
   <ItemGroup>

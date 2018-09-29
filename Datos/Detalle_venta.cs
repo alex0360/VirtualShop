@@ -40,17 +40,18 @@ namespace Datos
         }
 
         //Método Insertar
-        public string Insertar(Detalle_venta Detalle_Venta, ref SqlConnection SqlConnection, ref SqlTransaction SqlTransaction)
+        public string Insertar(Detalle_venta Detalle_Venta, 
+            ref SqlConnection SqlConnection, ref SqlTransaction SqlTransaction)
         {
             string respuesta = null;
             try
             {
-                SqlCommand SqlCommand= new SqlCommand() {
-                Connection = SqlConnection,
-                Transaction = SqlTransaction,
-                CommandText = "SpInsertar_detalle_ingreso",
-                CommandType = CommandType.StoredProcedure
-            };
+                SqlCommand SqlCommand = new SqlCommand() {
+                    Connection = SqlConnection,
+                    Transaction = SqlTransaction,
+                    CommandText = "SpInsertar_detalle_venta",
+                    CommandType = CommandType.StoredProcedure
+                };
 
 
                 SqlParameter ParId = new SqlParameter {
@@ -94,13 +95,13 @@ namespace Datos
                     Value = Detalle_Venta.Descuento
                 };
                 SqlCommand.Parameters.Add(ParDescuento);
-                
+
                 //Ejecutamos nuestro comando
-                respuesta = SqlCommand.ExecuteNonQuery() == 1 ? "OK" : 
-                    Convert.ToString(IdVenta) + 
-                    Convert.ToString(IdDetalle_Ingreso) + 
-                    Convert.ToString(Cantidad) + 
-                    Convert.ToString(Precio_venta) + 
+                respuesta = SqlCommand.ExecuteNonQuery() == 1 ? "OK" :
+                    Convert.ToString(IdVenta) +
+                    Convert.ToString(IdDetalle_Ingreso) +
+                    Convert.ToString(Cantidad) +
+                    Convert.ToString(Precio_venta) +
                     Convert.ToString(Descuento);
 
             } catch (Exception ex)

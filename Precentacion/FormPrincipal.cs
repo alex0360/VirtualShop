@@ -82,15 +82,10 @@ namespace Precentacion
         #endregion Codigo Generado
 
         #region Eventos
-        private void FormPrincipal_Load(object sender, EventArgs e)
-        {
-            GestionUsuario();
-        }
+        private void FormPrincipal_Load(object sender, EventArgs e) => GestionUsuario();
         // Cerrar la Aplicacion
-        private void SalirTSMI_Click(object sender, EventArgs e)
-        {
-            Comunes.Cerrar();
-        }
+        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e) => Comunes.Cerrar();
+        private void SalirTSMI_Click(object sender, EventArgs e) => Comunes.Cerrar();
         // Open una Categoria
         private void CategoriasTSMI_Click(object sender, EventArgs e)
         {
@@ -137,10 +132,17 @@ namespace Precentacion
         }
         private void IngresosTSMI_Click(object sender, EventArgs e)
         {
-            FormIngreso Form = FormIngreso.GetIngreso();
+            FormIngreso Form = FormIngreso.GetInstancia();
             Form.MdiParent = this;
             Form.Show();
             Form.IdTrabajador = this.IdTrabajador;
+        }
+        private void VentasTSMI_Click(object sender, EventArgs e)
+        {
+            FormVenta Form = FormVenta.GetInstancia();
+            Form.MdiParent = this;
+            Form.Show();
+            Form.IdTrabajador = IdTrabajador;
         }
         #endregion
         #region Accesos
@@ -195,10 +197,5 @@ namespace Precentacion
         }
 
         #endregion
-
-        private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Comunes.Cerrar();
-        }
     }
 }

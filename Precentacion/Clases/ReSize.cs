@@ -32,8 +32,8 @@ namespace Precentacion.Clases
             foreach (Control Control in _controls) // Pasa por los controles
             {
                 _arr_control_storage.Add(Control.Bounds); // guarda límites de control / dimensión           
-                                                          // Si tiene datagridview
-                if (Control.GetType() == typeof(DataGridView))
+                                                          
+                if (Control.GetType() == typeof(DataGridView))// Si tiene DataGridView
                     DataGridView_Column_Adjust(((DataGridView)Control), ShowRowHeader);
             }
         }
@@ -47,30 +47,32 @@ namespace Precentacion.Clases
             int _pos = -1;// no cambie este valor a menos que sepa lo que está haciendo
             foreach (Control control in _controls)
             {
-                // hacer algo de cálculo matemático
-                _pos += 1;// incrementar en 1;
-                System.Drawing.Size _controlSize = new System.Drawing.Size
-                ((int)(_arr_control_storage[_pos].Width * _form_ratio_width),
-                    (int)(_arr_control_storage[_pos].Height * _form_ratio_height)); // Usar para dimensionar
+                try
+                {
+                    // hacer algo de cálculo matemático
+                    _pos += 1;// incrementar en 1;
+                    System.Drawing.Size _controlSize = new System.Drawing.Size
+                    ((int)(_arr_control_storage[_pos].Width * _form_ratio_width),
+                        (int)(_arr_control_storage[_pos].Height * _form_ratio_height)); // Usar para dimensionar
 
-                System.Drawing.Point _controlposition = new System.Drawing.Point((int)
-                (_arr_control_storage[_pos].X * _form_ratio_width),
-                (int)(_arr_control_storage[_pos].Y * _form_ratio_height));// Uso para la ubicación
+                    System.Drawing.Point _controlposition = new System.Drawing.Point((int)
+                    (_arr_control_storage[_pos].X * _form_ratio_width),
+                    (int)(_arr_control_storage[_pos].Y * _form_ratio_height));// Uso para la ubicación
 
-                // Establecer límites
-                control.Bounds = new System.Drawing.Rectangle(_controlposition, _controlSize); //juntar
+                    // Establecer límites
+                    control.Bounds = new System.Drawing.Rectangle(_controlposition, _controlSize); //juntar
 
-                // Suponiendo que tiene una datagridview dentro de un formulario()
-                // si quiere mostrar el encabezado de la fila, reemplace la declaración falsa de
-                // showRowHeader en la parte superior / public declaration en true;
-                if (control.GetType() == typeof(DataGridView))
-                    DataGridView_Column_Adjust(((DataGridView)control), ShowRowHeader);
+                    // Suponiendo que tiene una datagridview dentro de un formulario()
+                    // si quiere mostrar el encabezado de la fila, reemplace la declaración falsa de
+                    // showRowHeader en la parte superior / public declaration en true;
+                    if (control.GetType() == typeof(DataGridView))
+                        DataGridView_Column_Adjust(((DataGridView)control), ShowRowHeader);
 
-                // Tamaño automático de fuente
-                control.Font = new System.Drawing.Font(Form.Font.FontFamily,
-                 (float)(((Convert.ToDouble(_fontsize) * _form_ratio_width) / 2) +
-                  ((Convert.ToDouble(_fontsize) * _form_ratio_height) / 2)));
-
+                    // Tamaño automático de fuente
+                    control.Font = new System.Drawing.Font(Form.Font.FontFamily,
+                     (float)(((Convert.ToDouble(_fontsize) * _form_ratio_width) / 2) +
+                      ((Convert.ToDouble(_fontsize) * _form_ratio_height) / 2)));
+                } catch { }
             }
         }
         #endregion
@@ -103,30 +105,5 @@ namespace Precentacion.Clases
                 control.Name != string.Empty);
         }
         #endregion
-        //#region Adicional
-
-        //private int X;
-        //Point point = new Point();
-        ////public ReSize()
-        ////{
-        ////    float widthRatio = Screen.PrimaryScreen.Bounds.Width / 1280;
-        ////    float heightRatio = Screen.PrimaryScreen.Bounds.Height / 800f;
-        ////    SizeF scale = new SizeF(widthRatio, heightRatio);
-        ////    foreach (Control control in this.Controls)
-        ////    {
-        ////        control.Font = new Font("Verdana", control.Font.SizeInPoints * heightRatio * widthRatio);
-        ////    }
-        ////}
-        //public ReSize(Control Control)
-        //{
-        //    X = Screen.PrimaryScreen.WorkingArea.Width - 1024;
-        //    X = X / 2;
-
-        //    point.Y = Control.Location.Y + 50;
-        //    point.X = Control.Location.X + X;
-
-        //    Control.Location = point;
-        //}
-        //#endregion
     }
 }

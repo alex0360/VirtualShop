@@ -15,7 +15,6 @@ namespace Datos
         private string _Serie;
         private string _Correlativo;
         private decimal _Igv;
-        private string _Estado;
 
         //Propiedades
         public int IdVenta { get => _IdVenta; set => _IdVenta = value; }
@@ -26,7 +25,6 @@ namespace Datos
         public string Serie { get => _Serie; set => _Serie = value; }
         public string Correlativo { get => _Correlativo; set => _Correlativo = value; }
         public decimal Igv { get => _Igv; set => _Igv = value; }
-        public string Estado { get => _Estado; set => _Estado = value; }
 
         //Constructores
         /// <summary>
@@ -50,7 +48,7 @@ namespace Datos
         /// <param name="estado">Estado {Anulado o Activo}</param>
         public Venta(int idVenta, int idCliente, int idTrabajador, 
             DateTime fecha, string tipo_comprobante, string serie, 
-            string correlativo, decimal igv, string estado)
+            string correlativo, decimal igv)
         {
             IdVenta = idVenta;
             IdCliente = idCliente;
@@ -60,7 +58,6 @@ namespace Datos
             Serie = serie;
             Correlativo = correlativo;
             Igv = igv;
-            Estado = estado;
         }
         //Métodos
         /// <summary>
@@ -74,8 +71,10 @@ namespace Datos
             string respuesta = null;
             try
             {
+                if (Conexion.SqlConnection.State == System.Data.ConnectionState.Closed) Conexion.SqlConnection.Open();
                 //Establecer la transacción
-                SqlTransaction SqlTransaction = Conexion.SqlConnection.BeginTransaction();
+                SqlTransaction SqlTransaction =
+                    Conexion.SqlConnection.BeginTransaction();
                 //Establecer el Comando
                 SqlCommand SqlCommand = new SqlCommand {
                     Connection = Conexion.SqlConnection,
@@ -146,14 +145,6 @@ namespace Datos
                 };
                 SqlCommand.Parameters.Add(ParIgv);
 
-                SqlParameter ParEstado = new SqlParameter {
-                    ParameterName = "@estado",
-                    SqlDbType = SqlDbType.VarChar,
-                    Size = 7,
-                    Value = Venta.Estado
-                };
-                SqlCommand.Parameters.Add(ParEstado);
-
 
                 //Ejecutamos nuestro comando
                 respuesta = SqlCommand.ExecuteNonQuery() == 1 ? "OK" : "NO se Ingreso el Registro";
@@ -177,7 +168,7 @@ namespace Datos
                         {
                             //Actualizamos el Stock
 
-                            respuesta = DisminuirStock(detalle.IdDetalle_Ingreso, detalle.Cantidad);
+                            respuesta = DisminuirStock(detalle.IdDetalle_Ingreso, detalle.Cantidad,ref Conexion.SqlConnection, ref SqlTransaction);
                             if (!respuesta.Equals("OK"))
                             {
                                 break;
@@ -197,7 +188,7 @@ namespace Datos
 
             } catch (Exception ex)
             {
-                respuesta = ex.Message;
+                respuesta = ex.ToString();
             } finally
             {
                 Conexion.SqlConnection.Close();
@@ -246,7 +237,8 @@ namespace Datos
         /// <param name="idDetalle_ingreso"></param>
         /// <param name="cantidad"></param>
         /// <returns></returns>
-        public string DisminuirStock(int idDetalle_ingreso, int cantidad)
+        public string DisminuirStock(int idDetalle_ingreso, int cantidad,
+            ref SqlConnection SqlConnection, ref SqlTransaction SqlTransaction)
         {
             string respuesta = null;
             
@@ -254,7 +246,8 @@ namespace Datos
             {
                 //Establecer el Comando
                 SqlCommand SqlCmd = new SqlCommand {
-                    Connection = Conexion.SqlConnection,
+                    Connection = SqlConnection,
+                    Transaction = SqlTransaction,
                     CommandText = "SpDisminuir_stock",
                     CommandType = CommandType.StoredProcedure
                 };

@@ -6,6 +6,7 @@
 
         private static System.Data.SqlClient.SqlConnection Trigger()
         {
+            //SqlConnection =Properties.Settings.Default.ConntionStringDta;
             SqlConnection =
                 new System.Data.SqlClient.SqlConnection
                     (System.Configuration.ConfigurationManager.AppSettings

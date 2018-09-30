@@ -99,6 +99,12 @@
     <Compile Include="Clases\FaderForm.Designer.cs">
       <DependentUpon>FaderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\FormVistas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,12 @@
     </Compile>
     <Compile Include="FormProveedor.Designer.cs">
       <DependentUpon>FormProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FormReportArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FormReportArticulo.Designer.cs">
+      <DependentUpon>FormReportArticulo.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\FormReporteFactura.cs">
       <SubType>Form</SubType>
@@ -231,6 +243,9 @@
     <EmbeddedResource Include="Clases\FaderForm.resx">
       <DependentUpon>FaderForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Clases\FormReportes.resx">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clases\FormVistas.resx">
       <DependentUpon>FormVistas.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +276,9 @@
     <EmbeddedResource Include="FormProveedor.resx">
       <DependentUpon>FormProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FormReportArticulo.resx">
+      <DependentUpon>FormReportArticulo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\FormReporteFactura.resx">
       <DependentUpon>FormReporteFactura.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +308,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportArticulo.rdlc" />
     <EmbeddedResource Include="Reportes\ReportComprobanteFactura.rdlc" />
   </ItemGroup>
   <ItemGroup>

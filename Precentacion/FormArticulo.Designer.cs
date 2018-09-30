@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormArticulo));
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.labMostrarTotal = new System.Windows.Forms.Label();
             this.chbEliminar = new System.Windows.Forms.CheckBox();
-            this.butImprimir = new System.Windows.Forms.Button();
+            this.BImprimir = new System.Windows.Forms.Button();
             this.butEliminar = new System.Windows.Forms.Button();
             this.tbBuscar = new System.Windows.Forms.TextBox();
             this.lMatenimCategoria = new System.Windows.Forms.Label();
@@ -105,15 +105,16 @@
             this.chbEliminar.UseVisualStyleBackColor = true;
             this.chbEliminar.CheckedChanged += new System.EventHandler(this.ChbEliminar_CheckedChanged);
             // 
-            // butImprimir
+            // BImprimir
             // 
-            this.butImprimir.Location = new System.Drawing.Point(316, 12);
-            this.butImprimir.Margin = new System.Windows.Forms.Padding(2);
-            this.butImprimir.Name = "butImprimir";
-            this.butImprimir.Size = new System.Drawing.Size(73, 28);
-            this.butImprimir.TabIndex = 3;
-            this.butImprimir.Text = "&Imprimir";
-            this.butImprimir.UseVisualStyleBackColor = true;
+            this.BImprimir.Location = new System.Drawing.Point(316, 12);
+            this.BImprimir.Margin = new System.Windows.Forms.Padding(2);
+            this.BImprimir.Name = "BImprimir";
+            this.BImprimir.Size = new System.Drawing.Size(73, 28);
+            this.BImprimir.TabIndex = 3;
+            this.BImprimir.Text = "&Imprimir";
+            this.BImprimir.UseVisualStyleBackColor = true;
+            this.BImprimir.Click += new System.EventHandler(this.BImprimir_Click);
             // 
             // butEliminar
             // 
@@ -159,39 +160,39 @@
             this.datagListado.AllowUserToOrderColumns = true;
             this.datagListado.BackgroundColor = System.Drawing.Color.White;
             this.datagListado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagListado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagListado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.datagListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagListado.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagListado.DefaultCellStyle = dataGridViewCellStyle5;
             this.datagListado.GridColor = System.Drawing.SystemColors.Control;
             this.datagListado.Location = new System.Drawing.Point(11, 76);
             this.datagListado.Margin = new System.Windows.Forms.Padding(2);
             this.datagListado.MultiSelect = false;
             this.datagListado.Name = "datagListado";
             this.datagListado.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagListado.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagListado.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.datagListado.RowTemplate.Height = 24;
             this.datagListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagListado.Size = new System.Drawing.Size(515, 170);
@@ -204,7 +205,7 @@
             this.tabPage1.Controls.Add(this.datagListado);
             this.tabPage1.Controls.Add(this.labMostrarTotal);
             this.tabPage1.Controls.Add(this.chbEliminar);
-            this.tabPage1.Controls.Add(this.butImprimir);
+            this.tabPage1.Controls.Add(this.BImprimir);
             this.tabPage1.Controls.Add(this.butEliminar);
             this.tabPage1.Controls.Add(this.tbBuscar);
             this.tabPage1.Controls.Add(this.lMatenimCategoria);
@@ -533,7 +534,7 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
         private System.Windows.Forms.Label labMostrarTotal;
         private System.Windows.Forms.CheckBox chbEliminar;
-        private System.Windows.Forms.Button butImprimir;
+        private System.Windows.Forms.Button BImprimir;
         private System.Windows.Forms.Button butEliminar;
         private System.Windows.Forms.TextBox tbBuscar;
         private System.Windows.Forms.Label lMatenimCategoria;

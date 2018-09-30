@@ -296,5 +296,11 @@ namespace Precentacion
         }
         private void _Resize(object sender, EventArgs e) => ReSize._resize();
         #endregion
+
+        private void BImprimir_Click(object sender, EventArgs e)
+        {
+            FormReportArticulo form = new FormReportArticulo();
+            form.ShowDialog();
+        }
     }
 }

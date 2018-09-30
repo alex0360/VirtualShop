@@ -98,6 +98,7 @@
             this.TSBCompras.Name = "TSBCompras";
             this.TSBCompras.Size = new System.Drawing.Size(24, 24);
             this.TSBCompras.Text = "Compras";
+            this.TSBCompras.Click += new System.EventHandler(this.IngresosTSMI_Click);
             // 
             // TSBVentas
             // 
@@ -107,6 +108,7 @@
             this.TSBVentas.Name = "TSBVentas";
             this.TSBVentas.Size = new System.Drawing.Size(24, 24);
             this.TSBVentas.Text = "Ventas";
+            this.TSBVentas.Click += new System.EventHandler(this.VentasTSMI_Click);
             // 
             // statusStrip
             // 
@@ -304,7 +306,7 @@
             // 
             this.SalirTSMI.Image = ((System.Drawing.Image)(resources.GetObject("SalirTSMI.Image")));
             this.SalirTSMI.Name = "SalirTSMI";
-            this.SalirTSMI.Size = new System.Drawing.Size(184, 26);
+            this.SalirTSMI.Size = new System.Drawing.Size(96, 22);
             this.SalirTSMI.Text = "Salir";
             this.SalirTSMI.Click += new System.EventHandler(this.SalirTSMI_Click);
             // 
@@ -323,7 +325,7 @@
             // 
             this.ArticulosTSMI.Image = ((System.Drawing.Image)(resources.GetObject("ArticulosTSMI.Image")));
             this.ArticulosTSMI.Name = "ArticulosTSMI";
-            this.ArticulosTSMI.Size = new System.Drawing.Size(184, 26);
+            this.ArticulosTSMI.Size = new System.Drawing.Size(142, 22);
             this.ArticulosTSMI.Text = "Articulos";
             this.ArticulosTSMI.Click += new System.EventHandler(this.ArticulosTSMI_Click);
             // 
@@ -331,7 +333,7 @@
             // 
             this.CategoriasTSMI.Image = ((System.Drawing.Image)(resources.GetObject("CategoriasTSMI.Image")));
             this.CategoriasTSMI.Name = "CategoriasTSMI";
-            this.CategoriasTSMI.Size = new System.Drawing.Size(184, 26);
+            this.CategoriasTSMI.Size = new System.Drawing.Size(142, 22);
             this.CategoriasTSMI.Text = "Categorias";
             this.CategoriasTSMI.Click += new System.EventHandler(this.CategoriasTSMI_Click);
             // 
@@ -339,7 +341,7 @@
             // 
             this.PresentacionTSMI.Image = ((System.Drawing.Image)(resources.GetObject("PresentacionTSMI.Image")));
             this.PresentacionTSMI.Name = "PresentacionTSMI";
-            this.PresentacionTSMI.Size = new System.Drawing.Size(184, 26);
+            this.PresentacionTSMI.Size = new System.Drawing.Size(142, 22);
             this.PresentacionTSMI.Text = "Presentacion";
             this.PresentacionTSMI.Click += new System.EventHandler(this.PresentacionTSMI_Click);
             // 
@@ -357,7 +359,7 @@
             // 
             this.IngresosTSMI.Image = ((System.Drawing.Image)(resources.GetObject("IngresosTSMI.Image")));
             this.IngresosTSMI.Name = "IngresosTSMI";
-            this.IngresosTSMI.Size = new System.Drawing.Size(184, 26);
+            this.IngresosTSMI.Size = new System.Drawing.Size(128, 22);
             this.IngresosTSMI.Text = "Ingresos";
             this.IngresosTSMI.Click += new System.EventHandler(this.IngresosTSMI_Click);
             // 
@@ -365,7 +367,7 @@
             // 
             this.ProveedorTSMI.Image = ((System.Drawing.Image)(resources.GetObject("ProveedorTSMI.Image")));
             this.ProveedorTSMI.Name = "ProveedorTSMI";
-            this.ProveedorTSMI.Size = new System.Drawing.Size(184, 26);
+            this.ProveedorTSMI.Size = new System.Drawing.Size(128, 22);
             this.ProveedorTSMI.Text = "Proveedor";
             this.ProveedorTSMI.Click += new System.EventHandler(this.ProveedorTSMI_Click);
             // 
@@ -383,7 +385,7 @@
             // 
             this.VentasTSMI.Image = ((System.Drawing.Image)(resources.GetObject("VentasTSMI.Image")));
             this.VentasTSMI.Name = "VentasTSMI";
-            this.VentasTSMI.Size = new System.Drawing.Size(184, 26);
+            this.VentasTSMI.Size = new System.Drawing.Size(111, 22);
             this.VentasTSMI.Text = "Ventas";
             this.VentasTSMI.Click += new System.EventHandler(this.VentasTSMI_Click);
             // 
@@ -391,7 +393,7 @@
             // 
             this.ClienteTSMI.Image = ((System.Drawing.Image)(resources.GetObject("ClienteTSMI.Image")));
             this.ClienteTSMI.Name = "ClienteTSMI";
-            this.ClienteTSMI.Size = new System.Drawing.Size(184, 26);
+            this.ClienteTSMI.Size = new System.Drawing.Size(111, 22);
             this.ClienteTSMI.Text = "Cliente";
             this.ClienteTSMI.Click += new System.EventHandler(this.ClienteTSMI_Click);
             // 
@@ -408,7 +410,7 @@
             // 
             this.TrabajadoresTSMI.Image = ((System.Drawing.Image)(resources.GetObject("TrabajadoresTSMI.Image")));
             this.TrabajadoresTSMI.Name = "TrabajadoresTSMI";
-            this.TrabajadoresTSMI.Size = new System.Drawing.Size(184, 26);
+            this.TrabajadoresTSMI.Size = new System.Drawing.Size(141, 22);
             this.TrabajadoresTSMI.Text = "Trabajadores";
             this.TrabajadoresTSMI.Click += new System.EventHandler(this.TrabajadoresTSMI_Click);
             // 

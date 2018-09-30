@@ -229,5 +229,12 @@ namespace Precentacion
         }
         private void _Resize(object sender, EventArgs e) => ReSize._resize();
         #endregion
+
+        private void BActualizar_Click(object sender, EventArgs e)
+        {
+            Mostrar();
+            TBBuscar.Text = string.Empty;
+        }
+
     }
 }

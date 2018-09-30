@@ -600,3 +600,21 @@ ON v.idCliente = c.idCliente
 INNER JOIN Trabajador t 
 ON v.idTrabajador = t.idTrabajador
 where v.idVenta=@idVenta
+
+-- Mostrar el Stock de los Articulos
+Create Proc SpStock_Articulo
+AS
+SELECT dbo.Articulo.codigo, dbo.Articulo.nombre, 
+dbo.Categoria.nombre AS Categoria, 
+sum(dbo.Detalle_ingreso.stock_inicial) AS Cantidad_Ingreso, 
+sum(dbo.Detalle_ingreso.stock_actual) AS Cantidad_Stock,
+(sum(dbo.Detalle_ingreso.stock_inicial)-sum(dbo.Detalle_ingreso.stock_actual)) AS Cantidad_Venta
+FROM dbo.Articulo INNER JOIN dbo.Categoria 
+ON dbo.Articulo.idCategoria = dbo.Categoria.idCategoria 
+INNER JOIN dbo.Detalle_ingreso 
+ON dbo.Articulo.idArticulo = dbo.Detalle_ingreso.idArticulo 
+INNER JOIN dbo.Ingreso 
+ON dbo.Detalle_ingreso.idIngreso = dbo.Ingreso.idIngreso
+Where Ingreso.estado <> 'ANULADO'
+Group BY dbo.Articulo.codigo, dbo.Articulo.nombre, 
+dbo.Categoria.nombre

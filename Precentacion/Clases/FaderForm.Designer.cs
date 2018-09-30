@@ -37,6 +37,7 @@
             this.EPErrorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabCon = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.BActualizar = new System.Windows.Forms.Button();
             this.LTotalRegistro = new System.Windows.Forms.Label();
             this.CBEliminar = new System.Windows.Forms.CheckBox();
             this.BImprimir = new System.Windows.Forms.Button();
@@ -116,6 +117,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.BActualizar);
             this.tabPage1.Controls.Add(this.LTotalRegistro);
             this.tabPage1.Controls.Add(this.CBEliminar);
             this.tabPage1.Controls.Add(this.BImprimir);
@@ -130,6 +132,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // BActualizar
+            // 
+            this.BActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BActualizar.BackgroundImage")));
+            this.BActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BActualizar.Location = new System.Drawing.Point(390, 15);
+            this.BActualizar.Name = "BActualizar";
+            this.BActualizar.Size = new System.Drawing.Size(41, 33);
+            this.BActualizar.TabIndex = 7;
+            this.BActualizar.UseVisualStyleBackColor = true;
             // 
             // LTotalRegistro
             // 
@@ -154,18 +166,20 @@
             // 
             // BImprimir
             // 
-            this.BImprimir.Location = new System.Drawing.Point(541, 15);
+            this.BImprimir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BImprimir.BackgroundImage")));
+            this.BImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BImprimir.ImageKey = "(ninguno)";
+            this.BImprimir.Location = new System.Drawing.Point(563, 10);
             this.BImprimir.Margin = new System.Windows.Forms.Padding(1);
             this.BImprimir.Name = "BImprimir";
-            this.BImprimir.Size = new System.Drawing.Size(97, 33);
+            this.BImprimir.Size = new System.Drawing.Size(61, 43);
             this.BImprimir.TabIndex = 3;
-            this.BImprimir.Text = "&Imprimir";
             this.BImprimir.UseVisualStyleBackColor = true;
             this.BImprimir.Visible = false;
             // 
             // BEliminar
             // 
-            this.BEliminar.Location = new System.Drawing.Point(363, 15);
+            this.BEliminar.Location = new System.Drawing.Point(448, 15);
             this.BEliminar.Margin = new System.Windows.Forms.Padding(1);
             this.BEliminar.Name = "BEliminar";
             this.BEliminar.Size = new System.Drawing.Size(96, 33);
@@ -208,7 +222,7 @@
             // PBTitulo
             // 
             this.PBTitulo.Image = global::Precentacion.Properties.Resources.add;
-            this.PBTitulo.Location = new System.Drawing.Point(673, 4);
+            this.PBTitulo.Location = new System.Drawing.Point(669, 4);
             this.PBTitulo.Name = "PBTitulo";
             this.PBTitulo.Size = new System.Drawing.Size(151, 74);
             this.PBTitulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -258,5 +272,6 @@
         public System.Windows.Forms.Label LBuscar;
         public System.Windows.Forms.CheckBox CBEliminar;
         public System.Windows.Forms.PictureBox PBTitulo;
+        public System.Windows.Forms.Button BActualizar;
     }
 }

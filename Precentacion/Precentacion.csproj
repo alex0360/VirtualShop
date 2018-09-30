@@ -99,6 +99,12 @@
     <Compile Include="Clases\FaderForm.Designer.cs">
       <DependentUpon>FaderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\FormConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\FormConsulta.Designer.cs">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\FormReportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,27 @@
     </Compile>
     <Compile Include="Clases\Mensaje.cs" />
     <Compile Include="Clases\ReSize.cs" />
+    <Compile Include="Consultas\FormConsultaIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FormConsultaIngreso.Designer.cs">
+      <DependentUpon>FormConsultaIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FormConsultaVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FormConsultaVentas.Designer.cs">
+      <DependentUpon>FormConsultaVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\FormStockArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\FormStockArticulo.Designer.cs">
+      <DependentUpon>FormStockArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPrincipal.cs">
+      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetPrincipal.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -243,11 +270,23 @@
     <EmbeddedResource Include="Clases\FaderForm.resx">
       <DependentUpon>FaderForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Clases\FormConsulta.resx">
+      <DependentUpon>FormConsulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clases\FormReportes.resx">
       <DependentUpon>FormReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clases\FormVistas.resx">
       <DependentUpon>FormVistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FormConsultaIngreso.resx">
+      <DependentUpon>FormConsultaIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FormConsultaVentas.resx">
+      <DependentUpon>FormConsultaVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\FormStockArticulo.resx">
+      <DependentUpon>FormStockArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormArticulo.resx">
       <DependentUpon>FormArticulo.cs</DependentUpon>
@@ -378,5 +417,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

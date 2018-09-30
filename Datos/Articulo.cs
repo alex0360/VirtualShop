@@ -266,5 +266,27 @@ namespace Datos
             }
             return tableResutado;
         }
+
+        public DataTable StockArticulo()
+        {
+            DataTable tableResutado = new DataTable("Articulo");
+            try
+            {
+                SqlCommand sqlCommand = new SqlCommand()
+                {
+                    Connection = Conexion.SqlConnection,
+                    CommandText = "SpStock_Articulo",
+                    CommandType = CommandType.StoredProcedure
+                };
+
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand);
+                dataAdapter.Fill(tableResutado);
+            }
+            catch
+            {
+                tableResutado = null;
+            }
+            return tableResutado;
+        }
     }
 }

@@ -104,7 +104,7 @@
             // 
             // BImprimir
             // 
-            this.BImprimir.Location = new System.Drawing.Point(363, 26);
+            this.BImprimir.Location = new System.Drawing.Point(585, 18);
             // 
             // tabCon
             // 
@@ -682,7 +682,7 @@
             // 
             // BComprobante
             // 
-            this.BComprobante.Location = new System.Drawing.Point(479, 26);
+            this.BComprobante.Location = new System.Drawing.Point(389, 26);
             this.BComprobante.Name = "BComprobante";
             this.BComprobante.Size = new System.Drawing.Size(121, 33);
             this.BComprobante.TabIndex = 27;

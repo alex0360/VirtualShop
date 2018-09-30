@@ -144,6 +144,18 @@ namespace Precentacion
             Form.Show();
             Form.IdTrabajador = IdTrabajador;
         }
+        private void StockDeArticulosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormStockArticulo form = new FormStockArticulo();
+            form.MdiParent = this;
+            form.Show();
+        }
+        private void VentasPorFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consultas.FormConsultaVentas form = new Consultas.FormConsultaVentas();
+            form.MdiParent = this;
+            form.Show();
+        }
         #endregion
         #region Accesos
         private void GestionUsuario() {
@@ -196,6 +208,15 @@ namespace Precentacion
             TSBVentas.Enabled = false;
         }
 
+
+
         #endregion
+
+        private void ComprasPorFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consultas.FormConsultaIngreso form = new Consultas.FormConsultaIngreso();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

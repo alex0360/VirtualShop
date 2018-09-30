@@ -80,7 +80,7 @@
             // 
             // BImprimir
             // 
-            this.BImprimir.Location = new System.Drawing.Point(366, 13);
+            this.BImprimir.Location = new System.Drawing.Point(454, 8);
             // 
             // tabCon
             // 
@@ -95,6 +95,7 @@
             // 
             this.tabPage1.Controls.Add(this.DGVListado);
             this.tabPage1.Size = new System.Drawing.Size(540, 301);
+            this.tabPage1.Controls.SetChildIndex(this.BActualizar, 0);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.BEliminar, 0);
@@ -149,7 +150,7 @@
             // 
             // BEliminar
             // 
-            this.BEliminar.Location = new System.Drawing.Point(261, 13);
+            this.BEliminar.Location = new System.Drawing.Point(337, 13);
             this.BEliminar.Click += new System.EventHandler(this.BEliminar_Click);
             // 
             // TBBuscar
@@ -165,6 +166,11 @@
             // 
             this.PBTitulo.Image = ((System.Drawing.Image)(resources.GetObject("PBTitulo.Image")));
             this.PBTitulo.Location = new System.Drawing.Point(407, 6);
+            // 
+            // BActualizar
+            // 
+            this.BActualizar.Location = new System.Drawing.Point(263, 13);
+            this.BActualizar.Click += new System.EventHandler(this.BActualizar_Click);
             // 
             // CBTipo_documento
             // 
@@ -298,7 +304,7 @@
             this.DGVListado.ReadOnly = true;
             this.DGVListado.RowTemplate.Height = 24;
             this.DGVListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVListado.Size = new System.Drawing.Size(468, 164);
+            this.DGVListado.Size = new System.Drawing.Size(517, 164);
             this.DGVListado.TabIndex = 8;
             this.DGVListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListado_CellContentClick);
             this.DGVListado.DoubleClick += new System.EventHandler(this.DGVListado_DoubleClick);

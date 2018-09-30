@@ -91,5 +91,6 @@
             DataGridView.Columns["idCategoria"].DisplayIndex = 5;
             DataGridView.Columns["idPresentacion"].DisplayIndex = 6;
         }
+        public static System.Data.DataTable StockArticulo() => new Datos.Articulo().StockArticulo();
     }
 }

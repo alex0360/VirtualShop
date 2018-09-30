@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTrabajador));
             this.DGVListado = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.CBTipo_documento = new System.Windows.Forms.ComboBox();
@@ -60,6 +61,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.GBMatenimiento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).BeginInit();
             this.PCuanta.SuspendLayout();
             this.SuspendLayout();
@@ -91,13 +93,11 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Size = new System.Drawing.Size(608, 301);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.DGVListado);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Size = new System.Drawing.Size(608, 301);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
@@ -165,6 +165,12 @@
             // 
             this.CBEliminar.CheckedChanged += new System.EventHandler(this.CBEliminar_CheckedChanged);
             // 
+            // PBTitulo
+            // 
+            this.PBTitulo.Image = ((System.Drawing.Image)(resources.GetObject("PBTitulo.Image")));
+            this.PBTitulo.Location = new System.Drawing.Point(480, 9);
+            this.PBTitulo.Size = new System.Drawing.Size(151, 58);
+            // 
             // DGVListado
             // 
             this.DGVListado.AllowUserToAddRows = false;
@@ -174,7 +180,7 @@
             this.DGVListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.DGVListado.Location = new System.Drawing.Point(11, 86);
-            this.DGVListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DGVListado.Margin = new System.Windows.Forms.Padding(2);
             this.DGVListado.MultiSelect = false;
             this.DGVListado.Name = "DGVListado";
             this.DGVListado.ReadOnly = true;
@@ -197,7 +203,7 @@
             this.CBTipo_documento.FormattingEnabled = true;
             this.CBTipo_documento.ItemHeight = 13;
             this.CBTipo_documento.Location = new System.Drawing.Point(192, 76);
-            this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2);
             this.CBTipo_documento.Name = "CBTipo_documento";
             this.CBTipo_documento.Size = new System.Drawing.Size(158, 21);
             this.CBTipo_documento.TabIndex = 13;
@@ -264,7 +270,7 @@
             this.DTPFecha_nacimiento.CalendarMonthBackground = System.Drawing.SystemColors.Control;
             this.DTPFecha_nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DTPFecha_nacimiento.Location = new System.Drawing.Point(10, 114);
-            this.DTPFecha_nacimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DTPFecha_nacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.DTPFecha_nacimiento.Name = "DTPFecha_nacimiento";
             this.DTPFecha_nacimiento.Size = new System.Drawing.Size(88, 19);
             this.DTPFecha_nacimiento.TabIndex = 31;
@@ -278,7 +284,7 @@
             "M",
             "F"});
             this.CBSexo.Location = new System.Drawing.Point(107, 74);
-            this.CBSexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CBSexo.Margin = new System.Windows.Forms.Padding(2);
             this.CBSexo.Name = "CBSexo";
             this.CBSexo.Size = new System.Drawing.Size(39, 21);
             this.CBSexo.TabIndex = 28;
@@ -355,7 +361,7 @@
             // LNombre
             // 
             this.LNombre.AutoSize = true;
-            this.LNombre.Location = new System.Drawing.Point(8, 23);
+            this.LNombre.Location = new System.Drawing.Point(9, 19);
             this.LNombre.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LNombre.Name = "LNombre";
             this.LNombre.Size = new System.Drawing.Size(44, 13);
@@ -365,7 +371,7 @@
             // LApellidos
             // 
             this.LApellidos.AutoSize = true;
-            this.LApellidos.Location = new System.Drawing.Point(190, 23);
+            this.LApellidos.Location = new System.Drawing.Point(191, 19);
             this.LApellidos.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LApellidos.Name = "LApellidos";
             this.LApellidos.Size = new System.Drawing.Size(49, 13);
@@ -381,7 +387,7 @@
             this.PCuanta.Controls.Add(this.LUsuario);
             this.PCuanta.Controls.Add(this.LAcesso);
             this.PCuanta.Location = new System.Drawing.Point(366, 37);
-            this.PCuanta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PCuanta.Margin = new System.Windows.Forms.Padding(2);
             this.PCuanta.Name = "PCuanta";
             this.PCuanta.Size = new System.Drawing.Size(213, 132);
             this.PCuanta.TabIndex = 33;
@@ -390,7 +396,7 @@
             // 
             this.TBPassword.BackColor = System.Drawing.SystemColors.Control;
             this.TBPassword.Location = new System.Drawing.Point(62, 93);
-            this.TBPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TBPassword.Name = "TBPassword";
             this.TBPassword.PasswordChar = '*';
             this.TBPassword.Size = new System.Drawing.Size(103, 19);
@@ -400,7 +406,7 @@
             // 
             this.TBUsuario.BackColor = System.Drawing.SystemColors.Control;
             this.TBUsuario.Location = new System.Drawing.Point(62, 59);
-            this.TBUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TBUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.TBUsuario.Name = "TBUsuario";
             this.TBUsuario.Size = new System.Drawing.Size(103, 19);
             this.TBUsuario.TabIndex = 2;
@@ -411,7 +417,7 @@
             this.CBAcesso.BackColor = System.Drawing.SystemColors.Control;
             this.CBAcesso.FormattingEnabled = true;
             this.CBAcesso.Location = new System.Drawing.Point(62, 18);
-            this.CBAcesso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CBAcesso.Margin = new System.Windows.Forms.Padding(2);
             this.CBAcesso.Name = "CBAcesso";
             this.CBAcesso.Size = new System.Drawing.Size(103, 21);
             this.CBAcesso.TabIndex = 1;
@@ -461,6 +467,7 @@
             this.tabPage1.PerformLayout();
             this.GBMatenimiento.ResumeLayout(false);
             this.GBMatenimiento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).EndInit();
             this.PCuanta.ResumeLayout(false);
             this.PCuanta.PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProveedor));
             this.TBRazon = new System.Windows.Forms.TextBox();
             this.LRazon = new System.Windows.Forms.Label();
             this.LSector_comercial = new System.Windows.Forms.Label();
@@ -51,6 +52,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.GBMatenimiento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,13 +92,11 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Size = new System.Drawing.Size(374, 288);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.DGVListado);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Size = new System.Drawing.Size(374, 288);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
@@ -161,6 +161,12 @@
             // 
             this.CBEliminar.Location = new System.Drawing.Point(11, 50);
             this.CBEliminar.CheckedChanged += new System.EventHandler(this.CBEliminar_CheckedChanged);
+            // 
+            // PBTitulo
+            // 
+            this.PBTitulo.Image = ((System.Drawing.Image)(resources.GetObject("PBTitulo.Image")));
+            this.PBTitulo.Location = new System.Drawing.Point(240, 9);
+            this.PBTitulo.Size = new System.Drawing.Size(152, 63);
             // 
             // TBRazon
             // 
@@ -306,7 +312,7 @@
             this.DGVListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.DGVListado.Location = new System.Drawing.Point(11, 79);
-            this.DGVListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DGVListado.Margin = new System.Windows.Forms.Padding(2);
             this.DGVListado.MultiSelect = false;
             this.DGVListado.Name = "DGVListado";
             this.DGVListado.ReadOnly = true;
@@ -328,7 +334,7 @@
             this.CBSector_comercial.BackColor = System.Drawing.SystemColors.Control;
             this.CBSector_comercial.FormattingEnabled = true;
             this.CBSector_comercial.Location = new System.Drawing.Point(200, 37);
-            this.CBSector_comercial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CBSector_comercial.Margin = new System.Windows.Forms.Padding(2);
             this.CBSector_comercial.Name = "CBSector_comercial";
             this.CBSector_comercial.Size = new System.Drawing.Size(88, 21);
             this.CBSector_comercial.TabIndex = 2;
@@ -338,7 +344,7 @@
             this.CBTipo_documento.BackColor = System.Drawing.SystemColors.Control;
             this.CBTipo_documento.FormattingEnabled = true;
             this.CBTipo_documento.Location = new System.Drawing.Point(7, 89);
-            this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2);
             this.CBTipo_documento.Name = "CBTipo_documento";
             this.CBTipo_documento.Size = new System.Drawing.Size(88, 21);
             this.CBTipo_documento.TabIndex = 3;
@@ -359,6 +365,7 @@
             this.tabPage1.PerformLayout();
             this.GBMatenimiento.ResumeLayout(false);
             this.GBMatenimiento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

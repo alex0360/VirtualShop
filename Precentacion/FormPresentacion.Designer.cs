@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPresentacion));
             this.lTitulo = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupb = new System.Windows.Forms.GroupBox();
@@ -50,12 +51,14 @@
             this.lMatenimCategoria = new System.Windows.Forms.Label();
             this.tooltMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
+            this.PBTitulo = new System.Windows.Forms.PictureBox();
             this.tabPage2.SuspendLayout();
             this.groupb.SuspendLayout();
             this.tabCon.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagListado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).BeginInit();
             this.SuspendLayout();
             // 
             // lTitulo
@@ -268,15 +271,27 @@
             // 
             this.errorIcono.ContainerControl = this;
             // 
+            // PBTitulo
+            // 
+            this.PBTitulo.Image = ((System.Drawing.Image)(resources.GetObject("PBTitulo.Image")));
+            this.PBTitulo.Location = new System.Drawing.Point(282, 7);
+            this.PBTitulo.Name = "PBTitulo";
+            this.PBTitulo.Size = new System.Drawing.Size(151, 74);
+            this.PBTitulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBTitulo.TabIndex = 9;
+            this.PBTitulo.TabStop = false;
+            // 
             // FormPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(466, 447);
+            this.ClientSize = new System.Drawing.Size(454, 447);
+            this.Controls.Add(this.PBTitulo);
             this.Controls.Add(this.tabCon);
             this.Controls.Add(this.lTitulo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormPresentacion";
             this.Text = "Presentacion";
@@ -290,6 +305,7 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagListado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,5 +334,6 @@
         private System.Windows.Forms.Label lMatenimCategoria;
         private System.Windows.Forms.ToolTip tooltMensaje;
         private System.Windows.Forms.ErrorProvider errorIcono;
+        public System.Windows.Forms.PictureBox PBTitulo;
     }
 }

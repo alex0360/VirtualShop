@@ -84,7 +84,7 @@
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSBCompras,
             this.TSBVentas});
-            this.toolStrip.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip.Location = new System.Drawing.Point(0, 28);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Size = new System.Drawing.Size(804, 27);
             this.toolStrip.TabIndex = 1;
@@ -138,7 +138,7 @@
             this.toolBarToolStripMenuItem,
             this.statusBarToolStripMenuItem});
             this.TSMIVer.Name = "TSMIVer";
-            this.TSMIVer.Size = new System.Drawing.Size(35, 20);
+            this.TSMIVer.Size = new System.Drawing.Size(35, 24);
             this.TSMIVer.Text = "&Ver";
             // 
             // toolBarToolStripMenuItem
@@ -165,20 +165,23 @@
             // 
             this.TSMIHerramienta.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionsToolStripMenuItem});
+            this.TSMIHerramienta.Image = ((System.Drawing.Image)(resources.GetObject("TSMIHerramienta.Image")));
             this.TSMIHerramienta.Name = "TSMIHerramienta";
-            this.TSMIHerramienta.Size = new System.Drawing.Size(90, 20);
+            this.TSMIHerramienta.Size = new System.Drawing.Size(110, 24);
             this.TSMIHerramienta.Text = "&Herramientas";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backUpBDToolStripMenuItem});
+            this.optionsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("optionsToolStripMenuItem.Image")));
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.optionsToolStripMenuItem.Text = "Base de Datos";
             // 
             // backUpBDToolStripMenuItem
             // 
+            this.backUpBDToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("backUpBDToolStripMenuItem.Image")));
             this.backUpBDToolStripMenuItem.Name = "backUpBDToolStripMenuItem";
             this.backUpBDToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.backUpBDToolStripMenuItem.Text = "Back up BD";
@@ -193,7 +196,7 @@
             this.closeAllToolStripMenuItem,
             this.arrangeIconsToolStripMenuItem});
             this.TSMIVentanas.Name = "TSMIVentanas";
-            this.TSMIVentanas.Size = new System.Drawing.Size(66, 20);
+            this.TSMIVentanas.Size = new System.Drawing.Size(66, 24);
             this.TSMIVentanas.Text = "&Ventanas";
             // 
             // newWindowToolStripMenuItem
@@ -245,7 +248,7 @@
             this.toolStripSeparator8,
             this.aboutToolStripMenuItem});
             this.TSMIayuda.Name = "TSMIayuda";
-            this.TSMIayuda.Size = new System.Drawing.Size(53, 20);
+            this.TSMIayuda.Size = new System.Drawing.Size(53, 24);
             this.TSMIayuda.Text = "Ay&uda";
             // 
             // indexToolStripMenuItem
@@ -284,7 +287,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.MdiWindowListItem = this.TSMIVentanas;
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(804, 24);
+            this.menuStrip.Size = new System.Drawing.Size(804, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -292,14 +295,16 @@
             // 
             this.TSMISistema.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SalirTSMI});
+            this.TSMISistema.Image = ((System.Drawing.Image)(resources.GetObject("TSMISistema.Image")));
             this.TSMISistema.Name = "TSMISistema";
-            this.TSMISistema.Size = new System.Drawing.Size(60, 20);
+            this.TSMISistema.Size = new System.Drawing.Size(80, 24);
             this.TSMISistema.Text = "Sistema";
             // 
             // SalirTSMI
             // 
+            this.SalirTSMI.Image = ((System.Drawing.Image)(resources.GetObject("SalirTSMI.Image")));
             this.SalirTSMI.Name = "SalirTSMI";
-            this.SalirTSMI.Size = new System.Drawing.Size(96, 22);
+            this.SalirTSMI.Size = new System.Drawing.Size(184, 26);
             this.SalirTSMI.Text = "Salir";
             this.SalirTSMI.Click += new System.EventHandler(this.SalirTSMI_Click);
             // 
@@ -309,28 +314,32 @@
             this.ArticulosTSMI,
             this.CategoriasTSMI,
             this.PresentacionTSMI});
+            this.TSMIAlmacen.Image = global::Precentacion.Properties.Resources.Paquetes;
             this.TSMIAlmacen.Name = "TSMIAlmacen";
-            this.TSMIAlmacen.Size = new System.Drawing.Size(66, 20);
+            this.TSMIAlmacen.Size = new System.Drawing.Size(86, 24);
             this.TSMIAlmacen.Text = "Almacen";
             // 
             // ArticulosTSMI
             // 
+            this.ArticulosTSMI.Image = ((System.Drawing.Image)(resources.GetObject("ArticulosTSMI.Image")));
             this.ArticulosTSMI.Name = "ArticulosTSMI";
-            this.ArticulosTSMI.Size = new System.Drawing.Size(142, 22);
+            this.ArticulosTSMI.Size = new System.Drawing.Size(184, 26);
             this.ArticulosTSMI.Text = "Articulos";
             this.ArticulosTSMI.Click += new System.EventHandler(this.ArticulosTSMI_Click);
             // 
             // CategoriasTSMI
             // 
+            this.CategoriasTSMI.Image = ((System.Drawing.Image)(resources.GetObject("CategoriasTSMI.Image")));
             this.CategoriasTSMI.Name = "CategoriasTSMI";
-            this.CategoriasTSMI.Size = new System.Drawing.Size(142, 22);
+            this.CategoriasTSMI.Size = new System.Drawing.Size(184, 26);
             this.CategoriasTSMI.Text = "Categorias";
             this.CategoriasTSMI.Click += new System.EventHandler(this.CategoriasTSMI_Click);
             // 
             // PresentacionTSMI
             // 
+            this.PresentacionTSMI.Image = ((System.Drawing.Image)(resources.GetObject("PresentacionTSMI.Image")));
             this.PresentacionTSMI.Name = "PresentacionTSMI";
-            this.PresentacionTSMI.Size = new System.Drawing.Size(142, 22);
+            this.PresentacionTSMI.Size = new System.Drawing.Size(184, 26);
             this.PresentacionTSMI.Text = "Presentacion";
             this.PresentacionTSMI.Click += new System.EventHandler(this.PresentacionTSMI_Click);
             // 
@@ -339,21 +348,24 @@
             this.TSMICompras.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.IngresosTSMI,
             this.ProveedorTSMI});
+            this.TSMICompras.Image = ((System.Drawing.Image)(resources.GetObject("TSMICompras.Image")));
             this.TSMICompras.Name = "TSMICompras";
-            this.TSMICompras.Size = new System.Drawing.Size(67, 20);
+            this.TSMICompras.Size = new System.Drawing.Size(87, 24);
             this.TSMICompras.Text = "Compras";
             // 
             // IngresosTSMI
             // 
+            this.IngresosTSMI.Image = ((System.Drawing.Image)(resources.GetObject("IngresosTSMI.Image")));
             this.IngresosTSMI.Name = "IngresosTSMI";
-            this.IngresosTSMI.Size = new System.Drawing.Size(128, 22);
+            this.IngresosTSMI.Size = new System.Drawing.Size(184, 26);
             this.IngresosTSMI.Text = "Ingresos";
             this.IngresosTSMI.Click += new System.EventHandler(this.IngresosTSMI_Click);
             // 
             // ProveedorTSMI
             // 
+            this.ProveedorTSMI.Image = ((System.Drawing.Image)(resources.GetObject("ProveedorTSMI.Image")));
             this.ProveedorTSMI.Name = "ProveedorTSMI";
-            this.ProveedorTSMI.Size = new System.Drawing.Size(128, 22);
+            this.ProveedorTSMI.Size = new System.Drawing.Size(184, 26);
             this.ProveedorTSMI.Text = "Proveedor";
             this.ProveedorTSMI.Click += new System.EventHandler(this.ProveedorTSMI_Click);
             // 
@@ -362,21 +374,24 @@
             this.TSMIVentas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.VentasTSMI,
             this.ClienteTSMI});
+            this.TSMIVentas.Image = ((System.Drawing.Image)(resources.GetObject("TSMIVentas.Image")));
             this.TSMIVentas.Name = "TSMIVentas";
-            this.TSMIVentas.Size = new System.Drawing.Size(53, 20);
+            this.TSMIVentas.Size = new System.Drawing.Size(73, 24);
             this.TSMIVentas.Text = "Ventas";
             // 
             // VentasTSMI
             // 
+            this.VentasTSMI.Image = ((System.Drawing.Image)(resources.GetObject("VentasTSMI.Image")));
             this.VentasTSMI.Name = "VentasTSMI";
-            this.VentasTSMI.Size = new System.Drawing.Size(180, 22);
+            this.VentasTSMI.Size = new System.Drawing.Size(184, 26);
             this.VentasTSMI.Text = "Ventas";
             this.VentasTSMI.Click += new System.EventHandler(this.VentasTSMI_Click);
             // 
             // ClienteTSMI
             // 
+            this.ClienteTSMI.Image = ((System.Drawing.Image)(resources.GetObject("ClienteTSMI.Image")));
             this.ClienteTSMI.Name = "ClienteTSMI";
-            this.ClienteTSMI.Size = new System.Drawing.Size(180, 22);
+            this.ClienteTSMI.Size = new System.Drawing.Size(184, 26);
             this.ClienteTSMI.Text = "Cliente";
             this.ClienteTSMI.Click += new System.EventHandler(this.ClienteTSMI_Click);
             // 
@@ -384,14 +399,16 @@
             // 
             this.TSMIMantenimiento.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TrabajadoresTSMI});
+            this.TSMIMantenimiento.Image = ((System.Drawing.Image)(resources.GetObject("TSMIMantenimiento.Image")));
             this.TSMIMantenimiento.Name = "TSMIMantenimiento";
-            this.TSMIMantenimiento.Size = new System.Drawing.Size(101, 20);
+            this.TSMIMantenimiento.Size = new System.Drawing.Size(121, 24);
             this.TSMIMantenimiento.Text = "Mantenimiento";
             // 
             // TrabajadoresTSMI
             // 
+            this.TrabajadoresTSMI.Image = ((System.Drawing.Image)(resources.GetObject("TrabajadoresTSMI.Image")));
             this.TrabajadoresTSMI.Name = "TrabajadoresTSMI";
-            this.TrabajadoresTSMI.Size = new System.Drawing.Size(141, 22);
+            this.TrabajadoresTSMI.Size = new System.Drawing.Size(184, 26);
             this.TrabajadoresTSMI.Text = "Trabajadores";
             this.TrabajadoresTSMI.Click += new System.EventHandler(this.TrabajadoresTSMI_Click);
             // 
@@ -402,7 +419,7 @@
             this.comprasPorFechaToolStripMenuItem,
             this.stockDeArticulosToolStripMenuItem});
             this.TSMIConsultas.Name = "TSMIConsultas";
-            this.TSMIConsultas.Size = new System.Drawing.Size(71, 20);
+            this.TSMIConsultas.Size = new System.Drawing.Size(71, 24);
             this.TSMIConsultas.Text = "Consultas";
             // 
             // ventasPorFechaToolStripMenuItem
@@ -431,6 +448,7 @@
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "FormPrincipal";

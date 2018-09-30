@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Sale32.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AngleSharp, Version=0.9.6.41832, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
       <HintPath>..\packages\AngleSharp.0.9.6\lib\net45\AngleSharp.dll</HintPath>
@@ -104,9 +107,6 @@
     </Compile>
     <Compile Include="Clases\Mensaje.cs" />
     <Compile Include="Clases\ReSize.cs" />
-    <Compile Include="DataSetPrincipal.cs">
-      <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DataSetPrincipal.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -290,7 +290,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Reporte_informe.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportComprobanteFactura.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataSetPrincipal.xsc">
@@ -342,6 +342,9 @@
     <None Include="Resources\Play.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Paquetes.png" />
+    <Content Include="Sale.ico" />
+    <Content Include="Sale32.ico" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

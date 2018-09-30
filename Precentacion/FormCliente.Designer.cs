@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCliente));
             this.CBTipo_documento = new System.Windows.Forms.ComboBox();
             this.TBDireccion = new System.Windows.Forms.TextBox();
             this.TBNum_documento = new System.Windows.Forms.TextBox();
@@ -53,6 +54,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.GBMatenimiento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,13 +89,11 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Size = new System.Drawing.Size(540, 301);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.DGVListado);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Size = new System.Drawing.Size(540, 301);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
@@ -160,6 +160,11 @@
             // CBEliminar
             // 
             this.CBEliminar.CheckedChanged += new System.EventHandler(this.CBEliminar_CheckedChanged);
+            // 
+            // PBTitulo
+            // 
+            this.PBTitulo.Image = ((System.Drawing.Image)(resources.GetObject("PBTitulo.Image")));
+            this.PBTitulo.Location = new System.Drawing.Point(407, 6);
             // 
             // CBTipo_documento
             // 
@@ -382,6 +387,7 @@
             this.tabPage1.PerformLayout();
             this.GBMatenimiento.ResumeLayout(false);
             this.GBMatenimiento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

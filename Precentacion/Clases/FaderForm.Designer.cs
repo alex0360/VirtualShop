@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FaderForm));
             this.BCancelar = new System.Windows.Forms.Button();
             this.BGuardar = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -44,11 +45,13 @@
             this.LBuscar = new System.Windows.Forms.Label();
             this.TTMensaje = new System.Windows.Forms.ToolTip(this.components);
             this.LTitulo = new System.Windows.Forms.Label();
+            this.PBTitulo = new System.Windows.Forms.PictureBox();
             this.tabPage2.SuspendLayout();
             this.GBMatenimiento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EPErrorIcono)).BeginInit();
             this.tabCon.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).BeginInit();
             this.SuspendLayout();
             // 
             // BCancelar
@@ -74,11 +77,11 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.GBMatenimiento);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(1);
-            this.tabPage2.Size = new System.Drawing.Size(777, 373);
+            this.tabPage2.Size = new System.Drawing.Size(777, 376);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Matenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -119,11 +122,11 @@
             this.tabPage1.Controls.Add(this.BEliminar);
             this.tabPage1.Controls.Add(this.TBBuscar);
             this.tabPage1.Controls.Add(this.LBuscar);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(1);
-            this.tabPage1.Size = new System.Drawing.Size(777, 373);
+            this.tabPage1.Size = new System.Drawing.Size(777, 376);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -134,7 +137,7 @@
             this.LTotalRegistro.Location = new System.Drawing.Point(11, 339);
             this.LTotalRegistro.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LTotalRegistro.Name = "LTotalRegistro";
-            this.LTotalRegistro.Size = new System.Drawing.Size(16, 17);
+            this.LTotalRegistro.Size = new System.Drawing.Size(13, 13);
             this.LTotalRegistro.TabIndex = 6;
             this.LTotalRegistro.Text = "0";
             // 
@@ -144,7 +147,7 @@
             this.CBEliminar.Location = new System.Drawing.Point(15, 65);
             this.CBEliminar.Margin = new System.Windows.Forms.Padding(1);
             this.CBEliminar.Name = "CBEliminar";
-            this.CBEliminar.Size = new System.Drawing.Size(80, 21);
+            this.CBEliminar.Size = new System.Drawing.Size(62, 17);
             this.CBEliminar.TabIndex = 4;
             this.CBEliminar.Text = "Eliminar";
             this.CBEliminar.UseVisualStyleBackColor = true;
@@ -176,7 +179,7 @@
             this.TBBuscar.Location = new System.Drawing.Point(80, 20);
             this.TBBuscar.Margin = new System.Windows.Forms.Padding(1);
             this.TBBuscar.Name = "TBBuscar";
-            this.TBBuscar.Size = new System.Drawing.Size(235, 22);
+            this.TBBuscar.Size = new System.Drawing.Size(235, 19);
             this.TBBuscar.TabIndex = 1;
             // 
             // LBuscar
@@ -185,7 +188,7 @@
             this.LBuscar.Location = new System.Drawing.Point(11, 23);
             this.LBuscar.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LBuscar.Name = "LBuscar";
-            this.LBuscar.Size = new System.Drawing.Size(56, 17);
+            this.LBuscar.Size = new System.Drawing.Size(43, 13);
             this.LBuscar.TabIndex = 0;
             this.LBuscar.Text = "Buscar:";
             // 
@@ -198,19 +201,31 @@
             this.LTitulo.Location = new System.Drawing.Point(33, 28);
             this.LTitulo.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.LTitulo.Name = "LTitulo";
-            this.LTitulo.Size = new System.Drawing.Size(112, 31);
+            this.LTitulo.Size = new System.Drawing.Size(90, 26);
             this.LTitulo.TabIndex = 6;
             this.LTitulo.Text = "#Titulo:";
             // 
+            // PBTitulo
+            // 
+            this.PBTitulo.Image = global::Precentacion.Properties.Resources.add;
+            this.PBTitulo.Location = new System.Drawing.Point(673, 4);
+            this.PBTitulo.Name = "PBTitulo";
+            this.PBTitulo.Size = new System.Drawing.Size(151, 74);
+            this.PBTitulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBTitulo.TabIndex = 8;
+            this.PBTitulo.TabStop = false;
+            // 
             // FaderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 491);
+            this.Controls.Add(this.PBTitulo);
             this.Controls.Add(this.tabCon);
             this.Controls.Add(this.LTitulo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "FaderForm";
             this.Text = "FaderForm";
@@ -220,6 +235,7 @@
             this.tabCon.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,5 +257,6 @@
         public System.Windows.Forms.TextBox TBBuscar;
         public System.Windows.Forms.Label LBuscar;
         public System.Windows.Forms.CheckBox CBEliminar;
+        public System.Windows.Forms.PictureBox PBTitulo;
     }
 }

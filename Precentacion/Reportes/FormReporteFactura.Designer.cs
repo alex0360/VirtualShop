@@ -28,37 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.spReporte_FacturaTableAdapter1 = new Precentacion.DataSetPrincipalTableAdapters.SpReporte_FacturaTableAdapter();
-            this.dataSetPrincipal1 = new Precentacion.DataSetPrincipal();
-            this.tableAdapterManager1 = new Precentacion.DataSetPrincipalTableAdapters.TableAdapterManager();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPrincipal1)).BeginInit();
+            this.DataSetPrincipal = new Precentacion.DataSetPrincipal();
+            this.SpReporte_FacturaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.SpReporte_FacturaTableAdapter = new Precentacion.DataSetPrincipalTableAdapters.SpReporte_FacturaTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetPrincipal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpReporte_FacturaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Precentacion.Reportes.Reporte_informe.rdlc";
+            reportDataSource1.Name = "DataSetTabla";
+            reportDataSource1.Value = this.SpReporte_FacturaBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Precentacion.Reportes.ReportComprobanteFactura.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(1185, 730);
             this.reportViewer1.TabIndex = 0;
             // 
-            // spReporte_FacturaTableAdapter1
+            // DataSetPrincipal
             // 
-            this.spReporte_FacturaTableAdapter1.ClearBeforeFill = true;
+            this.DataSetPrincipal.DataSetName = "DataSetPrincipal";
+            this.DataSetPrincipal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataSetPrincipal1
+            // SpReporte_FacturaBindingSource
             // 
-            this.dataSetPrincipal1.DataSetName = "DataSetPrincipal";
-            this.dataSetPrincipal1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.SpReporte_FacturaBindingSource.DataMember = "SpReporte_Factura";
+            this.SpReporte_FacturaBindingSource.DataSource = this.DataSetPrincipal;
             // 
-            // tableAdapterManager1
+            // SpReporte_FacturaTableAdapter
             // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Precentacion.DataSetPrincipalTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.SpReporte_FacturaTableAdapter.ClearBeforeFill = true;
             // 
             // FormReporteFactura
             // 
@@ -69,7 +74,8 @@
             this.Name = "FormReporteFactura";
             this.Text = "Reporte de Factura";
             this.Load += new System.EventHandler(this.FormReporteFactura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetPrincipal1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetPrincipal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpReporte_FacturaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -77,8 +83,8 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private DataSetPrincipalTableAdapters.SpReporte_FacturaTableAdapter spReporte_FacturaTableAdapter1;
-        private DataSetPrincipal dataSetPrincipal1;
-        private DataSetPrincipalTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.BindingSource SpReporte_FacturaBindingSource;
+        private DataSetPrincipal DataSetPrincipal;
+        private DataSetPrincipalTableAdapters.SpReporte_FacturaTableAdapter SpReporte_FacturaTableAdapter;
     }
 }

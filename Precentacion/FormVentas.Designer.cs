@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVenta));
             this.DGVListado = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.BBuscar_fecha = new System.Windows.Forms.Button();
@@ -75,6 +76,7 @@
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.GBMatenimiento.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListados_detalles)).BeginInit();
             this.GBArticulo.SuspendLayout();
@@ -112,7 +114,6 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Size = new System.Drawing.Size(663, 376);
             // 
             // tabPage1
@@ -124,7 +125,6 @@
             this.tabPage1.Controls.Add(this.LFecha_Inicial);
             this.tabPage1.Controls.Add(this.DTPFecha_inicio);
             this.tabPage1.Controls.Add(this.DGVListado);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Size = new System.Drawing.Size(663, 376);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
@@ -186,6 +186,12 @@
             // CBEliminar
             // 
             this.CBEliminar.CheckedChanged += new System.EventHandler(this.CBEliminar_CheckedChanged);
+            // 
+            // PBTitulo
+            // 
+            this.PBTitulo.Image = ((System.Drawing.Image)(resources.GetObject("PBTitulo.Image")));
+            this.PBTitulo.Location = new System.Drawing.Point(559, 9);
+            this.PBTitulo.Size = new System.Drawing.Size(107, 50);
             // 
             // DGVListado
             // 
@@ -701,6 +707,7 @@
             this.tabPage1.PerformLayout();
             this.GBMatenimiento.ResumeLayout(false);
             this.GBMatenimiento.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListados_detalles)).EndInit();
             this.GBArticulo.ResumeLayout(false);

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCategoria));
             this.lTituloCategoria = new System.Windows.Forms.Label();
             this.tabConCategoria = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -51,12 +52,14 @@
             this.labNombre = new System.Windows.Forms.Label();
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.tooltMensaje = new System.Windows.Forms.ToolTip(this.components);
+            this.PBTitulo = new System.Windows.Forms.PictureBox();
             this.tabConCategoria.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagListado)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupbCategoria.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).BeginInit();
             this.SuspendLayout();
             // 
             // lTituloCategoria
@@ -209,7 +212,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(580, 294);
+            this.tabPage2.Size = new System.Drawing.Size(580, 303);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Matenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -297,14 +300,26 @@
             // 
             this.errorIcono.ContainerControl = this;
             // 
+            // PBTitulo
+            // 
+            this.PBTitulo.Image = ((System.Drawing.Image)(resources.GetObject("PBTitulo.Image")));
+            this.PBTitulo.Location = new System.Drawing.Point(502, 9);
+            this.PBTitulo.Name = "PBTitulo";
+            this.PBTitulo.Size = new System.Drawing.Size(100, 50);
+            this.PBTitulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PBTitulo.TabIndex = 2;
+            this.PBTitulo.TabStop = false;
+            // 
             // FormCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(614, 377);
+            this.Controls.Add(this.PBTitulo);
             this.Controls.Add(this.tabConCategoria);
             this.Controls.Add(this.lTituloCategoria);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormCategoria";
             this.Text = "Matenimiento de Categoria";
@@ -318,6 +333,7 @@
             this.groupbCategoria.ResumeLayout(false);
             this.groupbCategoria.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PBTitulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,5 +362,6 @@
         private System.Windows.Forms.Label labNombre;
         private System.Windows.Forms.ErrorProvider errorIcono;
         private System.Windows.Forms.ToolTip tooltMensaje;
+        private System.Windows.Forms.PictureBox PBTitulo;
     }
 }

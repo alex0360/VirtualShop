@@ -1223,7 +1223,7 @@ namespace Precentacion.DataSetPrincipalTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "";
+            this._connection.ConnectionString = global::Precentacion.Properties.Settings.Default.DBVentasConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

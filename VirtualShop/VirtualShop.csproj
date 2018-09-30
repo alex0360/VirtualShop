@@ -77,13 +77,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Sale.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Precentacion\Precentacion.csproj">
       <Project>{16d2f654-b892-4742-bbe8-30855715ea9c}</Project>
       <Name>Precentacion</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Sale.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

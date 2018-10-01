@@ -340,17 +340,17 @@
             "Minero",
             "Forestal",
             "Industrial",
-            "Energético",
+            "Energetico",
             "Minero",
-            "Construcción",
+            "Construccion",
             "Transportes",
             "Comunicaciones",
             "Comercial",
-            "Turístico",
+            "Turistico",
             "Sanitario",
             "Educativo",
             "Financiero",
-            "Administración"});
+            "Administracion"});
             this.CBSector_comercial.Location = new System.Drawing.Point(200, 37);
             this.CBSector_comercial.Margin = new System.Windows.Forms.Padding(2);
             this.CBSector_comercial.Name = "CBSector_comercial";

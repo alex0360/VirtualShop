@@ -19,7 +19,7 @@
                     while (SR.Peek() >= 0)
                     {
                         ComboBox.Items.Add(SR.ReadLine());
-                    }
+                    } 
                 }
             } catch{ }
         }

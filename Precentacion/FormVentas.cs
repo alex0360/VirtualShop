@@ -382,6 +382,12 @@ namespace Precentacion
             form.ShowDialog();
         }
 
+        private void BActualizar_Click(object sender, EventArgs e)
+        {
+            Mostrar();
+            CargarFechaActual();
+        }
+
         private void FormVentas_FormClosing(object sender, FormClosingEventArgs e) => _Instancia = null;
         private void FormVentas_Load(object sender, EventArgs e)
         {

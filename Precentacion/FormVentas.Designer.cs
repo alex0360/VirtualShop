@@ -194,6 +194,11 @@
             this.PBTitulo.Location = new System.Drawing.Point(559, 9);
             this.PBTitulo.Size = new System.Drawing.Size(107, 50);
             // 
+            // BActualizar
+            // 
+            this.BActualizar.Location = new System.Drawing.Point(363, 23);
+            this.BActualizar.Click += new System.EventHandler(this.BActualizar_Click);
+            // 
             // DGVListado
             // 
             this.DGVListado.AllowUserToAddRows = false;
@@ -688,7 +693,7 @@
             // 
             // BComprobante
             // 
-            this.BComprobante.Location = new System.Drawing.Point(389, 26);
+            this.BComprobante.Location = new System.Drawing.Point(460, 26);
             this.BComprobante.Name = "BComprobante";
             this.BComprobante.Size = new System.Drawing.Size(121, 33);
             this.BComprobante.TabIndex = 27;

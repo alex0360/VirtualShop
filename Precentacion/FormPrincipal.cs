@@ -156,6 +156,12 @@ namespace Precentacion
             form.MdiParent = this;
             form.Show();
         }
+        private void ComprasPorFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consultas.FormConsultaIngreso form = new Consultas.FormConsultaIngreso();
+            form.MdiParent = this;
+            form.Show();
+        }
         #endregion
         #region Accesos
         private void GestionUsuario() {
@@ -164,7 +170,7 @@ namespace Precentacion
                 Administrador();
             else if (Acceso == "Vendedor")
                 Vendedor();
-            else if (Acceso == " Almacenista")
+            else if (Acceso == "Almacenista")
                 Almacenista();
             else {
                 TSMIAlmacen.Enabled = false;
@@ -212,11 +218,6 @@ namespace Precentacion
 
         #endregion
 
-        private void ComprasPorFechaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Consultas.FormConsultaIngreso form = new Consultas.FormConsultaIngreso();
-            form.MdiParent = this;
-            form.Show();
-        }
+       
     }
 }

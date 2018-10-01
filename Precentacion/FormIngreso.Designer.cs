@@ -123,6 +123,7 @@
             this.tabPage1.Controls.Add(this.DTPFecha_inicio);
             this.tabPage1.Controls.Add(this.DGVListado);
             resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Controls.SetChildIndex(this.BActualizar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.BEliminar, 0);
@@ -288,6 +289,10 @@
             // 
             this.CBComprobante.BackColor = System.Drawing.SystemColors.Control;
             this.CBComprobante.FormattingEnabled = true;
+            this.CBComprobante.Items.AddRange(new object[] {
+            resources.GetString("CBComprobante.Items"),
+            resources.GetString("CBComprobante.Items1"),
+            resources.GetString("CBComprobante.Items2")});
             resources.ApplyResources(this.CBComprobante, "CBComprobante");
             this.CBComprobante.Name = "CBComprobante";
             // 

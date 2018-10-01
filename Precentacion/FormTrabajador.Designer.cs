@@ -99,6 +99,7 @@
             // 
             this.tabPage1.Controls.Add(this.DGVListado);
             this.tabPage1.Size = new System.Drawing.Size(608, 301);
+            this.tabPage1.Controls.SetChildIndex(this.BActualizar, 0);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.BEliminar, 0);
@@ -202,11 +203,16 @@
             this.CBTipo_documento.BackColor = System.Drawing.SystemColors.Control;
             this.CBTipo_documento.FormattingEnabled = true;
             this.CBTipo_documento.ItemHeight = 13;
+            this.CBTipo_documento.Items.AddRange(new object[] {
+            "Cedula",
+            "Pasaporte",
+            "Lic. Conducir"});
             this.CBTipo_documento.Location = new System.Drawing.Point(192, 76);
             this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2);
             this.CBTipo_documento.Name = "CBTipo_documento";
             this.CBTipo_documento.Size = new System.Drawing.Size(158, 21);
             this.CBTipo_documento.TabIndex = 13;
+            this.CBTipo_documento.Text = "Cedula";
             // 
             // TBNum_documento
             // 
@@ -416,11 +422,16 @@
             // 
             this.CBAcesso.BackColor = System.Drawing.SystemColors.Control;
             this.CBAcesso.FormattingEnabled = true;
+            this.CBAcesso.Items.AddRange(new object[] {
+            "Administrador",
+            "Almacenista",
+            "Vendedor"});
             this.CBAcesso.Location = new System.Drawing.Point(62, 18);
             this.CBAcesso.Margin = new System.Windows.Forms.Padding(2);
             this.CBAcesso.Name = "CBAcesso";
             this.CBAcesso.Size = new System.Drawing.Size(103, 21);
             this.CBAcesso.TabIndex = 1;
+            this.CBAcesso.Text = "Vendedor";
             // 
             // LPassword
             // 

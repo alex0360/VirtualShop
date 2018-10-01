@@ -98,6 +98,7 @@
             // 
             this.tabPage1.Controls.Add(this.DGVListado);
             this.tabPage1.Size = new System.Drawing.Size(374, 288);
+            this.tabPage1.Controls.SetChildIndex(this.BActualizar, 0);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.BEliminar, 0);
@@ -333,21 +334,44 @@
             // 
             this.CBSector_comercial.BackColor = System.Drawing.SystemColors.Control;
             this.CBSector_comercial.FormattingEnabled = true;
+            this.CBSector_comercial.Items.AddRange(new object[] {
+            "Ganadero",
+            "Pesquero",
+            "Minero",
+            "Forestal",
+            "Industrial",
+            "Energético",
+            "Minero",
+            "Construcción",
+            "Transportes",
+            "Comunicaciones",
+            "Comercial",
+            "Turístico",
+            "Sanitario",
+            "Educativo",
+            "Financiero",
+            "Administración"});
             this.CBSector_comercial.Location = new System.Drawing.Point(200, 37);
             this.CBSector_comercial.Margin = new System.Windows.Forms.Padding(2);
             this.CBSector_comercial.Name = "CBSector_comercial";
             this.CBSector_comercial.Size = new System.Drawing.Size(88, 21);
             this.CBSector_comercial.TabIndex = 2;
+            this.CBSector_comercial.Text = "Comercial";
             // 
             // CBTipo_documento
             // 
             this.CBTipo_documento.BackColor = System.Drawing.SystemColors.Control;
             this.CBTipo_documento.FormattingEnabled = true;
+            this.CBTipo_documento.Items.AddRange(new object[] {
+            "DNI",
+            "RNC",
+            "Contrato"});
             this.CBTipo_documento.Location = new System.Drawing.Point(7, 89);
             this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2);
             this.CBTipo_documento.Name = "CBTipo_documento";
             this.CBTipo_documento.Size = new System.Drawing.Size(88, 21);
             this.CBTipo_documento.TabIndex = 3;
+            this.CBTipo_documento.Text = "RNC";
             // 
             // FormProveedor
             // 

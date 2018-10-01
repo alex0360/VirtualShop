@@ -83,7 +83,7 @@ namespace Precentacion
         private void CargarComboBox()
         {
             new Negocio.Read(CBSector_comercial, "SCom.vshop");
-            new Negocio.Read(CBTipo_documento, "TDoc.vshop");
+            new Negocio.Read(CBTipo_documento, "TDocs.vshop");
         }
         #region Eventos
         private void FormProveedor_Load(object sender, EventArgs e)

@@ -351,6 +351,7 @@
     <EmbeddedResource Include="Reportes\ReportComprobanteFactura.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="DataSetPrincipal.xsc">
       <DependentUpon>DataSetPrincipal.xsd</DependentUpon>
     </None>

@@ -177,11 +177,16 @@
             this.CBTipo_documento.BackColor = System.Drawing.SystemColors.Control;
             this.CBTipo_documento.FormattingEnabled = true;
             this.CBTipo_documento.ItemHeight = 13;
+            this.CBTipo_documento.Items.AddRange(new object[] {
+            "Cedula",
+            "Pasaporte",
+            "Lic. Conducir"});
             this.CBTipo_documento.Location = new System.Drawing.Point(212, 73);
             this.CBTipo_documento.Margin = new System.Windows.Forms.Padding(2);
             this.CBTipo_documento.Name = "CBTipo_documento";
             this.CBTipo_documento.Size = new System.Drawing.Size(69, 21);
             this.CBTipo_documento.TabIndex = 6;
+            this.CBTipo_documento.Text = "Cedula";
             // 
             // TBDireccion
             // 

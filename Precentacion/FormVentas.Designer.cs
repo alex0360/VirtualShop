@@ -126,6 +126,7 @@
             this.tabPage1.Controls.Add(this.DTPFecha_inicio);
             this.tabPage1.Controls.Add(this.DGVListado);
             this.tabPage1.Size = new System.Drawing.Size(663, 376);
+            this.tabPage1.Controls.SetChildIndex(this.BActualizar, 0);
             this.tabPage1.Controls.SetChildIndex(this.LBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.TBBuscar, 0);
             this.tabPage1.Controls.SetChildIndex(this.BEliminar, 0);
@@ -555,11 +556,16 @@
             // 
             this.CBComprobante.BackColor = System.Drawing.SystemColors.Control;
             this.CBComprobante.FormattingEnabled = true;
+            this.CBComprobante.Items.AddRange(new object[] {
+            "Ticket",
+            "Factura",
+            "Nota Credito"});
             this.CBComprobante.Location = new System.Drawing.Point(80, 12);
             this.CBComprobante.Margin = new System.Windows.Forms.Padding(2);
             this.CBComprobante.Name = "CBComprobante";
             this.CBComprobante.Size = new System.Drawing.Size(197, 21);
             this.CBComprobante.TabIndex = 19;
+            this.CBComprobante.Text = "Factura";
             // 
             // TBSerie
             // 

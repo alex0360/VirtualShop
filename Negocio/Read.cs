@@ -21,7 +21,7 @@
                         ComboBox.Items.Add(SR.ReadLine());
                     }
                 }
-            } catch (System.Exception e) { System.Windows.Forms.MessageBox.Show(e.Message); }
+            } catch{ }
         }
         /// <summary>
         /// Converte un ComboBox en un Control de solo Lectura
